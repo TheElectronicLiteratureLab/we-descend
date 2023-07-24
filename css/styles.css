@@ -1,3 +1,46 @@
+/*Fonts*/
+@font-face {
+	font-family: CormorantGaramond;
+	src: url(../fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+	font-family: CormorantGaramond;
+	src: url(../fonts/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf);
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: CormorantGaramond;
+	src: url(../fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf);
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: Catamaran;
+	src: url(../fonts/Catamaran/Catamaran-VariableFont_wght.ttf);
+}
+
+/*Variables*/
+:root {
+	/*Colors*/
+	--sand: #DDC9B1;
+	--ochre: #9D6436;
+	--earth: #918C71;
+	--ink: #000000;
+
+	/*Additional Sand Shades for the "Bands of Time"*/
+	--sand2: #C8B6A0;
+	--sand3: #B1A28E;
+	--sand4: #9B8D7C;
+
+	/*Fonts*/
+	--primaryFont: CormorantGaramond;
+	--secondaryFont: Catamaran;
+	--secondaryFont-spacing: 1px;
+  }
+
+
 /*Foundation*/
 body {
 	box-sizing: border-box;
@@ -7,11 +50,23 @@ body {
 	height: 100vh;
 	padding: 0;
 	line-height: 1.25;
+	font-family: var(--primaryFont);
 	font-size: 18px;
+	color: var(--ink);
+	background-color: var(--sand);
 }
 
 p {
 	margin-bottom: 10px;	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 1.6em;
+	letter-spacing: 1px;
 }
 
 
@@ -43,18 +98,31 @@ p {
 	transform: rotate(-45deg);
 	margin-bottom: 0;
 	text-transform: uppercase;
+	font-family: var(--secondaryFont);
+	letter-spacing: var(--secondaryFont-spacing);
+	font-weight: 600;
 }
 
 /*Lexia*/
 article {
 	box-sizing: border-box;
-	border: 1px solid red;
 	width: 50vw;
 	height: 40vw;
-	padding: 20px;
+	padding: 30px;
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	background-image: url(../img/frame.png);
+	background-size: 100% 100%;
+}
+
+article a {
+	color: var(--ochre);
+	font-weight: 700;
+}
+
+article a:visited {
+	color: var(--earth);
 }
 
 article header {
@@ -110,19 +178,19 @@ article :target {
 
 @-webkit-keyframes crosslink {
 	0%  {background: #cc9;}
-	100%   {background: #ffe;}
+	100%   {background: transparent;}
 	}
 @-moz-keyframes crosslink {
 	0%  {background: #cc9;}
-	100%   {background: #ffe;}
+	100%   {background: transparent;}
 	}
 @-ms-keyframes crosslink {
 	0%  {background: #cc9;}
-	100%   {background: #ffe;}
+	100%   {background: transparent;}
 	}
 @-keyframes crosslink {
 	0%  {background: #cc9;}
-	100%   {background: #ffe;}
+	100%   {background: transparent;}
 	}
 
 article .path {
@@ -135,6 +203,8 @@ article .path {
 	padding: 20px 0 0 0;
 	margin-top: 20px;
 	text-align: center;
+	font-family: var(--secondaryFont);
+	letter-spacing: var(--secondaryFont-spacing);
 }
 
 article .path span {
@@ -143,4 +213,7 @@ article .path span {
 
 article .path a {
 	text-transform: uppercase;
+	color: var(--ink);
+	font-size: .8em;
+	font-weight: 600;
 }
