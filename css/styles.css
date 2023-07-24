@@ -28,6 +28,7 @@
 	--ochre: #9D6436;
 	--earth: #918C71;
 	--ink: #000000;
+	--white: #ffffff;
 
 	/*Additional Sand Shades for the "Bands of Time"*/
 	--sand2: #C8B6A0;
@@ -54,6 +55,19 @@ body {
 	font-size: 18px;
 	color: var(--ink);
 	background-color: var(--sand);
+}
+
+.bg-texture {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/texture.jpeg);
+	background-size: cover;
+	background-position: center;
+	mix-blend-mode: lighten;
+	opacity: .1;
 }
 
 p {
@@ -87,7 +101,7 @@ h3 {
 #navigator button {
 	height: 65px;
 	width: 65px;
-	background-color: lightgray;
+	background-color: var(--white);
 	transform: rotate(45deg);
 	display: flex;
 	justify-content: center;
@@ -116,7 +130,7 @@ article {
 	background-size: 100% 100%;
 }
 
-article a {
+article a:link {
 	color: var(--ochre);
 	font-weight: 700;
 }
@@ -217,3 +231,22 @@ article .path a {
 	font-size: .8em;
 	font-weight: 600;
 }
+
+/*Scrollbar*/
+/* Width */
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px rgba(0,0,0,.25);
+	border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: rgba(0,0,0,.25);
+	border-radius: 10px;
+  }
