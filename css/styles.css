@@ -1,4 +1,4 @@
-
+/*Foundation*/
 body {
 	box-sizing: border-box;
 	display: flex;
@@ -14,6 +14,8 @@ p {
 	margin-bottom: 10px;	
 }
 
+
+/*Navigator*/
 #navigator {
 	box-sizing: border-box;
 	margin: auto;
@@ -43,6 +45,7 @@ p {
 	text-transform: uppercase;
 }
 
+/*Lexia*/
 article {
 	box-sizing: border-box;
 	border: 1px solid red;
@@ -97,6 +100,30 @@ article .inscription {
 	      -ms-column-gap: 2em;
 			  column-gap: 2em; 
 }
+
+article :target {
+	-webkit-animation: crosslink 4.25s ease;
+	   -moz-animation: crosslink 4.25s ease;
+	    -ms-animation: crosslink 4.25s ease;	
+	        animation: crosslink 4.25s ease;
+	} 
+
+@-webkit-keyframes crosslink {
+	0%  {background: #cc9;}
+	100%   {background: #ffe;}
+	}
+@-moz-keyframes crosslink {
+	0%  {background: #cc9;}
+	100%   {background: #ffe;}
+	}
+@-ms-keyframes crosslink {
+	0%  {background: #cc9;}
+	100%   {background: #ffe;}
+	}
+@-keyframes crosslink {
+	0%  {background: #cc9;}
+	100%   {background: #ffe;}
+	}
 
 article .path {
 	box-sizing: border-box;
