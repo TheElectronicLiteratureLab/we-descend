@@ -105,8 +105,10 @@ h6 {
 .bookPlatePage {
 	background-image: none;
 	height: auto;
-	width: auto;
-	width: 40%;
+	width: 100%;
+	min-width: 300px;
+	max-width: 700px;
+	margin: 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
