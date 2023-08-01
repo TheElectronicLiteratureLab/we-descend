@@ -431,3 +431,90 @@ article .path a {
 	background: rgba(0,0,0,.25);
 	border-radius: 10px;
   }
+
+
+  /* Modals */
+  .modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+  }
+
+  .modal section {
+	z-index: 999;
+	padding: 75px 50px;
+	min-width: 40%;
+	background-color: rgba(255,255,255, .35);
+	box-shadow: inset 0 0 99px var(--sand);
+  }
+
+  .modal::before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(221,201,177,.92);
+	z-index: 1;
+  }
+
+  .modal::after {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/texture.jpeg);
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	mix-blend-mode: lighten;
+	opacity: .05;
+	z-index: 1;
+  }
+
+  .close-modal {
+	z-index: 999;
+	position: absolute;
+	top: 23px;
+	right: 27px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: var(--secondaryFont);
+	letter-spacing: var(--secondaryFont-spacing);
+  }
+
+  #search-modal {
+	display: flex;
+  }
+
+  #search-modal form {
+	width: 100%;
+	box-sizing: border-box;
+  }
+
+  #search-modal form input {
+	width: 99.5%;
+	height: 35px;
+	border: 0;
+	background-color: rgba(255,255,255, .4)
+  }
+
+  #search-modal form button {
+	display: block;
+	padding: 10px 0 0 0;
+	margin: 0;
+	margin-left: auto;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: var(--secondaryFont);
+	letter-spacing: var(--secondaryFont-spacing);
+  }
