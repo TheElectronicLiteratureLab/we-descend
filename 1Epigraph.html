@@ -73,10 +73,16 @@
 
 	<div id="search-modal" class="modal">
 		<section>
-			<form>
-				<input type="text" name="fname">
+		
+			<form id="search-form">
+				<input type="text" id="searchterm" name="searchterm" value=""><br>
 				<button type="submit">Search</button>
 			</form>
+			
+			<section>
+				<h2>Output</h2>
+				<div id="output-area"></div>
+			</section>
 		</section>
 
 		<button class="close-modal">Close</button>
@@ -99,7 +105,9 @@
 		<button class="close-modal">Close</button>
 	</div> -->
 
-
+	<script src="lib/jquery/jquery-3.7.0.min.js"></script>
+	<script src="data/search-data.js"></script>
+	<script src="js/search-functions.js"></script>
 </body>
 
 </html>
