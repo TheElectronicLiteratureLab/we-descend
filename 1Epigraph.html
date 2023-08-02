@@ -9,6 +9,21 @@
 	<meta name="viewport" content="initial-scale=1">
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+	
+	<style>
+		/*please, if you have any mercy, you will change and move these*/
+		#output-result-count {
+			display: none;
+		}
+		
+		#output-result-count.search-active {
+			display: block;
+		}
+		
+		#output-result-count span {
+			color: red;
+		}
+	</style>
 </head>
 
 <body>
@@ -73,11 +88,12 @@
 
 	<div id="search-modal" class="modal">
 		<section>
-		
 			<form id="search-form">
 				<input type="text" id="searchterm" name="searchterm" value=""><br>
 				<button type="submit">Search</button>
 			</form>
+			
+			<div id="output-result-count" aria-live="polite"><span></span> Results Found</div>
 			
 			<section id="output">
 				<div id="output-area"></div>
