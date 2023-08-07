@@ -9,22 +9,28 @@
 	<meta name="viewport" content="initial-scale=1">
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/intro.css" rel="stylesheet">
 </head>
 
 <body>
+	<div id="intro-overlay"></div>
 	<div class="bg-texture"></div>
 
-	<article class="bookPlatePage">
-	
-		<p class="image">
-			<a href="Dedication.html"><img src="assets/HyperTrees3_v2_crop+1Knoise_50pct-062322.jpg" alt="Bare trees against a lightening sky, vague monoliths in among them." title="Begin a new reading."></a>
-		</p>
-		<a href="Dedication.html">&nbsp;</a>
-	
-	</article>
-	<!-- end of "bookPlatePage" article -->
-	
-			
+	<h1 onclick="launch()" id="intro-title">WE DESCEND</h1>
+	<img src="./img/title-3.png">
+	<img src="./img/title-2.png">
+	<img src="./img/title-1.png">
+
+	<script type="text/javascript">
+		function launch() {
+			document.getElementById("intro-overlay").classList.add("intro-out");
+			setTimeout(function() {
+				// window.location.replace("1TITLE.html"); //load page and remove index from history
+				window.location.href = "1TITLE.html"; //load page but keep index in history
+			}, 550);
+		}
+	</script>
+
 </body>
 
 </html>
