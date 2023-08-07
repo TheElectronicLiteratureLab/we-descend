@@ -498,7 +498,7 @@ article .path a {
   }
 
   #search-modal {
-	display: flex;
+	display: none;
   }
 
   #search-modal section {
