@@ -9,12 +9,29 @@
 	<meta name="viewport" content="initial-scale=1">
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/intro.css" rel="stylesheet">
 </head>
 
 <body>
+	<div id="intro-overlay" class="covered"></div>
+
 	<div class="bg-texture"></div>
 
-	<article class="bookPlatePage">
+	<article class="bookPlatePage hidden" id="dedication">
+	
+		<!-- there is no header element on this page -->
+		
+		<div class="dedication container">
+			<h5>In memory of</h5>
+			<h3>Deborah Ruth Griffin Bly</h3>
+			<h4>1954 – 2012</h4>
+		</div>
+		<!-- end of "dedication" div -->
+		
+	</article>
+	<!-- end "bookPlatePage" article -->
+
+	<article class="bookPlatePage" id="title">
 
 		<h1 class="title">
 			We Descend
@@ -49,6 +66,41 @@
 	<!-- end of "bookPlatePage" article -->
 
 	<h6 id="copyright">&copy; 2022 Bill Bly</a>. All rights reserved.</h6>
+
+	<script type="text/javascript">
+
+		let lastPageUrl = document.referrer;
+		let result = lastPageUrl.slice(-1);
+		overlay = document.getElementById("intro-overlay");
+		title = document.getElementById("title");
+		dedication = document.getElementById("dedication");
+
+		// result = "/"; //Debugging
+
+		if (result == "/") { //Routed from index | animated intro
+			overlay.classList.add("intro-in");
+			overlay.classList.remove("covered");
+			title.classList.add("hidden");
+			dedication.classList.remove("hidden");
+			dedication.classList.add("intro-in");
+
+			setTimeout(function introDelay() { //Swap to title
+				overlay.classList.remove("intro-in");
+				overlay.classList.add("intro-transition");
+			}, 7000)
+
+			setTimeout(function introDelay() { //Animate the title
+				title.classList.remove("hidden");
+				dedication.classList.add("hidden");
+				title.classList.add("intro-in");
+			}, 8000)
+		}
+		else { //Routed from somewhere else | static page
+			overlay.classList.add("intro-in-instant");
+		}
+
+	</script>
+
 </body>
 
 </html>

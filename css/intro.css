@@ -4,9 +4,13 @@
 	height: 100%;
 	background-color: var(--sand);
 	z-index: 99;
-	opacity: 0;
 	pointer-events: none;
+	opacity: 0;
 	transition: opacity 1s;
+}
+
+#intro-overlay.covered {
+	opacity: 1;
 }
 
 #intro-overlay.intro-out {
@@ -14,18 +18,30 @@
 	transition: opacity 0.5s ease-in;
 }
 
+#intro-overlay.intro-in {
+	animation: intro-bg 1s 0.0s ease-in forwards;
+}
 
-h1 {
+#intro-overlay.intro-transition {
+	animation: intro-bg-transition 2.2s 0.0s ease-in-out forwards;
+}
+
+#intro-overlay.intro-in-instant {
+	animation: intro-bg 0s 0s ease-in forwards;
+}
+
+#intro-title {
 	position: fixed;
 	z-index: 10;
 	font-size: 11vh;
 	cursor: pointer;
 	letter-spacing: 8px;
 	transition: letter-spacing 0.5s;
+	text-align: center;
 }
 
-h1 {
-	animation: intro-title 1.8s 0.5s forwards;
+#intro-title {
+	animation: intro-title 1.8s 0.5s forwards ease-out;
 	background: linear-gradient(to right, #000000FF 45%, #00000000 55%);
 	background-size: 400% 100%;
 	-webkit-text-fill-color: transparent;
@@ -34,9 +50,21 @@ h1 {
   	background-position: 75% 0%;
 }
 
-h1:hover {
+#intro-title:hover {
 	letter-spacing: 13px;
 	transition: letter-spacing 0.5s;
+}
+
+#title.intro-in h1.title {
+	animation: h1-title 2s forwards ease-out;
+}
+
+.dedication h3 {
+	animation: h3-dedication 8s forwards linear;
+}
+
+.dedication {
+	animation: dedication 8s forwards linear;
 }
 
 img {
@@ -56,14 +84,50 @@ img:nth-of-type(1) {
 	animation-delay: 0.2s;
 }
 
-@keyframes intro-title {
+.hidden {
+	display: none;
+}
+
+@keyframes h1-title {
 	from {
-		background-position: 75% 0%;
-		transform: scale(2);
+		letter-spacing: 7px;
 	}
 	to {
+		letter-spacing: 2px;
+	}
+}
+
+@keyframes dedication {
+	from {
+		letter-spacing: 1px;
+	}
+	to {
+		letter-spacing: 5px;
+	}
+}
+
+@keyframes h3-dedication {
+	from {
+		letter-spacing: 1px;
+	}
+	to {
+		letter-spacing: 3px;
+	}
+}
+
+@keyframes intro-title {
+	0% {
+		background-position: 75% 0%;
+		transform: scale(2);
+		opacity: 0;
+	}
+	15% {
+		opacity: 1;
+	}
+	100% {
 		background-position: 25% 0%;
 		transform: scale(1);
+		opacity: 1;
 	}
 }
 
@@ -89,5 +153,55 @@ img:nth-of-type(1) {
 	to {
 		transform: scale(1.1);
 		opacity: 0;
+	}
+}
+
+@keyframes intro-bg-transition {
+	0% {
+		opacity: 0;
+	}
+	45%,55% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	#intro-title {
+		font-size: 8vh;
+	}
+
+	img {
+		width: 60vh;
+		height: 60vh;
+	}
+
+	@keyframes intro-title {
+		0% {
+			background-position: 75% 0%;
+			transform: scale(1.5);
+			opacity: 0;
+		}
+		15% {
+			opacity: 1;
+		}
+		100% {
+			background-position: 25% 0%;
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#intro-title {
+		font-size: 5vh;
+	}
+
+	img {
+		width: 50vh;
+		height: 50vh;
 	}
 }
