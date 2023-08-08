@@ -447,7 +447,7 @@ article .path a {
 	box-sizing: border-box;
   }
 
-  .modal section {
+  .modal article {
 	z-index: 999;
 	padding: 75px 50px;
 	width: 100%;
@@ -497,11 +497,8 @@ article .path a {
 	letter-spacing: var(--secondaryFont-spacing);
   }
 
-  #search-modal {
-	display: none;
-  }
 
-  #search-modal section {
+  #search-modal article {
 	padding-bottom: 50px;
   }
 
@@ -555,3 +552,26 @@ article .path a {
   .search-highlight {
 	background-color: #cc9;
   }
+  
+  
+  
+		/*please, if you have any mercy, you will change and move these search styles*/
+		#output-result-count {
+			display: none;
+		}
+		
+		#output-result-count.search-active {
+			display: block;
+		}
+		
+		#output-result-count span {
+			color: red;
+		}
+		
+		.modal-closed {
+			display: none;
+		}
+		
+		.modal article.hidden {
+			display: none;
+		}
