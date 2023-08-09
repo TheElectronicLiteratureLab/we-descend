@@ -60,11 +60,11 @@
 }
 
 .dedication h3 {
-	animation: h3-dedication 8s forwards linear;
+	animation: h3-dedication 7s forwards linear;
 }
 
 .dedication {
-	animation: dedication 8s forwards linear;
+	animation: dedication 7s forwards linear;
 }
 
 img {
