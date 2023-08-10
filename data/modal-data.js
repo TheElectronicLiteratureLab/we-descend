@@ -2,9 +2,6 @@
 const modalData = [
 	[`PATHWAY`,
 		`<header>
-			<h2 class="title">
-				PATHWAY
-			</h2>
 			<h3 class="subTitle">A literary sequence</h3>
 			<h4 class="subTitle">providing a brief tour of the Writings</h4>
 		</header>
@@ -37,10 +34,7 @@ const modalData = [
 		<!-- end of "catalog" div -->`
 	],
 	[`AGE of EGDERUS`,
-		`<header>			
-			<h3 class="title">
-				<a href="LegomenonforAGEofEGDERUS.html">AGE of EGDERUS</a> <!--link to timeBand's Legomenon -->
-			</h3>
+		`<header>
 			<h4 class="subTitle">
 				Writings from the time during which Egderus flourished.
 			</h4>

@@ -10,10 +10,7 @@ $(document).ready(function() {
 		}
 	}
 	
-	$(`#inventory`).html(`<header>			
-			<h2 class="title">
-				<a id="INVENTORY">INVENTORY</a>
-			</h2>
+	$(`#inventory`).html(`<header>
 			<h3 class="subTitle">
 				<a id="indescendingorder">Writings by Author</a>
 			<h3>
@@ -49,10 +46,7 @@ $(document).ready(function() {
 		</div>
 		<!-- end of "catalog container" div -->`);
 		
-	$(`#outline`).html(`<header>			
-		<h2>
-			<a id="OUTLINE">OUTLINE</a>
-		</h2>
+	$(`#outline`).html(`<header>
 		<h3>
 			All the Writings contained in the Complete Edition.
 		</h3>
@@ -470,7 +464,12 @@ $(document).ready(function() {
 							<li><a href="OntheArrangementoftheWritings.html">On the Arrangement of the Writings</a></li>
 							<li><a href="Acknowledgments.html">Acknowledgments</a></li>
 							<li><a href="Colophon.html">Colophon</a> </strong></li>
-							<li>OUTLINE (this Nota)</li></ul></li></ul></li></ul>
+							<li>OUTLINE (this Nota)</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
 	</div>
 	<!-- end of "inscription" section -->`);
 		
