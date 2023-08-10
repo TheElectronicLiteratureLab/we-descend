@@ -488,6 +488,7 @@ $(document).ready(function() {
 			$(".outline-container, .stream-container, .inventory-container").addClass("hidden");
 			let subTarget = $(this).data("subtarget");
 			$("."+subTarget+"-container").removeClass("hidden");
+			$("#"+subTarget+"-tab").addClass("selected");
 		}
 	});
 	
