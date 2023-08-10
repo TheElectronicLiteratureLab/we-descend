@@ -454,6 +454,7 @@ article .path a {
 	padding: 0;
 	width: auto;
 	height: auto;
+	max-height: 75vh;
   }
 
   .modal .modal-container {
@@ -632,7 +633,7 @@ article .path a {
 	text-align: center;
 }
 
-#stream-modal article {
+#stream-modal .stream-container {
 	text-align: center;
 
 }
