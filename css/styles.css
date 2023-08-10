@@ -29,7 +29,7 @@
 	--earth: #918C71;
 	--ink: #000000;
 	--white: #ffffff;
-	--white25: rgba(255,255,255,.25);
+	--white25: rgba(255, 255, 255, .25);
 
 	/*Additional Sand Shades for the "Bands of Time"*/
 	--sand2: #C8B6A0;
@@ -40,7 +40,7 @@
 	--primaryFont: CormorantGaramond;
 	--secondaryFont: Catamaran;
 	--secondaryFont-spacing: 1px;
-  }
+}
 
 
 /*Foundation*/
@@ -72,10 +72,11 @@ body {
 }
 
 p {
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
 }
 
-h1, h3 {
+h1,
+h3 {
 	font-weight: 600;
 }
 
@@ -159,7 +160,9 @@ h6 {
 	bottom: 0;
 }
 
-.bookPlatePage h4, .bookPlatePage h5, .bookPlatePage a {
+.bookPlatePage h4,
+.bookPlatePage h5,
+.bookPlatePage a {
 	font-size: 1.1em;
 }
 
@@ -190,7 +193,7 @@ h6 {
 	top: 0;
 	bottom: 0;
 	z-index: -1;
-	background-image: radial-gradient(rgba(255,255,255, .7), rgba(255,255,255,0) 60%);
+	background-image: radial-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, 0) 60%);
 }
 
 .bookPlatePage .path {
@@ -236,7 +239,7 @@ h6 {
 #navigator button {
 	height: 75px;
 	width: 75px;
-	background-color: rgba(255,255,255,.25);
+	background-color: rgba(255, 255, 255, .25);
 	transform: rotate(45deg);
 	display: flex;
 	justify-content: center;
@@ -268,11 +271,11 @@ h6 {
 }
 
 #navigator button:hover {
-	background-color: rgba(255,255,255,.5);
+	background-color: rgba(255, 255, 255, .5);
 }
 
 #navigator button:hover::after {
- 	opacity: .25;
+	opacity: .25;
 }
 
 #navigator .decorative-diamond {
@@ -310,12 +313,14 @@ article {
 	background-size: 100% 100%;
 }
 
-article a:link, #output a:link {
+article a:link,
+#output a:link {
 	color: var(--ochre);
 	font-weight: 700;
 }
 
-article a:visited, #output a:visited {
+article a:visited,
+#output a:visited {
 	color: var(--earth);
 }
 
@@ -344,50 +349,74 @@ article header h1::after {
 	height: 2px;
 }
 
-article .container, article section {
+article .container,
+article section {
 	flex: 1;
 	overflow-y: auto;
 }
 
 article .inscription {
-	-webkit-perspective:1;
+	-webkit-perspective: 1;
 	-webkit-column-width: 15em;
-	   -moz-column-width: 15em;
-	    -ms-column-width: 15em;
-			column-width: 15em;
-	 -webkit-column-fill: auto;
-	    -moz-column-fill: auto;
-	     -ms-column-fill: auto;
-	 		 column-fill: auto; 
-	  -webkit-column-gap: 2em;
-	     -moz-column-gap: 2em;
-	      -ms-column-gap: 2em;
-			  column-gap: 2em; 
+	-moz-column-width: 15em;
+	-ms-column-width: 15em;
+	column-width: 15em;
+	-webkit-column-fill: auto;
+	-moz-column-fill: auto;
+	-ms-column-fill: auto;
+	column-fill: auto;
+	-webkit-column-gap: 2em;
+	-moz-column-gap: 2em;
+	-ms-column-gap: 2em;
+	column-gap: 2em;
 }
 
 article :target {
 	-webkit-animation: crosslink 4.25s ease;
-	   -moz-animation: crosslink 4.25s ease;
-	    -ms-animation: crosslink 4.25s ease;	
-	        animation: crosslink 4.25s ease;
-	} 
+	-moz-animation: crosslink 4.25s ease;
+	-ms-animation: crosslink 4.25s ease;
+	animation: crosslink 4.25s ease;
+}
 
 @-webkit-keyframes crosslink {
-	0%  {background: #cc9;}
-	100%   {background: transparent;}
+	0% {
+		background: #cc9;
 	}
+
+	100% {
+		background: transparent;
+	}
+}
+
 @-moz-keyframes crosslink {
-	0%  {background: #cc9;}
-	100%   {background: transparent;}
+	0% {
+		background: #cc9;
 	}
+
+	100% {
+		background: transparent;
+	}
+}
+
 @-ms-keyframes crosslink {
-	0%  {background: #cc9;}
-	100%   {background: transparent;}
+	0% {
+		background: #cc9;
 	}
+
+	100% {
+		background: transparent;
+	}
+}
+
 @-keyframes crosslink {
-	0%  {background: #cc9;}
-	100%   {background: transparent;}
+	0% {
+		background: #cc9;
 	}
+
+	100% {
+		background: transparent;
+	}
+}
 
 article .path {
 	box-sizing: border-box;
@@ -420,23 +449,23 @@ article .path a {
 ::-webkit-scrollbar {
 	width: 5px;
 	height: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 5px rgba(0,0,0,.25);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .25);
 	border-radius: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-	background: rgba(0,0,0,.25);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, .25);
 	border-radius: 10px;
-  }
+}
 
 
-  /* Modals */
-  .modal {
+/* Modals */
+.modal {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -447,29 +476,30 @@ article .path a {
 	height: 100vh;
 	width: 100vw;
 	box-sizing: border-box;
-  }
+}
 
-  .modal article {
+.modal article {
 	background: none;
 	padding: 0;
 	width: auto;
 	height: auto;
 	max-height: 75vh;
-  }
+}
 
-  .modal .modal-container {
+.modal .modal-container {
 	z-index: 999;
 	padding: 40px;
 	width: 100%;
 	max-width: 750px;
-	background-color: rgba(255,255,255, .35);
+	background-color: rgba(255, 255, 255, .35);
 	box-shadow: inset 0 0 99px var(--sand);
-	max-height: 80vh;
+	max-height: 95vh;
 	margin: 50px;
 	transition: all .3s;
-  }
+	box-sizing: border-box;
+}
 
-  .modal::before {
+.modal::before {
 	display: block;
 	content: '';
 	position: absolute;
@@ -477,11 +507,11 @@ article .path a {
 	left: 0;
 	height: 100vh;
 	width: 100vw;
-	background-color: rgba(221,201,177,.85);
+	background-color: rgba(221, 201, 177, .85);
 	z-index: 1;
-  }
+}
 
-  .modal::after {
+.modal::after {
 	display: block;
 	content: '';
 	position: absolute;
@@ -494,9 +524,9 @@ article .path a {
 	mix-blend-mode: lighten;
 	opacity: .075;
 	z-index: 1;
-  }
+}
 
-  .close-modal {
+.close-modal {
 	z-index: 999;
 	position: absolute;
 	top: 23px;
@@ -505,30 +535,31 @@ article .path a {
 	font-weight: 600;
 	font-family: var(--secondaryFont);
 	letter-spacing: var(--secondaryFont-spacing);
-  }
+}
 
 
-  #search-modal article {
+/* Search Modal */
+#search-modal article {
 	padding-bottom: 50px;
-  }
+}
 
-  #search-modal form {
+#search-modal form {
 	width: 100%;
 	box-sizing: border-box;
-  }
+}
 
-  #search-modal form input {
+#search-modal form input {
 	width: 100%;
 	height: 35px;
 	padding-left: 10px;
 	border: 0;
-	background-color: rgba(255,255,255, .4);
+	background-color: rgba(255, 255, 255, .4);
 	box-sizing: border-box;
 	font-family: var(--primaryFont);
 	font-size: 1em;
-  }
+}
 
-  #search-modal form button {
+#search-modal form button {
 	display: block;
 	padding: 10px 0 0 0;
 	margin: 0;
@@ -537,9 +568,9 @@ article .path a {
 	font-weight: 600;
 	font-family: var(--secondaryFont);
 	letter-spacing: var(--secondaryFont-spacing);
-  }
+}
 
-  #search-modal #output {
+#search-modal #output {
 	background-color: transparent;
 	box-shadow: none;
 	padding: 0;
@@ -548,43 +579,43 @@ article .path a {
 	width: 100%;
 	max-height: 50vh;
 	overflow: auto;
-  }
+}
 
-  #search-modal #output h3 {
+#search-modal #output h3 {
 	font-size: 1.05em;
 	letter-spacing: normal;
-  }
+}
 
-  #search-modal #output p {
+#search-modal #output p {
 	margin-bottom: 30px;
-  } 
+}
 
-  .search-highlight {
+.search-highlight {
 	background-color: #cc9;
-  }
-  
-  
-  
-		/*please, if you have any mercy, you will change and move these search styles*/
-		#output-result-count {
-			display: none;
-		}
-		
-		#output-result-count.search-active {
-			display: block;
-		}
-		
-		#output-result-count span {
-			color: red;
-		}
-		
-		.modal-closed {
-			display: none;
-		}
-		
-		.modal article.hidden {
-			display: none;
-		}
+}
+
+
+
+/*please, if you have any mercy, you will change and move these search styles*/
+#output-result-count {
+	display: none;
+}
+
+#output-result-count.search-active {
+	display: block;
+}
+
+#output-result-count span {
+	color: red;
+}
+
+.modal-closed {
+	display: none;
+}
+
+.modal article.hidden {
+	display: none;
+}
 
 
 /* Stream Modal */
