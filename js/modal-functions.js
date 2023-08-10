@@ -47,7 +47,7 @@ $(document).ready(function() {
 		<!-- end of "catalog container" div -->`);
 		
 	$(`#outline`).html(`<header>
-		<h3>
+		<h3 class="subTitle">
 			All the Writings contained in the Complete Edition.
 		</h3>
 	</header>
