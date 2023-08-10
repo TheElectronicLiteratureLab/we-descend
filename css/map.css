@@ -1,0 +1,248 @@
+.close-map {
+	position: fixed;
+	right: 2%;
+	top: 2%;
+	z-index: 2;
+}
+
+.map-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: .5rem;
+	width: 100%;
+	height: 100%;
+	}
+
+.map-grid a, .secondary-grid a {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	text-decoration: none;
+	color: inherit;
+	border-radius: 2px;
+	grid-column: span 2;
+}
+
+.button-array button {
+	padding: 1rem 0;
+	width: 100%;
+	font-size: 1.3rem;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border: none;
+	border-radius: 2px;
+	margin: .5rem 0;
+	font-family: inherit;
+	font-weight: bold;
+	z-index: 99;
+}
+
+/*==========Individual Grid Basics for Each Level===========*/
+
+#unknown-grid, #scholar-grid, #egderus-grid, #ancients-grid {
+	transition: opacity .6s ease-out;
+	transition: transform .6s ease-out;
+}
+
+#unknown-grid a {
+	background-color: var(--sand);
+}
+
+#scholar-grid a {
+	background: var(--sand2);
+}
+
+#egderus-grid a {
+	background: var(--sand3);
+}
+
+#ancients-grid a {
+	background: var(--sand4);
+}
+
+/*=============Styling for grid in each position*==============*/
+
+/*this position exits the screen (comes toward visitor and disappears)*/
+.position-offscreen {
+	position: absolute;
+	top: 0;
+	transform: scale(1.5);
+	z-index: 2;
+	opacity: 0;
+	pointer-events: none;
+}
+
+/*whatever is directly in view/use by the visitor*/
+.position-1 {
+	position: relative;
+	transform: none;
+	z-index: 1;
+	opacity: .8;
+}
+
+.position-2 {
+	position: absolute;
+	top: 0; 
+	left: 0;
+	right: 0;
+	transform: scale(.8);
+	margin: auto;
+	z-index: -1;
+	opacity: .6;
+}
+
+/*fade labels (for legibility)*/
+.position-2 h3 {
+	opacity: .4;
+}
+
+.position-3 {
+	position: absolute;
+	top: 0; /*must be adjusted for desktop styles*/
+	left: 0;
+	right: 0;
+	transform: scale(.7);
+	opacity: .6;
+	margin: auto;
+	z-index: -2;
+}
+
+/*fade labels*/
+.position-3 h3 {
+	opacity: .7;
+}
+
+.position-4 {
+	position: absolute;
+	top: 0; /*must be adjusted for desktop styles*/
+	left: 0;
+	right: 0;
+	transform: scale(.6);
+	margin: auto;
+	opacity: .6;
+	z-index: -3;
+}
+
+/*fade labels*/
+.position-4 h3 {
+	opacity: .9;
+}
+
+@media (min-width:401px) {
+
+	/*custom mosaic styling for 400-600px*/
+
+	#scholar-grid a:nth-child(3){
+		grid-column: span 1;
+	}
+
+	#scholar-grid a:nth-child(4){
+		grid-column: span 3;
+	}
+
+	#scholar-grid a:nth-child(5){
+		grid-column: span 3;
+	}
+
+	#scholar-grid a:nth-child(6){
+		grid-column: span 1;
+	}
+
+	#egderus-grid a:nth-child(3){
+		grid-column: span 3;
+	}
+
+	#egderus-grid a:nth-child(4){
+		grid-column: span 1;
+	}
+
+	#egderus-grid a:nth-child(7){
+		grid-column: span 3;
+	}
+
+	#egderus-grid a:nth-child(8){
+		grid-column: span 1;
+	}
+
+	#ancients-grid a:nth-child(1){
+		grid-row: span 2;
+	}
+
+}
+
+/*============================Tablets============================*/
+
+@media (min-width: 601px) {
+
+	#map-container {
+		font-size: 1.3rem;
+	}
+
+}
+
+/*============================Desktop============================*/
+
+@media (min-width: 901px) {
+
+	#map-container {
+		display: grid;
+		grid-template-columns: 4fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-gap: 1rem;
+		overflow: hidden;
+		padding-top: .5rem;
+	}
+
+	#map-container main {
+		height: 90vh;
+		grid-row: span 3;
+		font-size: 1.5rem;
+		padding: 1.5rem 0 0 0;
+	}
+
+	.map-grid, .secondary-grid {
+		grid-gap: 1rem;
+	}
+
+	.map-grid a:hover, .secondary-grid a:hover {
+		filter: brightness(1.1);
+	}
+
+	#map-container aside {
+		display: block;
+	}
+
+	#map-container h2 {
+		position: absolute;
+		top: 2%;
+		left: 2%;
+		z-index: 3;
+		padding: 1rem;
+		background: var(--light-accent);
+		border-radius: 2px;
+		height: 40px;
+	}
+
+	.secondary-grid {
+		margin-bottom: 1rem;
+	}
+
+	.secondary-grid:nth-child(2) a:nth-child(1) {
+		grid-row: span 2;
+	}
+
+	.secondary-grid a {
+		grid-column: span 1;
+	}
+
+}
+
+@media (min-width: 1000px) {
+
+	#map-container main {
+		font-size: 1.8rem;
+	}
+
+}

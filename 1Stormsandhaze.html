@@ -9,22 +9,29 @@
 	<meta name="viewport" content="initial-scale=1">
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/map.css" rel="stylesheet">
 </head>
 
 <body data-stream="PATHWAY">
 	<div class="bg-texture"></div>
 
 	<article class="uniCol">
-	
-		<header>			
+
+		<header>
 			<h1>Storms and haze</h1>
 		</header>
-				
+
 		<div class="uniCol container">
-			<p>When the sun goes down, the storms begin. Every night is like this. They come in waves, one then the next, regular as breathing. Goes on all night. Impossible to sleep.</p>
-			<p>Days are worse: air heavy and foul, fog draped over everything, a filthy rag soaking in a puddle. When the sun does come out, the earth steams. But then it is gone, and the haze hangs in the sodden air.</p>
-			<p>Everything is soaked. <!--<a href="WayfarinStranger.html">Fire is impossible: nothing can be kept dry</a>.</p>-->
-			<p>I cannot bear this. None of us can. Our numbers dwindle, one by one &mdash; some leave, some die &mdash; and we hadn't many to start. Some of the young ones try to make plans, but only as something to do, something to keep from listening to the endless drip drip drip. Nowhere to go. Too much effort to move at all.</p>
+			<p>When the sun goes down, the storms begin. Every night is like this. They come in waves, one then the
+				next, regular as breathing. Goes on all night. Impossible to sleep.</p>
+			<p>Days are worse: air heavy and foul, fog draped over everything, a filthy rag soaking in a puddle. When
+				the sun does come out, the earth steams. But then it is gone, and the haze hangs in the sodden air.</p>
+			<p>Everything is soaked.
+				<!--<a href="WayfarinStranger.html">Fire is impossible: nothing can be kept dry</a>.</p>-->
+			<p>I cannot bear this. None of us can. Our numbers dwindle, one by one &mdash; some leave, some die &mdash;
+				and we hadn't many to start. Some of the young ones try to make plans, but only as something to do,
+				something to keep from listening to the endless drip drip drip. Nowhere to go. Too much effort to move
+				at all.</p>
 		</div>
 		<!-- end of "uniCol container" div -->
 	
@@ -36,7 +43,7 @@
 	
 	</article>
 	<!-- end of "pathWritingPage" article -->
-	
+
 	<nav id="navigator">
 		<div>
 			<button>
@@ -59,7 +66,7 @@
 		<div class="decorative-vert"></div>
 
 		<div>
-			<button>
+			<button class="modal-toggle" data-target="map-modal">
 				<span>Map</span>
 			</button>
 
@@ -77,9 +84,9 @@
 				<input type="text" id="searchterm" name="searchterm" value=""><br>
 				<button type="submit">Search</button>
 			</form>
-			
+
 			<div id="output-result-count" aria-live="polite"><span></span> Results Found</div>
-			
+
 			<section id="output">
 				<div id="output-area"></div>
 			</section>
@@ -87,7 +94,6 @@
 
 		<button class="close-modal">Close</button>
 	</section>
-	
 
 		<section id="stream-modal" class="modal modal-closed">
 			<nav class="stream-tabs">
@@ -103,9 +109,106 @@
 			<article id="stream" class="stream-container bookPlatePage hidden"></article>
 			
 			<article class="inventory-container hidden">Inventory</article>
-		
 
+		<article class="stream-container bookPlatePage hidden">
+
+			<header>
+				<h2 class="title">
+					PATHWAY
+				</h2>
+				<h3 class="subTitle">A literary sequence</h3>
+				<h4 class="subTitle">providing a brief tour of the Writings</h4>
+			</header>
+
+			<div class="catalog container">
+				<p><a id="Epigraph"></a><a href="1Epigraph.html"><strong>Epigraph</strong></a></p>
+				<p><a id="Stormsandhaze"></a><a href="1Stormsandhaze.html">Storms and haze</a></p>
+				<p><a id="ScholarsDiary"></a><a href="1ScholarsDiary.html">Scholar's Diary</a></p>
+				<p><a id="TheLocustGrove"></a><a href="1TheLocustGrove.html">The Locust Grove</a></p>
+				<p><a id="EgderusatMountainHouse"></a><a href="1EgderusatMountainHouse.html">Egderus at Mountain House
+				</p>
+				<p><a id="nocertaintiesnotruth"></a><a href="1nocertaintiesnotruth.html">no certainties, no truth</a>
+				</p>
+				<p><a id="archiveunderthreat"></a><a href="1archiveunderthreat.html">archive under threat</a></p>
+				<p><a id="adreamoftheGreatCity"></a><a href="1adreamoftheGreatCity.html">a dream of the Great City</a>
+				</p>
+				<p><a id="SteadfastBone-Snapper"></a><a href="1SteadfastBone-Snapper.html">Steadfast Bone-Snapper</a>
+				</p>
+				<p><a id="intheKeep"></a><a href="1intheKeep.html">in the Keep</a></p>
+				<p><a id="ThePerpetratedWorld"></a><a href="1ThePerpetratedWorld.html">The Perpetrated World</a></p>
+				<p><a id="Thescriptorandhisbeloved"></a><a href="1Thescriptorandhisbeloved.html">The scriptor and his
+						beloved</a></p>
+				<p><a id="stars"></a><a href="1stars.html">stars</a></p>
+				<p><a id="enemy"></a><a href="1enemy.html">enemy</a></p>
+				<p><a id="return"></a><a href="1return.html">return</a></p>
+				<p><a id="thisroad"></a><a href="1thisroad.html">this road</a></p>
+				<p><a id="LANDING"></a><a href="LANDING.html"><strong>LANDING</strong></a>
+				<p>
+			</div>
+			<!-- end of "catalog" div -->
+
+			<nav class="path">
+				<a href="1PrefacetotheCompleteEdition.html">Preface &mdash;</a><a
+					href="1ForewordtotheArchives.html">|&mdash; Foreword</a><br>
+				<a href="1TITLE.html">TITLE</a>
+			</nav>
+
+		</article>
+		<!-- end of "pathWritingPage" article -->
+
+		<article class="inventory-container hidden">
+			Inventory
+		</article>
+		
 		<button class="close-modal">Close</button>
+	</section>
+
+	<section id="map-modal" class="modal modal-closed">
+		<div id="map-container">
+			<h2>UNKNOWN PROVENANCE</h2>
+			<main>
+				<section class="map-grid position-1" id="unknown-grid">
+					<a href="#"><h3>ROMANTIC IMPULSE WRITINGS</h3></a>
+					<a href="#"><h3>THE REMNANT</h3></a>
+					<a href="#"><h3>INSOMNIAC</h3></a>
+					<a href="#"><h3>OTHER WRITINGS of UNKNOWN PROVENANCE</h3></a>
+				</section>
+
+				<section class="map-grid position-2" id="scholar-grid">
+					<a href="#"><h3>SOLDIER</h3></a>
+					<a href="#"><h3>UNKNOWN SCHOLASTIC</h3></a>
+					<a href="#"><h3>EXILE</h3></a>
+					<a href="#"><h3>VOICE from the LOCUST GROVE</h3></a>
+					<a href="#"><h3>UNKNOWN CURATOR</h3></a>
+					<a href="#"><h3>SCHOLAR</h3></a>
+				</section>
+
+				<section class="map-grid position-3" id="egderus-grid">
+					<a href="#"><h3>INSURGENT</h3></a>
+					<a href="#"><h3>EGDERUS</h3></a>
+					<a href="#"><h3>MISSIONARY</h3></a>
+					<a href="#"><h3>ARIC</h3></a>
+					<a href="#"><h3>BONE-SNAPPER</h3></a>
+					<a href="#"><h3>HISTORIAN</h3></a>
+					<a href="#"><h3>SUPERIUS FRATER</h3></a>
+					<a href="#"><h3>OLD POET</h3></a>
+				</section>
+
+				<section class="map-grid position-4" id="ancients-grid">
+					<a href="#"><h3>UNKNOWN ANCIENTS</h3></a>
+					<a href="#"><h3>BOY</h3></a>
+					<a href="#"><h3>LAST ONE</h3></a>
+				</section>
+
+			</main>
+
+			<div class="button-array">
+				<button id="ascend-button">ASCEND</button>
+				<button id="descend-button">DESCEND</button>
+			</div>
+
+			<div class="close-map"><i class="fa-solid fa-xmark" style="font-size: 1.5rem;">X</i></div>
+		</div>
 	</section>
 
 	<script src="lib/jquery/jquery-3.7.0.min.js"></script>
@@ -113,6 +216,7 @@
 	<script src="data/modal-data.js"></script>
 	<script src="js/search-functions.js"></script>
 	<script src="js/modal-functions.js"></script>
+	<!-- <script src="js/map-functions.js"></script> -->
 </body>
 
 </html>
