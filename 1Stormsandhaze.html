@@ -79,7 +79,7 @@
 		</div>
 	</nav>
 
-	
+
 	<!-- Search Modal -->
 	<section id="search-modal" class="modal modal-closed">
 		<article id="search-area" class="search-container">
@@ -101,19 +101,22 @@
 
 	<!-- Stream Modal -->
 	<section id="stream-modal" class="modal modal-closed">
-		<nav class="stream-tabs">
-			<ul>
-				<li><button id="outline-tab" class="modal-toggle" data-subtarget="outline">OUTLINE</button></li> |
-				<li><button id="stream-tab" class="modal-toggle" data-subtarget="stream"></button></li> |
-				<li><button id="inventory-tab" class="modal-toggle" data-subtarget="inventory">INVENTORY</button></li>
-			</ul>
-		</nav>
+		<div class="modal-container">
+			<nav class="stream-tabs">
+				<ul>
+					<li><button id="outline-tab" class="modal-toggle" data-subtarget="outline">OUTLINE</button></li> |
+					<li><button id="stream-tab" class="modal-toggle" data-subtarget="stream"></button></li> |
+					<li><button id="inventory-tab" class="modal-toggle" data-subtarget="inventory">INVENTORY</button>
+					</li>
+				</ul>
+			</nav>
 
-		<article id="outline" class="outline-container hidden">Outline</article>
+			<article id="outline" class="outline-container hidden">Outline</article>
 
-		<article id="stream" class="stream-container bookPlatePage hidden"></article>
+			<article id="stream" class="stream-container hidden"></article>
 
-		<article id="inventory" class="inventory-container hidden"></article>
+			<article id="inventory" class="inventory-container hidden"></article>
+		</div>
 
 		<button class="close-modal">Close</button>
 	</section>
