@@ -488,6 +488,8 @@ $(document).ready(function() {
 			$(".outline-container, .stream-container, .inventory-container").addClass("hidden");
 			let subTarget = $(this).data("subtarget");
 			$("."+subTarget+"-container").removeClass("hidden");
+			
+			$(".modal-toggle.selected").removeClass("selected");
 			$("#"+subTarget+"-tab").addClass("selected");
 		}
 	});
@@ -496,5 +498,6 @@ $(document).ready(function() {
 	$(".close-modal").click(function(){
 		$(this).parent(".modal").addClass("modal-closed");
 		$(this).siblings("article").addClass("hidden");
+		$(".modal-toggle.selected").removeClass("selected");
 	});
 });
