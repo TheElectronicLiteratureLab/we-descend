@@ -1,4 +1,15 @@
 $(document).ready(function() {
+
+	//setup modal and stream html
+	let currentStream = $("body").data("stream");
+	for (x=0;x<modalData.length;x++) {
+		if (modalData[x][0] == currentStream) {
+			$("#stream-button, #stream-tab").html(modalData[x][0]);
+			$("#stream").html(modalData[x][1]);
+			break;
+		}
+	}
+
 	$(".modal-toggle").click(function(){
 	
 		//open targeted modal

@@ -12,7 +12,7 @@
 	<link href="css/map.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-stream="PATHWAY">
 	<div class="bg-texture"></div>
 
 	<article class="uniCol">
@@ -34,12 +34,13 @@
 				at all.</p>
 		</div>
 		<!-- end of "uniCol container" div -->
-
+	
 		<nav class="path">
-			<a href="1Epigraph.html">Backward</a><span>|</span><a class="modal-toggle" data-target="stream-modal"
-				data-subtarget="stream" href="#">PATHWAY</a><span>|</span><a href="1ScholarsDiary.html">Onward</a><br>
+			<a href="1Epigraph.html">Backward</a><span>|</span>
+			<a id="stream-button" class="modal-toggle" data-target="stream-modal" data-subtarget="stream" href="#"></a><span>|</span>
+			<a href="1ScholarsDiary.html">Onward</a><br>
 		</nav>
-
+	
 	</article>
 	<!-- end of "pathWritingPage" article -->
 
@@ -58,7 +59,7 @@
 
 		<div class="decorative-vert"></div>
 
-		<button class="modal-toggle" data-target="search-modal">
+		<button class="modal-toggle" data-target="search-modal" data-subtarget="search">
 			<span>Search</span>
 		</button>
 
@@ -78,7 +79,7 @@
 	</nav>
 
 	<section id="search-modal" class="modal modal-closed">
-		<article id="search-area">
+		<article id="search-area" class="search-container">
 			<form id="search-form">
 				<input type="text" id="searchterm" name="searchterm" value=""><br>
 				<button type="submit">Search</button>
@@ -94,18 +95,20 @@
 		<button class="close-modal">Close</button>
 	</section>
 
-	<section id="stream-modal" class="modal modal-closed">
-		<nav class="stream-tabs">
-			<ul>
-				<li><button class="modal-toggle" data-subtarget="outline">OUTLINE</button></li> |
-				<li><button class="modal-toggle" data-subtarget="stream">PATHWAY</button></li> |
-				<li><button class="modal-toggle" data-subtarget="inventory">INVENTORY</button></li>
-			</ul>
-		</nav>
-
-		<article class="outline-container hidden">
-			Outline
-		</article>
+		<section id="stream-modal" class="modal modal-closed">
+			<nav class="stream-tabs">
+				<ul>
+					<li><button class="modal-toggle" data-subtarget="outline">OUTLINE</button></li> | 
+					<li><button id="stream-tab" class="modal-toggle" data-subtarget="stream"></button></li> | 
+					<li><button class="modal-toggle" data-subtarget="inventory">INVENTORY</button></li>
+				</ul>
+			</nav>
+		
+			<article class="outline-container hidden">Outline</article>
+		
+			<article id="stream" class="stream-container bookPlatePage hidden"></article>
+			
+			<article class="inventory-container hidden">Inventory</article>
 
 		<article class="stream-container bookPlatePage hidden">
 
@@ -210,6 +213,7 @@
 
 	<script src="lib/jquery/jquery-3.7.0.min.js"></script>
 	<script src="data/search-data.js"></script>
+	<script src="data/modal-data.js"></script>
 	<script src="js/search-functions.js"></script>
 	<script src="js/modal-functions.js"></script>
 	<!-- <script src="js/map-functions.js"></script> -->
