@@ -246,7 +246,7 @@ h6 {
 	transition: background-color .3s linear;
 }
 
-#navigator button p {
+#navigator button span {
 	transform: rotate(-45deg);
 	margin-bottom: 0;
 	text-transform: uppercase;
@@ -326,12 +326,14 @@ article header {
 	align-self: flex-start;
 }
 
-article header h3 {
+article header h1 {
 	text-transform: uppercase;
 	position: relative;
+	font-size: 1.6em;
+	letter-spacing: 1px;
 }
 
-article header h3::after {
+article header h1::after {
 	content: '';
 	display: block;
 	border-top: 1px solid black;
@@ -448,13 +450,20 @@ article .path a {
   }
 
   .modal article {
+	background: none;
+	padding: 0;
+	width: auto;
+	height: auto;
+  }
+
+  .modal .modal-container {
 	z-index: 999;
-	padding: 75px 50px;
+	padding: 40px;
 	width: 100%;
 	max-width: 750px;
 	background-color: rgba(255,255,255, .35);
 	box-shadow: inset 0 0 99px var(--sand);
-	max-height: 70%;
+	max-height: 80vh;
 	margin: 50px;
 	transition: all .3s;
   }
@@ -575,3 +584,55 @@ article .path a {
 		.modal article.hidden {
 			display: none;
 		}
+
+
+/* Stream Modal */
+#stream-modal .stream-tabs {
+	font-family: var(--secondaryFont);
+	font-weight: 400;
+	letter-spacing: var(--secondaryFont-spacing);
+	width: 40%;
+	margin: auto auto 25px auto;
+}
+
+#stream-modal .stream-tabs ul {
+	z-index: 1;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#stream-modal .stream-tabs button {
+	font-family: var(--secondaryFont);
+	font-weight: 600;
+	letter-spacing: var(--secondaryFont-spacing);
+	position: relative;
+}
+
+#stream-modal .stream-tabs button.selected::after {
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	content: '';
+	width: 100%;
+	height: 1px;
+	border-bottom: 1.5px solid var(--ink);
+}
+
+#stream-modal header {
+	width: 100%;
+}
+
+#stream-modal .subTitle {
+	font-size: 1.05em;
+	font-weight: normal;
+	width: 100%;
+	text-align: center;
+}
+
+#stream-modal article {
+	text-align: center;
+
+}
