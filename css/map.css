@@ -76,6 +76,7 @@
 	transform: rotate(45deg);
 	margin: auto;
 	opacity: .15;
+	pointer-events: none;
 }
 
 .modal::before {
@@ -111,15 +112,15 @@
 }
 
 #scholar-grid a::after {
-	background: var(--sand2);
+	background: var(--white);
 }
 
 #egderus-grid a::after {
-	background: var(--sand3);
+	background: var(--white);
 }
 
 #ancients-grid a::after {
-	background: var(--sand4);
+	background: var(--white);
 }
 
 /*=============Styling for grid in each position*==============*/
@@ -175,10 +176,7 @@
 }
 
 .position-4 {
-	position: absolute;
-	top: 0; /*must be adjusted for desktop styles*/
-	left: 0;
-	right: 0;
+	position: fixed;
 	transform: scale(.6);
 	margin: auto;
 	opacity: .6;
@@ -234,54 +232,78 @@
 }
 
 #map-container {
-		display: grid;
-		grid-template-columns: 4fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
-		grid-gap: 1rem;
-		overflow: hidden;
-		padding: .5rem 5%;
-		padding-top: .5rem;
-	}
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 1rem;
+	overflow: hidden;
+	padding: .5rem 5%;
+	padding-top: .5rem;
+}
 
-	#map-container main {
-		height: 90vh;
-		grid-row: span 3;
-		font-size: 1.0rem;
-		padding: 1.5rem 0 0 0;
-	}
+#map-modal.modal::before {
+	opacity: .85;
+}
 
-	.map-grid, .secondary-grid {
-		grid-gap: 1rem;
-	}
+#map-modal.modal.age1::before {
+	background-color: var(--sand);
+	transition: background-color 0.6s;
+}
 
-	.map-grid a:hover, .secondary-grid a:hover {
-		filter: brightness(1.1);
-		transition: filter 0.3s;
-	}
+#map-modal.modal.age2::before {
+	background-color: var(--sand2);
+	transition: background-color 0.6s;
+}
 
-	#map-container aside {
-		display: block;
-	}
+#map-modal.modal.age3::before {
+	background-color: var(--sand3);
+	transition: background-color 0.6s;
+}
 
-	#map-container h2 {
-		position: absolute;
-		top: 2%;
-		left: 5vw;
-		z-index: 3;
-		padding: 0.5rem 0;
-		border-bottom: solid 1px black;
-		height: 40px;
-		font-size: 1.5em;
-	}
+#map-modal.modal.age4::before {
+	background-color: var(--sand4);
+	transition: background-color 0.6s;
+}
 
-	.secondary-grid {
-		margin-bottom: 1rem;
-	}
+#map-container main {
+	height: 90vh;
+	grid-row: span 3;
+	font-size: 1.0rem;
+	padding: 1.5rem 0 0 0;
+}
 
-	.secondary-grid:nth-child(2) a:nth-child(1) {
-		grid-row: span 2;
-	}
+.map-grid, .secondary-grid {
+	grid-gap: 1rem;
+}
 
-	.secondary-grid a {
-		grid-column: span 1;
-	}
+.map-grid a:hover, .secondary-grid a:hover {
+	filter: brightness(1.3);
+	transition: filter 0.3s;
+}
+
+#map-container aside {
+	display: block;
+}
+
+#map-container h2 {
+	position: absolute;
+	top: 2%;
+	left: 5vw;
+	z-index: 3;
+	padding: 0.5rem 0;
+	border-bottom: solid 1px black;
+	height: 40px;
+	font-size: 1.5em;
+}
+
+.secondary-grid {
+	margin-bottom: 1rem;
+}
+
+.secondary-grid:nth-child(2) a:nth-child(1) {
+	grid-row: span 2;
+}
+
+.secondary-grid a {
+	grid-column: span 1;
+}
