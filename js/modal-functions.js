@@ -500,4 +500,12 @@ $(document).ready(function() {
 		$(this).siblings("article").addClass("hidden");
 		$(".modal-toggle.selected").removeClass("selected");
 	});
+	
+	$(document).keyup(function(e) {
+		if (e.key === "Escape") { // escape key maps to keycode `27`
+			$(".modal").addClass("modal-closed");
+			$(".modal article").addClass("hidden");
+			$(".modal-toggle.selected").removeClass("selected");
+		}
+	});
 });
