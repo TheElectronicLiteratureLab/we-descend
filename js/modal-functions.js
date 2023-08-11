@@ -268,7 +268,7 @@ $(document).ready(function() {
 				</ul>
 				</li>
 			</ul>
-		<h3>SECONDARY WRITINGS <strong></h3>
+		<h4>SECONDARY WRITINGS <strong></h4>
 			<ul><li><a href="LEGOMENA.html">LEGOMENA</strong></a> (Elucidations) 
 				<ul>
 					<li><strong><a href="LegomenonforUNKNOWNPROVENANCE.html">Legomenon for UNKNOWN PROVENANCE</a> 
@@ -440,7 +440,7 @@ $(document).ready(function() {
 						</li></ul>
 					</li></ul>
 				</li></ul>
-			<h3>TERTIARY WRITINGS <strong></h3>
+			<h4>TERTIARY WRITINGS <strong></h4>
 				<ul>
 					<li><a href="APPARATI.html">APPARATI</strong></a> (Finding Aids + Supplementay Writings) 
 					<ul>
@@ -499,5 +499,13 @@ $(document).ready(function() {
 		$(this).parent(".modal").addClass("modal-closed");
 		$(this).siblings("article").addClass("hidden");
 		$(".modal-toggle.selected").removeClass("selected");
+	});
+	
+	$(document).keyup(function(e) {
+		if (e.key === "Escape") { // escape key maps to keycode `27`
+			$(".modal").addClass("modal-closed");
+			$(".modal article").addClass("hidden");
+			$(".modal-toggle.selected").removeClass("selected");
+		}
 	});
 });
