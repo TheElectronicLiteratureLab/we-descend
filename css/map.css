@@ -19,46 +19,106 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	text-decoration: none;
 	color: inherit;
 	border-radius: 2px;
 	grid-column: span 2;
+	filter: brightness(1.0);
+	transition: filter 0.3s;
+}
+
+.button-array {
+	position: absolute;
+	z-index: 99;
+	right: 4%;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .button-array button {
-	padding: 1rem 0;
-	width: 100%;
-	font-size: 1.3rem;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	border: none;
-	border-radius: 2px;
-	margin: .5rem 0;
-	font-family: inherit;
-	font-weight: bold;
-	z-index: 99;
+	height: 75px;
+	width: 75px;
+	background-color: rgba(255,255,255,.25);
+	transform: rotate(45deg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: inset 0 0 30px var(--sand);
+	position: relative;
+	transition: background-color .3s linear;
+}
+
+.button-array button::after {
+	display: block;
+	content: '';
+	height: 90px;
+	width: 90px;
+	border: 3px solid var(--earth);
+	position: absolute;
+	opacity: 0;
+	transition: opacity .3s linear;
+}
+
+.button-array button:hover {
+	background-color: rgba(255,255,255,.5);
+}
+
+.button-array button:hover::after {
+ 	opacity: .25;
+}
+
+.button-array .decorative-diamond {
+	position: relative;
+	height: 50px;
+	width: 50px;
+	border: 3px solid var(--earth);
+	z-index: 1;
+	transform: rotate(45deg);
+	margin: auto;
+	opacity: .15;
+}
+
+.modal::before {
+	z-index: -5;
+}
+
+.modal::after {
+	pointer-events: none;
 }
 
 /*==========Individual Grid Basics for Each Level===========*/
 
 #unknown-grid, #scholar-grid, #egderus-grid, #ancients-grid {
-	transition: opacity .6s ease-out;
-	transition: transform .6s ease-out;
+	transition: opacity .6s ease-out, transform .6s ease-out;
+	width: 80vw;
+	height: 80vh;
+	left: 5vw;
+	top: 12vh;
 }
 
-#unknown-grid a {
-	background-color: var(--sand);
+#unknown-grid a::after, #scholar-grid a::after, #egderus-grid a::after, #ancients-grid a::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0px 0px 99px var(--sand);
+	opacity: 0.3;
+	z-index: -1;
 }
 
-#scholar-grid a {
+#unknown-grid a::after {
+	background-color: var(--white);
+}
+
+#scholar-grid a::after {
 	background: var(--sand2);
 }
 
-#egderus-grid a {
+#egderus-grid a::after {
 	background: var(--sand3);
 }
 
-#ancients-grid a {
+#ancients-grid a::after {
 	background: var(--sand4);
 }
 
@@ -66,8 +126,7 @@
 
 /*this position exits the screen (comes toward visitor and disappears)*/
 .position-offscreen {
-	position: absolute;
-	top: 0;
+	position: fixed;
 	transform: scale(1.5);
 	z-index: 2;
 	opacity: 0;
@@ -76,17 +135,19 @@
 
 /*whatever is directly in view/use by the visitor*/
 .position-1 {
-	position: relative;
+	position: fixed;
 	transform: none;
 	z-index: 1;
-	opacity: .8;
+	opacity: .9;
+}
+
+.position-1 h3 {
+	opacity: 1;
+	transition: opacity 0.6s;
 }
 
 .position-2 {
-	position: absolute;
-	top: 0; 
-	left: 0;
-	right: 0;
+	position: fixed;
 	transform: scale(.8);
 	margin: auto;
 	z-index: -1;
@@ -95,14 +156,12 @@
 
 /*fade labels (for legibility)*/
 .position-2 h3 {
-	opacity: .4;
+	opacity: .2;
+	transition: opacity 0.6s;
 }
 
 .position-3 {
-	position: absolute;
-	top: 0; /*must be adjusted for desktop styles*/
-	left: 0;
-	right: 0;
+	position: fixed;
 	transform: scale(.7);
 	opacity: .6;
 	margin: auto;
@@ -111,7 +170,8 @@
 
 /*fade labels*/
 .position-3 h3 {
-	opacity: .7;
+	opacity: .1;
+	transition: opacity 0.6s;
 }
 
 .position-4 {
@@ -127,7 +187,8 @@
 
 /*fade labels*/
 .position-4 h3 {
-	opacity: .9;
+	opacity: .1;
+	transition: opacity 0.6s;
 }
 
 @media (min-width:401px) {
@@ -172,33 +233,20 @@
 
 }
 
-/*============================Tablets============================*/
-
-@media (min-width: 601px) {
-
-	#map-container {
-		font-size: 1.3rem;
-	}
-
-}
-
-/*============================Desktop============================*/
-
-@media (min-width: 901px) {
-
-	#map-container {
+#map-container {
 		display: grid;
 		grid-template-columns: 4fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
 		grid-gap: 1rem;
 		overflow: hidden;
+		padding: .5rem 5%;
 		padding-top: .5rem;
 	}
 
 	#map-container main {
 		height: 90vh;
 		grid-row: span 3;
-		font-size: 1.5rem;
+		font-size: 1.0rem;
 		padding: 1.5rem 0 0 0;
 	}
 
@@ -208,6 +256,7 @@
 
 	.map-grid a:hover, .secondary-grid a:hover {
 		filter: brightness(1.1);
+		transition: filter 0.3s;
 	}
 
 	#map-container aside {
@@ -217,12 +266,12 @@
 	#map-container h2 {
 		position: absolute;
 		top: 2%;
-		left: 2%;
+		left: 5vw;
 		z-index: 3;
-		padding: 1rem;
-		background: var(--light-accent);
-		border-radius: 2px;
+		padding: 0.5rem 0;
+		border-bottom: solid 1px black;
 		height: 40px;
+		font-size: 1.5em;
 	}
 
 	.secondary-grid {
@@ -236,13 +285,3 @@
 	.secondary-grid a {
 		grid-column: span 1;
 	}
-
-}
-
-@media (min-width: 1000px) {
-
-	#map-container main {
-		font-size: 1.8rem;
-	}
-
-}

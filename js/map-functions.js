@@ -66,13 +66,13 @@ const traverse = () => {
 		$("#ancients-grid").addClass("position-4");
 
 		//change body's color to match
-		$("body").css("background-color", "var(--unknown-color)")
-		$("body").css("background-image", "url(" + unknownTexture + ")")
+		// $("body").css("background-color", "var(--unknown-color)")
+		// $("body").css("background-image", "url(" + unknownTexture + ")")
 
 		//gray out ascend button because you can't go any higher
 		$("#ascend-button").css("filter", "brightness(0.6)")
 
-		//normal ascend button
+		//normal descend button
 		$("#descend-button").css("filter", "brightness(1)")
 	}
 
@@ -92,13 +92,13 @@ const traverse = () => {
 		$("#ancients-grid").addClass("position-3");
 
 		//change body's color to match
-		$("body").css("background-color", "var(--scholar-color)")
-		$("body").css("background-image", "url(" + scholarTexture + ")")
+		// $("body").css("background-color", "var(--scholar-color)")
+		// $("body").css("background-image", "url(" + scholarTexture + ")")
 
 		//normal ascend button
 		$("#ascend-button").css("filter", "brightness(1)")
 
-		//normal ascend button
+		//normal descend button
 		$("#descend-button").css("filter", "brightness(1)")
 	}
 
@@ -118,13 +118,13 @@ const traverse = () => {
 		$("#ancients-grid").addClass("position-2");
 
 		//change body's color to match
-		$("body").css("background-color", "var(--egderus-color)")
-		$("body").css("background-image", "url(" + edgerusTexture + ")")
+		// $("body").css("background-color", "var(--egderus-color)")
+		// $("body").css("background-image", "url(" + edgerusTexture + ")")
 
 		//normal ascend button
 		$("#ascend-button").css("filter", "brightness(1)")
 
-		//normal ascend button
+		//normal descend button
 		$("#descend-button").css("filter", "brightness(1)")
 	}
 
@@ -144,13 +144,13 @@ const traverse = () => {
 		$("#ancients-grid").addClass("position-1");
 
 		//change body's color to match
-		$("body").css("background-color", "var(--ancients-color)")
-		$("body").css("background-image", "url(" + ancientsTexture + ")")
+		// $("body").css("background-color", "var(--ancients-color)")
+		// $("body").css("background-image", "url(" + ancientsTexture + ")")
 
 		//normal ascend button
 		$("#ascend-button").css("filter", "brightness(1)")
 
-		//gray out descend button because you can't go any higher
+		//gray out descend button because you can't go any lower
 		$("#descend-button").css("filter", "brightness(0.6)")
 
 	}
