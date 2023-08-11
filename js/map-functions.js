@@ -66,7 +66,8 @@ const traverse = () => {
 		$("#ancients-grid").addClass("position-4");
 
 		//change body's color to match
-		// $("body").css("background-color", "var(--unknown-color)")
+		$("#map-modal").removeClass("age2").removeClass("age3").removeClass("age4").addClass("age1");
+		// $("map-modal").css("background-color", "var(--sand3)")
 		// $("body").css("background-image", "url(" + unknownTexture + ")")
 
 		//gray out ascend button because you can't go any higher
@@ -92,6 +93,7 @@ const traverse = () => {
 		$("#ancients-grid").addClass("position-3");
 
 		//change body's color to match
+		$("#map-modal").removeClass("age1").removeClass("age3").removeClass("age4").addClass("age2");
 		// $("body").css("background-color", "var(--scholar-color)")
 		// $("body").css("background-image", "url(" + scholarTexture + ")")
 
@@ -118,6 +120,7 @@ const traverse = () => {
 		$("#ancients-grid").addClass("position-2");
 
 		//change body's color to match
+		$("#map-modal").removeClass("age1").removeClass("age2").removeClass("age4").addClass("age3");
 		// $("body").css("background-color", "var(--egderus-color)")
 		// $("body").css("background-image", "url(" + edgerusTexture + ")")
 
@@ -144,6 +147,7 @@ const traverse = () => {
 		$("#ancients-grid").addClass("position-1");
 
 		//change body's color to match
+		$("#map-modal").removeClass("age1").removeClass("age2").removeClass("age3").addClass("age4");
 		// $("body").css("background-color", "var(--ancients-color)")
 		// $("body").css("background-image", "url(" + ancientsTexture + ")")
 
