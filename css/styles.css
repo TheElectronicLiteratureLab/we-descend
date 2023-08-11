@@ -180,6 +180,7 @@ h6 {
 	font-weight: 600;
 	font-size: .8em;
 	position: relative;
+	transition: all .4s;
 }
 
 .entry-btn::after {
@@ -195,6 +196,12 @@ h6 {
 	bottom: 0;
 	z-index: -1;
 	background-image: radial-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, 0) 60%);
+	opacity: .5;
+	transition: all 1s;
+}
+
+.entry-btn:hover {
+	letter-spacing: 3px;
 }
 
 .bookPlatePage .path {
