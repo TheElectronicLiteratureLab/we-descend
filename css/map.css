@@ -35,6 +35,16 @@
 	transform: translateY(-50%);
 }
 
+.button-array span {
+	transform: rotate(-45deg);
+   margin-bottom: 0;
+   text-transform: uppercase;
+   font-family: var(--secondaryFont);
+   letter-spacing: var(--secondaryFont-spacing);
+   font-weight: 600;
+   opacity: .8;
+}
+
 .button-array button {
 	height: 75px;
 	width: 75px;
@@ -107,20 +117,29 @@
 	z-index: -1;
 }
 
-#unknown-grid a::after {
+.position-offscreen a::after {
 	background-color: var(--white);
+	transition: background-color 0.6s;
 }
 
-#scholar-grid a::after {
-	background: var(--white);
+.position-1 a::after {
+	background-color: var(--white);
+	transition: background-color 0.6s;
 }
 
-#egderus-grid a::after {
-	background: var(--white);
+.position-2 a::after {
+	background: var(--sand3);
+	transition: background-color 0.6s;
 }
 
-#ancients-grid a::after {
-	background: var(--white);
+.position-3 a::after {
+	background: var(--sand4);
+	transition: background-color 0.6s;
+}
+
+.position-4 a::after {
+	background: var(--sand4);
+	transition: background-color 0.6s;
 }
 
 /*=============Styling for grid in each position*==============*/
