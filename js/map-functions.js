@@ -1,3 +1,4 @@
+$(document).ready(function() {
 
 //set starting level at which the player enters the map
 //1 is highest up, 4 is lowest into the earth
@@ -7,8 +8,23 @@
 //4 = Age of The Ancients
 var currentLevel = 1;
 
-//GREG: adjust level based on imported variable
-//code here!
+//Adjust level based on imported variable
+// alert(currentStream);
+var ageUnknown = [`TheREMNANT`,`INSOMNIAC`,`ROMANTICIMPULSEWRITINGS`,`OTHERWRITINGSofUNKNOWNPROVENANCE`];
+var ageScholar = [`SOLDIER`,`EXILE`,`UNKNOWNSCHOLASTIC`,`VOICEfromtheLOCUSTGROVE`,`UNKNOWNCURATOR`,`SCHOLAR`];
+var ageEgderus = [`INSURGENT`,`EGDERUS`,`MISSIONARY`,`ARIC`,`BONE-SNAPPER`,`HISTORIAN`,`SUPERIUSFRATER`,`OLDPOET`];
+var ageAncient = [`BOY`,`LASTONE`,`UNKNOWNANCIENTS`];
+
+if (ageUnknown.includes(currentStream)) {
+	currentLevel = 1;
+} else if (ageScholar.includes(currentStream)) {
+	currentLevel = 2;
+} else if (ageEgderus.includes(currentStream)) {
+	currentLevel = 3;
+} else if (ageAncient.includes(currentStream)) {
+	currentLevel = 4;
+}
+
 
 //textures!
 const unknownTexture = "";
@@ -164,3 +180,5 @@ const traverse = () => {
 
 //traverse() should run here each time the page is loaded to adjust to the right place
 traverse();
+
+});
