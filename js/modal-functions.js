@@ -1,7 +1,8 @@
-$(document).ready(function() {
+//get stream
+let currentStream = document.body.getAttribute('data-stream');
 
+$(document).ready(function() {
 	//setup modal and stream html
-	let currentStream = $("body").data("stream");
 	for (x=0;x<modalData.length;x++) {
 		if (modalData[x][0] == currentStream) {
 			$("#stream-button, #stream-tab").html(modalData[x][0]);

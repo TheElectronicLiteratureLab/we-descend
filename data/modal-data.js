@@ -446,7 +446,7 @@ const modalData = [
 		</div>
 		<!-- end of "catalog" div -->`
 	],
-	[`SCHOLIA (Annotations)`,
+	[`SCHOLIA`,
 		`<header>			
 			<h2 class="notaName">
 				<a id="SCHOLIA">SCHOLIA</a> (Annotations)
