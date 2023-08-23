@@ -1,5 +1,8 @@
 //get stream
 let currentStream = document.body.getAttribute('data-stream');
+let streamBtn = document.getElementById('stream-button');
+let topModal;
+let secondaryModal;
 
 $(document).ready(function() {
 	//setup modal and stream html
@@ -20,7 +23,7 @@ $(document).ready(function() {
 		
 		<div class="catalog container">
 			<!--<p><a id="UNKNOWNPROVENANCE"></a><strong>===<a href="UNKNOWNPROVENANCE.html">UNKNOWN PROVENANCE</a>===</p>-->
-			<p><a id="TheREMNANT"></a><a href="TheREMNANT.html">The REMNANT</a></p>
+			<p><a id="TheREMNANT"></a><a href="TheREMNANT.html#The REMNANT">The REMNANT</a></p>
 			<p><a id="INSOMNIAC"></a><a href="INSOMNIAC.html">INSOMNIAC</a></p>
 			<p><a id="ROMANTICIMPULSEWRITINGS"></a><a href="ROMANTICIMPULSEWRITINGS.html">ROMANTIC IMPULSE WRITINGS</a></p>
 			<p><a id="OTHERWRITINGSofUNKNOWNPROVENANCE"></a><a href="OTHERWRITINGSofUNKNOWNPROVENANCE.html">OTHER WRITINGS of UNKNOWN PROVENANCE</a></p>
@@ -56,9 +59,10 @@ $(document).ready(function() {
 	<div class="listing container">
 		<h4><a id="indescendingorder">PRIMARY WRITINGS</a> (<a href="indescendingorder.html">in descending order</a>)</h4>
 		<ul>
-			<li><strong><a href="UNKNOWNPROVENANCE.html">UNKNOWN PROVENANCE</a> 
+			<li><strong><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="UNKNOWN PROVENANCE"
+			href="#">UNKNOWN PROVENANCE</a> 
 			<ul>
-				<li><a href="TheREMNANT.html">The REMNANT</a> 
+				<li><a href="TheRemnantSay.html#The REMNANT">The REMNANT</a>
 				<ul>
 					<li><a href="TheRemnantSay.html">The Remnant Say...</a></li>
 					<li><a href="Rhapsody.html">Rhapsody</a></li>
@@ -482,31 +486,66 @@ $(document).ready(function() {
 		if ($(this).data("target")) {
 			let target = $(this).data("target");
 			$("#"+target).removeClass("modal-closed");
+			secondaryModal = topModal;
+			topModal = target;
 		}
 		
 		//open targeted article inside of modal
 		if ($(this).data("subtarget")) {
-			$(".outline-container, .stream-container, .inventory-container").addClass("hidden");
 			let subTarget = $(this).data("subtarget");
+				if (subTarget != "metastream") {
+					$(".outline-container, .stream-container, .inventory-container").addClass("hidden");
+				}
+			
 			$("."+subTarget+"-container").removeClass("hidden");
 			
 			$(".modal-toggle.selected").removeClass("selected");
 			$("#"+subTarget+"-tab").addClass("selected");
 		}
+
+		//load metastream modal
+		if ($(this).data("metamodal")) {
+			for (x=0;x<modalData.length;x++) {
+				if (modalData[x][0] == $(this).data("metamodal")) {
+					$("#metastream").html(modalData[x][1]);
+					break;
+				}
+			}
+
+		}
+
 	});
 	
 	//hide all targeted modals and articles
 	$(".close-modal").click(function(){
-		$(this).parent(".modal").addClass("modal-closed");
-		$(this).siblings("article").addClass("hidden");
-		$(".modal-toggle.selected").removeClass("selected");
+		closeModal();
 	});
 	
 	$(document).keyup(function(e) {
 		if (e.key === "Escape") { // escape key maps to keycode `27`
-			$(".modal").addClass("modal-closed");
-			$(".modal article").addClass("hidden");
-			$(".modal-toggle.selected").removeClass("selected");
+			closeModal();
 		}
 	});
+
+	function closeModal() {
+		$("#"+topModal).addClass("modal-closed");
+		$("#"+topModal+".modal article").addClass("hidden");
+		$("#"+topModal+".modal-toggle.selected").removeClass("selected");
+		topModal = secondaryModal;
+	}
+
+	function checkHash() {
+		let hash = window.location.hash.slice(1).replace('%20', ' ');
+		for (x=0;x<modalData.length;x++) {
+			console.log(x);
+			if (modalData[x][0] == hash) {
+				// alert("'"+hash+"' found at position "+x);
+				streamBtn.click();
+				break;
+			}
+		}
+	}
+
+	checkHash();
+
 });

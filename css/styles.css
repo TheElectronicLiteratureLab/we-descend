@@ -725,3 +725,7 @@ article .path a {
 	list-style: circle inside;
 	margin-left: 25px;
 }
+
+#metastream-modal {
+	z-index: 1000;
+}
