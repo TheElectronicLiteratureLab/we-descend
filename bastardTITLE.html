@@ -40,8 +40,197 @@
 		
 	</article>
 	<!-- end of "bookPlatePage" article -->
+
+	<nav id="navigator">
+		<div>
+			<a href="1TITLE.html"><button>
+				<span>Title</span>
+			</button></a>
+
+			<div class="decorative-diamond"></div>
+
+			<a href="LANDING.html"><button>
+				<span>Landing</span>
+			</button></a>
+		</div>
+
+		<div class="decorative-vert"></div>
+
+		<button class="modal-toggle" data-target="search-modal" data-subtarget="search">
+			<span>Search</span>
+		</button>
+
+		<div class="decorative-vert"></div>
+
+		<div>
+			<button class="modal-toggle" data-target="map-modal">
+				<span>Map</span>
+			</button>
+
+			<div class="decorative-diamond"></div>
+
+			<button class="modal-toggle" data-target="stream-modal" data-subtarget="outline">
+				<span>Outline</span>
+			</button>
+		</div>
+	</nav>
+
+
+	<!-- Search Modal -->
+	<section id="search-modal" class="modal modal-closed">
+		<article id="search-area" class="search-container modal-container">
+			<form id="search-form">
+				<input type="text" id="searchterm" name="searchterm" value=""><br>
+				<button type="submit">Search</button>
+			</form>
+
+			<div id="output-result-count" aria-live="polite"><span></span> Results Found</div>
+
+			<section id="output">
+				<div id="output-area"></div>
+			</section>
+		</article>
+
+		<button class="close-modal">Close</button>
+	</section>
+
+	<!-- Metastream Modal -->
+	<section id="metastream-modal" class="modal modal-closed">
+		<div class="modal-container">
+
+			<article id="metastream" class="metastream-container hidden"></article>
+
+		</div>
+
+		<button class="close-modal">Close</button>
+	</section>
+
+	<!-- Stream Modal -->
+	<section id="stream-modal" class="modal modal-closed">
+		<div class="modal-container">
+			<nav class="stream-tabs">
+				<ul>
+					<li><button id="outline-tab" class="modal-toggle" data-subtarget="outline">OUTLINE</button></li> |
+					<li><button id="stream-tab" class="modal-toggle" data-subtarget="stream"></button></li> |
+					<li><button id="inventory-tab" class="modal-toggle" data-subtarget="inventory">INVENTORY</button>
+					</li>
+				</ul>
+			</nav>
+
+			<article id="outline" class="outline-container hidden">Outline</article>
+
+			<article id="stream" class="stream-container hidden"></article>
+
+			<article id="inventory" class="inventory-container hidden"></article>
+		</div>
+
+		<button class="close-modal">Close</button>
+	</section>
+
+
+	<!-- Map Modal -->
+	<section id="map-modal" class="modal modal-closed">
+		<div id="map-container">
+			<h2>UNKNOWN PROVENANCE</h2>
+			<main>
+				<section class="map-grid position-1" id="unknown-grid">
+					<a href="#">
+						<h3>ROMANTIC IMPULSE WRITINGS</h3>
+					</a>
+					<a href="#">
+						<h3>THE REMNANT</h3>
+					</a>
+					<a href="#">
+						<h3>INSOMNIAC</h3>
+					</a>
+					<a href="#">
+						<h3>OTHER WRITINGS of UNKNOWN PROVENANCE</h3>
+					</a>
+				</section>
+
+				<section class="map-grid position-2" id="scholar-grid">
+					<a href="#">
+						<h3>SOLDIER</h3>
+					</a>
+					<a href="#">
+						<h3>UNKNOWN SCHOLASTIC</h3>
+					</a>
+					<a href="#">
+						<h3>EXILE</h3>
+					</a>
+					<a href="#">
+						<h3>VOICE from the LOCUST GROVE</h3>
+					</a>
+					<a href="#">
+						<h3>UNKNOWN CURATOR</h3>
+					</a>
+					<a href="#">
+						<h3>SCHOLAR</h3>
+					</a>
+				</section>
+
+				<section class="map-grid position-3" id="egderus-grid">
+					<a href="#">
+						<h3>INSURGENT</h3>
+					</a>
+					<a href="#">
+						<h3>EGDERUS</h3>
+					</a>
+					<a href="#">
+						<h3>MISSIONARY</h3>
+					</a>
+					<a href="#">
+						<h3>ARIC</h3>
+					</a>
+					<a href="#">
+						<h3>BONE-SNAPPER</h3>
+					</a>
+					<a href="#">
+						<h3>HISTORIAN</h3>
+					</a>
+					<a href="#">
+						<h3>SUPERIUS FRATER</h3>
+					</a>
+					<a href="#">
+						<h3>OLD POET</h3>
+					</a>
+				</section>
+
+				<section class="map-grid position-4" id="ancients-grid">
+					<a href="#">
+						<h3>UNKNOWN ANCIENTS</h3>
+					</a>
+					<a href="#">
+						<h3>BOY</h3>
+					</a>
+					<a href="#">
+						<h3>LAST ONE</h3>
+					</a>
+				</section>
+
+			</main>
+
+			<div class="button-array">
+				<button id="ascend-button">
+					<span>ASCEND</span>
+				</button>
+				<div class="decorative-diamond"></div>
+				<button id="descend-button">
+					<span>DESCEND</span>
+				</button>
+			</div>
+		</div>
+		
+		<button class="close-modal">Close</button>
+	</section>
+
+	<script src="lib/jquery/jquery-3.7.0.min.js"></script>
+	<script src="data/search-data.js"></script>
+	<script src="data/modal-data.js"></script>
+	<script src="js/search-functions.js"></script>
+	<script src="js/modal-functions.js"></script>
+	<script src="js/map-functions.js"></script>
 	
-			
 </body>
 
 </html>
