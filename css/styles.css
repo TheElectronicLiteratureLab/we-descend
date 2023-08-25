@@ -168,6 +168,10 @@ h6 {
 	font-size: 1.1em;
 }
 
+.bookPlatePage a {
+	margin-bottom: 5px;
+}
+
 .entry-btn {
 	margin: 25px 0;
 	height: 275px;
@@ -290,6 +294,10 @@ h6 {
 	flex-direction: column;
 }
 
+#navigator button {
+	margin-bottom: 10px;
+}
+
 #navigator button span {
 	transform: rotate(-45deg);
 	margin-bottom: 0;
@@ -297,6 +305,7 @@ h6 {
 	font-family: var(--secondaryFont);
 	letter-spacing: var(--secondaryFont-spacing);
 	font-weight: 600;
+	font-size: 1.5em;
 	opacity: .8;
 }
 
@@ -338,6 +347,7 @@ h6 {
 		box-shadow: inset 0 0 30px var(--sand);
 		position: relative;
 		transition: background-color .3s linear;
+		margin-bottom: 0;
 	}
 
 	#navigator button span {
@@ -348,6 +358,7 @@ h6 {
 		letter-spacing: var(--secondaryFont-spacing);
 		font-weight: 600;
 		opacity: .8;
+		font-size: 1em;
 	}
 
 	#navigator button::after {
@@ -377,7 +388,7 @@ h6 {
 		z-index: 1;
 		transform: rotate(45deg);
 		margin: auto;
-		opacity: .15;
+		opacity: .05;
 		pointer-events: none;
 	}
 
@@ -408,6 +419,10 @@ h6 {
 
 	#navigator div {
 		flex-direction: column;
+	}
+
+	#navigator .decorative-diamond {
+		opacity: .15;
 	}
 
 	#navigator .decorative-vert {
@@ -501,6 +516,7 @@ article .container,
 article section {
 	flex: 1;
 	overflow-y: auto;
+	padding-right: 10px;
 }
 
 article .inscription {
@@ -800,7 +816,7 @@ article .path a {
 	font-family: var(--secondaryFont);
 	font-weight: 400;
 	letter-spacing: var(--secondaryFont-spacing);
-	width: 40%;
+	width: 50%;
 	margin: auto auto 25px auto;
 }
 
@@ -899,4 +915,16 @@ article .path a {
 
 #metastream-modal {
 	z-index: 1000;
+}
+
+.metastream-container, .metastream-container > * {
+	text-align: center;
+}
+
+.metastream-container header {
+	width: 100%;
+}
+
+.metastream-container .subTitle {
+	font-size: 1em;
 }

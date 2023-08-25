@@ -87,10 +87,10 @@ const traverse = () => {
 		// $("body").css("background-image", "url(" + unknownTexture + ")")
 
 		//gray out ascend button because you can't go any higher
-		$("#ascend-button").css("filter", "brightness(0.6)")
+		$("#ascend-button").css({"opacity":".5", "cursor":"initial"})
 
 		//normal descend button
-		$("#descend-button").css("filter", "brightness(1)")
+		$("#descend-button").css({"opacity":"1", "cursor":"pointer"})
 	}
 
 	//set state for second level with scholar map on top
@@ -114,10 +114,10 @@ const traverse = () => {
 		// $("body").css("background-image", "url(" + scholarTexture + ")")
 
 		//normal ascend button
-		$("#ascend-button").css("filter", "brightness(1)")
+		$("#ascend-button").css({"opacity":"1", "cursor":"pointer"})
 
 		//normal descend button
-		$("#descend-button").css("filter", "brightness(1)")
+		$("#descend-button").css({"opacity":"1", "cursor":"pointer"})
 	}
 
 	//set state for third level with Egderus map on top
@@ -141,10 +141,10 @@ const traverse = () => {
 		// $("body").css("background-image", "url(" + edgerusTexture + ")")
 
 		//normal ascend button
-		$("#ascend-button").css("filter", "brightness(1)")
+		$("#ascend-button").css({"opacity":"1", "cursor":"pointer"})
 
 		//normal descend button
-		$("#descend-button").css("filter", "brightness(1)")
+		$("#descend-button").css({"opacity":"1", "cursor":"pointer"})
 	}
 
 	//set state for base level with only Ancients grid showing
@@ -168,10 +168,10 @@ const traverse = () => {
 		// $("body").css("background-image", "url(" + ancientsTexture + ")")
 
 		//normal ascend button
-		$("#ascend-button").css("filter", "brightness(1)")
+		$("#ascend-button").css({"opacity":"1", "cursor":"pointer"})
 
 		//gray out descend button because you can't go any lower
-		$("#descend-button").css("filter", "brightness(0.6)")
+		$("#descend-button").css({"opacity":".5", "cursor":"initial"})
 
 	}
 
