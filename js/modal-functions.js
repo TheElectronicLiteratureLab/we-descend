@@ -548,4 +548,7 @@ $(document).ready(function() {
 
 	checkHash();
 
+	$("#mobile-menu").click(function(){
+		$("#navigator").fadeToggle(800).css('display', 'flex');
+	});
 });

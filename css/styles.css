@@ -47,6 +47,7 @@
 body {
 	box-sizing: border-box;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
@@ -233,28 +234,30 @@ h6 {
 	box-sizing: border-box;
 	margin: auto;
 	position: fixed;
+	left: 0;
+	right: 0;
 	top: 0;
 	bottom: 0;
-	right: 4%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	height: 40vw;
-	max-height: 690px;
+	justify-content: center;
+	text-align: center;
+	background-color: rgba(221, 201, 177, .9);
+	padding: 15% 0;
+	overflow: auto;
+	display: none;
 }
 
-#navigator button {
-	height: 75px;
-	width: 75px;
-	background-color: rgba(255, 255, 255, .25);
-	transform: rotate(45deg);
+#mobile-menu {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 999;
+}
+
+#navigator div {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	box-shadow: inset 0 0 30px var(--sand);
-	position: relative;
-	transition: background-color .3s linear;
+	flex-direction: column;
 }
 
 #navigator button span {
@@ -267,59 +270,165 @@ h6 {
 	opacity: .8;
 }
 
-#navigator button::after {
-	display: block;
-	content: '';
-	height: 90px;
-	width: 90px;
-	border: 3px solid var(--earth);
-	position: absolute;
-	opacity: 0;
-	transition: opacity .3s linear;
+
+@media screen and (min-width: 768px) {
+	#navigator {
+		display: flex !important;
+		max-width: 78vw;
+		width: 78vw;
+		background-color: transparent;
+		flex-direction: row;
+		top: auto;
+		bottom: 4%;
+		padding: 0;
+		position: relative;
+		margin-top: 50px;
+		margin-bottom: 25px;
+		overflow: visible;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	#mobile-menu {
+		display: none;
+	}
+
+	#navigator div {
+		flex-direction: row;
+	}
+
+	#navigator button {
+		height: 75px;
+		width: 75px;
+		background-color: rgba(255, 255, 255, .25);
+		transform: rotate(45deg);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: inset 0 0 30px var(--sand);
+		position: relative;
+		transition: background-color .3s linear;
+	}
+	
+	#navigator button span {
+		transform: rotate(-45deg);
+		margin-bottom: 0;
+		text-transform: uppercase;
+		font-family: var(--secondaryFont);
+		letter-spacing: var(--secondaryFont-spacing);
+		font-weight: 600;
+		opacity: .8;
+	}
+
+	#navigator button::after {
+		display: block;
+		content: '';
+		height: 90px;
+		width: 90px;
+		border: 3px solid var(--earth);
+		position: absolute;
+		opacity: 0;
+		transition: opacity .3s linear;
+	}
+	
+	#navigator button:hover {
+		background-color: rgba(255, 255, 255, .5);
+	}
+	
+	#navigator button:hover::after {
+		opacity: .25;
+	}
+	
+	#navigator .decorative-diamond {
+		position: relative;
+		height: 50px;
+		width: 50px;
+		border: 3px solid var(--earth);
+		z-index: 1;
+		transform: rotate(45deg);
+		margin: auto;
+		opacity: .15;
+		pointer-events: none;
+	}
+	
+	#navigator .decorative-vert {
+		position: relative;
+		height: auto;
+		width: 40px;
+		border: 1.5px solid var(--earth);
+		z-index: 1;
+		margin: auto;
+		opacity: .15;
+	}
 }
 
-#navigator button:hover {
-	background-color: rgba(255, 255, 255, .5);
+@media screen and (min-width: 1025px) {
+	#navigator {
+		width: auto;
+		margin: auto;
+		flex-direction: column;
+		left: auto;
+		right: 4%;
+		top: 0;
+		bottom: 0;
+		position: fixed;
+		min-height: 600px;
+		max-height: 690px;
+	}
+
+	#navigator div {
+		flex-direction: column;
+	}
+
+	#navigator .decorative-vert {
+		height: 40px;
+		width: auto
+	}
 }
 
-#navigator button:hover::after {
-	opacity: .25;
+@media screen and (min-width: 1425px) {
+	#navigator {
+		height: 40vw;
+	}
 }
 
-#navigator .decorative-diamond {
-	position: relative;
-	height: 50px;
-	width: 50px;
-	border: 3px solid var(--earth);
-	z-index: 1;
-	transform: rotate(45deg);
-	margin: auto;
-	opacity: .15;
-	pointer-events: none;
-}
-
-#navigator .decorative-vert {
-	position: relative;
-	height: 40px;
-	border: 1.5px solid var(--earth);
-	z-index: 1;
-	margin: auto;
-	opacity: .15;
-}
 
 /*Lexia*/
 article {
 	box-sizing: border-box;
-	width: 50vw;
-	height: 40vw;
-	max-width: 890px;
-	max-height: 690px;
+	width: 90vw;
+	height: 80vh;
 	padding: 30px;
 	display: flex;
 	flex-direction: column;
 	position: relative;
 	background-image: url(../img/frame.png);
 	background-size: 100% 100%;
+}
+
+@media screen and (min-width: 768px) {
+	article {
+		width: 80vw;
+		height: 50vw;
+	}	
+}
+
+@media screen and (min-width: 1025px) {
+	article {
+		width: 60vw;
+		height: 50vw;
+		max-width: 890px;
+		max-height: 690px;
+	}	
+}
+
+@media screen and (min-width: 1400px) {
+	article {
+		width: 50vw;
+		height: 40vw;
+		max-width: 890px;
+		max-height: 690px;
+	}	
 }
 
 article a:link,
@@ -498,14 +607,21 @@ article .path a {
 
 .modal .modal-container {
 	z-index: 999;
-	padding: 40px;
+	padding: 20px;
 	width: 100%;
 	max-width: 750px;
 	background-color: rgba(255, 255, 255, .35);
 	box-shadow: inset 0 0 99px var(--sand);
 	max-height: 95vh;
-	margin: 50px;
+	margin: 20px;
 	box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+	.modal .modal-container {
+		padding: 40px;
+		margin: 50px;
+	}
 }
 
 .modal::before {
@@ -662,9 +778,33 @@ article .path a {
 	z-index: 1;
 	position: relative;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 	width: 100%;
+}
+
+#stream-modal .stream-tabs ul li {
+	margin-bottom: 10px;
+}
+
+#stream-modal .stream-tabs span {
+	display: none;
+	margin: 0 5px;
+}
+
+@media screen and (min-width: 768px) {
+	#stream-modal .stream-tabs ul {
+		flex-direction: row;
+	}
+
+	#stream-modal .stream-tabs span {
+		display: inline-block;
+	}
+
+	#stream-modal .stream-tabs ul li {
+		margin-bottom: 0px;
+	}
 }
 
 #stream-modal .stream-tabs button {
