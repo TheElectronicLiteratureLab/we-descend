@@ -250,9 +250,39 @@ h6 {
 
 #mobile-menu {
 	position: fixed;
-	top: 10px;
-	right: 10px;
+	top: 0px;
+	right: 0px;
 	z-index: 999;
+	height: 65px;
+	width: 65px;
+	background-color: rgba(255, 255, 255, .25);
+	transform: rotate(45deg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: inset 0 0 30px var(--sand);
+	transition: background-color .3s linear;
+}
+
+#mobile-menu span {
+	transform: rotate(-45deg);
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-family: var(--secondaryFont);
+	letter-spacing: var(--secondaryFont-spacing);
+	font-weight: 600;
+	opacity: .8;
+}
+
+#mobile-menu::after {
+	display: block;
+	content: '';
+	height: 80px;
+	width: 80px;
+	border: 3px solid var(--earth);
+	position: absolute;
+	opacity: .25;
+	transition: opacity .3s linear;
 }
 
 #navigator div {
@@ -309,7 +339,7 @@ h6 {
 		position: relative;
 		transition: background-color .3s linear;
 	}
-	
+
 	#navigator button span {
 		transform: rotate(-45deg);
 		margin-bottom: 0;
@@ -330,15 +360,15 @@ h6 {
 		opacity: 0;
 		transition: opacity .3s linear;
 	}
-	
+
 	#navigator button:hover {
 		background-color: rgba(255, 255, 255, .5);
 	}
-	
+
 	#navigator button:hover::after {
 		opacity: .25;
 	}
-	
+
 	#navigator .decorative-diamond {
 		position: relative;
 		height: 50px;
@@ -350,7 +380,7 @@ h6 {
 		opacity: .15;
 		pointer-events: none;
 	}
-	
+
 	#navigator .decorative-vert {
 		position: relative;
 		height: auto;
@@ -397,7 +427,7 @@ h6 {
 article {
 	box-sizing: border-box;
 	width: 90vw;
-	height: 80vh;
+	height: 75vh;
 	padding: 30px;
 	display: flex;
 	flex-direction: column;
@@ -409,8 +439,8 @@ article {
 @media screen and (min-width: 768px) {
 	article {
 		width: 80vw;
-		height: 50vw;
-	}	
+		height: 60vw;
+	}
 }
 
 @media screen and (min-width: 1025px) {
@@ -419,7 +449,7 @@ article {
 		height: 50vw;
 		max-width: 890px;
 		max-height: 690px;
-	}	
+	}
 }
 
 @media screen and (min-width: 1400px) {
@@ -428,7 +458,7 @@ article {
 		height: 40vw;
 		max-width: 890px;
 		max-height: 690px;
-	}	
+	}
 }
 
 article a:link,
@@ -835,7 +865,8 @@ article .path a {
 	text-align: center;
 }
 
-#stream-modal .stream-container, #stream-modal .inventory-container {
+#stream-modal .stream-container,
+#stream-modal .inventory-container {
 	text-align: center;
 }
 
