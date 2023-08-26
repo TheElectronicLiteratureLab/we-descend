@@ -928,3 +928,21 @@ article .path a {
 .metastream-container .subTitle {
 	font-size: 1em;
 }
+
+.current-stream-page a {
+	color: cyan !important;
+	background-color: magenta;
+	font-size: 2em;
+	text-shadow: 0px 0px 3px yellow;
+	text-decoration: underline overline lime;
+	animation: holly-are-you-proud-i-did-a-style 0.25s infinite;
+}
+
+@keyframes holly-are-you-proud-i-did-a-style {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

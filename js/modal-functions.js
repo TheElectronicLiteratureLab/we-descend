@@ -513,6 +513,7 @@ $(document).ready(function() {
 			}
 
 		}
+		checkPage();
 
 	});
 	
@@ -537,13 +538,17 @@ $(document).ready(function() {
 	function checkHash() {
 		let hash = window.location.hash.slice(1).replace('%20', ' ');
 		for (x=0;x<modalData.length;x++) {
-			console.log(x);
 			if (modalData[x][0] == hash) {
 				// alert("'"+hash+"' found at position "+x);
 				streamBtn.click();
 				break;
 			}
 		}
+	}
+
+	function checkPage() {
+		let title = $("#h1-title").text().trim();
+		let catalogue = $("#stream").children(".catalog.container").children(":contains('" + title + "')").addClass("current-stream-page");
 	}
 
 	checkHash();
