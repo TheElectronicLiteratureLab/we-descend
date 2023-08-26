@@ -72,7 +72,7 @@ $(document).ready(function() {
 					<li><a href="promisesandtrust.html">promises and trust</a></li>
 				</ul>
 			</li>
-				<li><a href="INSOMNIAC.html">INSOMNIAC</a> 
+				<li><a href="awake.html#INSOMNIAC">INSOMNIAC</a> 
 				<ul>
 					<li><a href="awake.html">awake</a></li>
 					<li><a href="thedark.html">the dark</a></li>
