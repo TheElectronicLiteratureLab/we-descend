@@ -108,7 +108,7 @@ $(document).ready(function() {
 			</li>
 			<li><a href="AGEoftheSCHOLAR.html">AGE of the SCHOLAR</a> 
 			<ul>
-				<li><a href="SOLDIER.html">SOLDIER</a> 
+				<li><a href="purpleberries.html#SOLDIER">SOLDIER</a> 
 				<ul>
 					<li><a href="purpleberries.html">purple berries</a></li>
 			</ul>

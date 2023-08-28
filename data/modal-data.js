@@ -781,10 +781,10 @@ const modalData = [
 		</header>
 		
 		<div class="catalog container">
-				<p><a id="TheREMNANT"></a><a href="TheREMNANT.html">The REMNANT</a></p>
-				<p><a id="INSOMNIAC"></a><a href="INSOMNIAC.html">INSOMNIAC</a></p>
-				<p><a id="ROMANTICIMPULSEWRITINGS"></a><a href="ROMANTICIMPULSEWRITINGS.html">ROMANTIC IMPULSE WRITINGS</a></p>
-				<p><a id="OTHERWRITINGSofUNKNOWNPROVENANCE"></a><a href="OTHERWRITINGSofUNKNOWNPROVENANCE.html">OTHER WRITINGS of UNKNOWN PROVENANCE</a></p>
+				<p><a id="TheREMNANT"></a><a href="TheRemnantSay.html#The REMNANT">The REMNANT</a></p>
+				<p><a id="INSOMNIAC"></a><a href="awake.html#INSOMNIAC">INSOMNIAC</a></p>
+				<p><a id="ROMANTICIMPULSEWRITINGS"></a><a href="YoungRobenc.html#ROMANTIC IMPULSE WRITINGS">ROMANTIC IMPULSE WRITINGS</a></p>
+				<p><a id="OTHERWRITINGSofUNKNOWNPROVENANCE"></a><a href="HouseHills.html#OTHER WRITINGS of UNKNOWN PROVENANCE">OTHER WRITINGS of UNKNOWN PROVENANCE</a></p>
 			</ul>
 
 		</div>
