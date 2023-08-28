@@ -146,7 +146,7 @@ $(document).ready(function() {
 					<li><a href="archiveunderthreat.html">archive under threat</a></li>
 			</ul>
 			</li>
-				<li><a href="SCHOLAR.html">SCHOLAR</a> 
+				<li><a href="ScholarsDiary.html#SCHOLAR">SCHOLAR</a> 
 				<ul>
 					<li><a href="ScholarsDiary.html">Scholar's Diary</a></li>
 					<li><a href="ScholarsDraft.html">Scholar's Draft</a></li>
@@ -538,7 +538,7 @@ $(document).ready(function() {
 	}
 
 	function checkHash() {
-		let hash = window.location.hash.slice(1).replaceAll('%20', ' ');
+		let hash = window.location.hash.slice(1).replaceAll(`%20`, ` `);
 		// alert(hash);
 		for (x=0;x<modalData.length;x++) {
 			// alert(x);
@@ -552,7 +552,15 @@ $(document).ready(function() {
 
 	function checkPage() {
 		let title = $("title").text().trim();
-		let catalogue = $("#stream").children(".catalog.container").children(":contains('" + title + "')").addClass("current-stream-page");
+		let catalog = $("#stream").children(".catalog.container").children(':contains("' + title + '")');
+
+		let selectLexia = catalog.filter(function () {
+			// alert(title + " | " + catalog.text().trim());
+			// alert($(this).text().trim() == title);
+			return $(this).text().trim() == title;
+			});
+
+		selectLexia.addClass("current-stream-page");
 	}
 
 	checkHash();

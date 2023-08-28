@@ -440,7 +440,7 @@ const modalData = [
 			<p><a href="ScholarsVision.html">Scholar's Vision</a></p>
 			<p><a href="ScholarsConfessio.html">Scholar's Confessio</a></p>
 			<p><a href="ScholarsApology.html">Scholar's Apology</a></p>
-			<p><a href="ScholarsApologyredux.html">Scholar's Apology, redux</a></p>
+			<p><a href="ScholarsApologyredux.html">Scholar's Apology redux</a></p>
 			<p><a href="hands.html">hands</a></p>
 			<p><a href="recovery.html">recovery</a> </p>
 		</div>
