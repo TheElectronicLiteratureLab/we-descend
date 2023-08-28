@@ -126,9 +126,11 @@ $(document).ready(function() {
 					<li><a href="flight.html">flight</a></li>
 			</ul>
 			</li>
-				<li><a href="UNKNOWNSCHOLASTIC.html">UNKNOWN SCHOLASTIC</a> 
+				<li><a href="conspiracy.html#UNKNOWN SCHOLASTIC">UNKNOWN SCHOLASTIC</a> 
 				<ul>
-					<li><a href="conspiracy.html">conspiracy</a></li></ul></li>
+					<li><a href="conspiracy.html">conspiracy</a></li>
+			</ul>
+			</li>
 				<li><a href="VOICEfromtheLOCUSTGROVE.html">VOICE from the LOCUST GROVE</a> 
 				<ul>
 					<li><a href="TheLocustGrove.html">The Locust Grove</a></li>
