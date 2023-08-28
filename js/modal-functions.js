@@ -166,7 +166,7 @@ $(document).ready(function() {
 		</li>
 			<li><a href="AGEofEGDERUS.html">AGE of EGDERUS</a> 
 			<ul>
-				<li><a href="INSURGENT.html">INSURGENT</a> 
+				<li><a href="onmarch.html#INSURGENT">INSURGENT</a> 
 				<ul>
 					<li><a href="onmarch.html">on march</a></li>
 			</ul>
