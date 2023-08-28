@@ -197,7 +197,7 @@ $(document).ready(function() {
 					<li><a href="MtheWanderer.html">M the Wanderer</a></li>
 			</ul>
 			</li>
-				<li><a href="ARIC.html">ARIC</a> 
+				<li><a href="TestimonyofPraetorAric.html#ARIC">ARIC</a> 
 				<ul>
 					<li><a href="TestimonyofPraetorAric.html">Testimony of Praetor Aric</a></li>
 					<li><a href="AricAftermath.html">Aric: Aftermath</a></li>
