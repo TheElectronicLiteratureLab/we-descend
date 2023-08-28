@@ -209,7 +209,7 @@ $(document).ready(function() {
 					<li><a href="SteadfastBone-Snapper.html">Steadfast Bone-Snapper</a></li>
 			</ul>
 			</li>
-				<li><a href="HISTORIAN.html">HISTORIAN</a> 
+				<li><a href="HistoriansTale.html#HISTORIAN">HISTORIAN</a> 
 				<ul>
 					<li><a href="HistoriansTale.html">Historian's Tale</a></li>
 					<li><a href="HistoriansNotebook.html">Historian's Notebook</a></li>
