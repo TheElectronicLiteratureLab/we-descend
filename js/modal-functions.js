@@ -222,7 +222,7 @@ $(document).ready(function() {
 					<li><a href="SuperiusFratersNotes.html">Superius Frater's Notes</a></li>
 			</ul>
 			</li>
-				<li><a href="OLDPOET.html">OLD POET</a>
+				<li><a href="patteran.html#OLD POET">OLD POET</a>
 				<ul>
 					<li><a href="patteran.html">patteran</a></li></ul></li>
 			</ul>
