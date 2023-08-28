@@ -216,7 +216,7 @@ $(document).ready(function() {
 					<li><a href="allfalldown.html">all fall down</a></li>
 			</ul>
 			</li>
-				<li><a href="SUPERIUSFRATER.html">SUPERIUS FRATER</a> 
+				<li><a href="SuperiusFraterandRobenc.html#SUPERIUS FRATER">SUPERIUS FRATER</a> 
 				<ul>
 					<li><a href="SuperiusFraterandRobenc.html">Superius Frater and Robenc</a></li>
 					<li><a href="SuperiusFratersNotes.html">Superius Frater's Notes</a></li>
