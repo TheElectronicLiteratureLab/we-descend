@@ -113,7 +113,7 @@ $(document).ready(function() {
 					<li><a href="purpleberries.html">purple berries</a></li>
 			</ul>
 			</li>
-				<li><a href="EXILE.html">EXILE</a> 
+				<li><a href="fog.html#EXILE">EXILE</a> 
 				<ul>
 					<li><a href="fog.html">fog</a></li>
 					<li><a href="drawn.html">drawn</a></li>
