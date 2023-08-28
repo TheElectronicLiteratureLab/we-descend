@@ -90,7 +90,7 @@ $(document).ready(function() {
 					<li><a href="Starlingredux.html">Starling redux</a></li>
 				</ul>
 			</li>
-				<li><a href="OTHERWRITINGSofUNKNOWNPROVENANCE.html">OTHER WRITINGS of UNKNOWN PROVENANCE</a> 
+				<li><a href="HouseHills.html#OTHER WRITINGS of UNKNOWN PROVENANCE">OTHER WRITINGS of UNKNOWN PROVENANCE</a> 
 				<ul>
 					<li><a href="HouseHills.html">House, Hills</a></li>
 					<li><a href="Hypothesis.html">Hypothesis</a></li>
