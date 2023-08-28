@@ -23,7 +23,7 @@ $(document).ready(function() {
 		
 		<div class="catalog container">
 			<!--<p><a id="UNKNOWNPROVENANCE"></a><strong>===<a href="UNKNOWNPROVENANCE.html">UNKNOWN PROVENANCE</a>===</p>-->
-			<p><a id="TheREMNANT"></a><a href="TheREMNANT.html#The REMNANT">The REMNANT</a></p>
+			<p><a id="TheREMNANT"></a><a href="TheREMNANT.html">The REMNANT</a></p>
 			<p><a id="INSOMNIAC"></a><a href="INSOMNIAC.html">INSOMNIAC</a></p>
 			<p><a id="ROMANTICIMPULSEWRITINGS"></a><a href="ROMANTICIMPULSEWRITINGS.html">ROMANTIC IMPULSE WRITINGS</a></p>
 			<p><a id="OTHERWRITINGSofUNKNOWNPROVENANCE"></a><a href="OTHERWRITINGSofUNKNOWNPROVENANCE.html">OTHER WRITINGS of UNKNOWN PROVENANCE</a></p>
@@ -80,7 +80,7 @@ $(document).ready(function() {
 					<li><a href="themoonlitgarden.html">the moonlit garden</a></li>
 				</ul>
 			</li>
-				<li><a href="ROMANTICIMPULSEWRITINGS.html">ROMANTIC IMPULSE WRITINGS</a>
+				<li><a href="YoungRobenc.html#ROMANTIC IMPULSE WRITINGS">ROMANTIC IMPULSE WRITINGS</a>
 				<ul>
 					<li><a href="YoungRobenc.html">Young Robenc</a></li>
 					<li><a href="Robencreturns.html">Robenc Returns</a></li>
@@ -536,8 +536,10 @@ $(document).ready(function() {
 	}
 
 	function checkHash() {
-		let hash = window.location.hash.slice(1).replace('%20', ' ');
+		let hash = window.location.hash.slice(1).replaceAll('%20', ' ');
+		// alert(hash);
 		for (x=0;x<modalData.length;x++) {
+			// alert(x);
 			if (modalData[x][0] == hash) {
 				// alert("'"+hash+"' found at position "+x);
 				streamBtn.click();
