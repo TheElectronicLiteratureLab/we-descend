@@ -63,12 +63,12 @@ const modalData = [
 		</header>
 
 		<div class="catalog container">
-			<p><a href="SOLDIER.html"> SOLDIER</a></p>
-			<p><a href="EXILE.html"> EXILE</a></p>
-			<p><a href="UNKNOWNSCHOLASTIC.html"> UNKNOWN SCHOLASTIC</a></p>
-			<p><a href="VOICEfromtheLOCUSTGROVE.html"> VOICE from the LOCUST GROVE</a></p>
-			<p><a href="UNKNOWNCURATOR.html"> UNKNOWN CURATOR</a></p>
-			<p><a href="SCHOLAR.html"> SCHOLAR</a></p>
+			<p><a href="purpleberries.html#SOLDIER"> SOLDIER</a></p>
+			<p><a href="fog.html#EXILE"> EXILE</a></p>
+			<p><a href="conspiracy.html#UNKNOWN SCHOLASTIC"> UNKNOWN SCHOLASTIC</a></p>
+			<p><a href="TheLocustGrove.html#VOICE from the LOCUST GROVE"> VOICE from the LOCUST GROVE</a></p>
+			<p><a href="archiveunderthreat.html#UNKNOWN CURATOR"> UNKNOWN CURATOR</a></p>
+			<p><a href="ScholarsDiary.html#SCHOLAR"> SCHOLAR</a></p>
 		</div>
 		<!-- end of "catalog container" div -->`
 	],

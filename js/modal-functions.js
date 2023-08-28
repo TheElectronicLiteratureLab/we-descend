@@ -106,7 +106,8 @@ $(document).ready(function() {
 				</li>
 			</ul>
 			</li>
-			<li><a href="AGEoftheSCHOLAR.html">AGE of the SCHOLAR</a> 
+			<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="AGE of the SCHOLAR"
+			href="#">AGE of the SCHOLAR</a> 
 			<ul>
 				<li><a href="purpleberries.html#SOLDIER">SOLDIER</a> 
 				<ul>
