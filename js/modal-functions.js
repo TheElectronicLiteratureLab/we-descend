@@ -171,7 +171,7 @@ $(document).ready(function() {
 					<li><a href="onmarch.html">on march</a></li>
 			</ul>
 			</li>
-				<li><a href="EGDERUS.html">EGDERUS</a> 
+				<li><a href="EgderusatMountainHouse.html#EGDERUS">EGDERUS</a> 
 				<ul>
 					<li><a href="EgderusatMountainHouse.html">Egderus at Mountain House</a></li>
 					<li><a href="EgderusandtheGoodDoctor.html">Egderus and the Good Doctor</a></li>
