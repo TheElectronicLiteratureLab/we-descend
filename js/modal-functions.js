@@ -549,7 +549,7 @@ $(document).ready(function() {
 	}
 
 	function checkPage() {
-		let title = $("#h1-title").text().trim();
+		let title = $("title").text().trim();
 		let catalogue = $("#stream").children(".catalog.container").children(":contains('" + title + "')").addClass("current-stream-page");
 	}
 
