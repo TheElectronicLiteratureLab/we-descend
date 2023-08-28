@@ -131,7 +131,7 @@ $(document).ready(function() {
 					<li><a href="conspiracy.html">conspiracy</a></li>
 			</ul>
 			</li>
-				<li><a href="VOICEfromtheLOCUSTGROVE.html">VOICE from the LOCUST GROVE</a> 
+				<li><a href="TheLocustGrove.html#VOICE from the LOCUST GROVE">VOICE from the LOCUST GROVE</a> 
 				<ul>
 					<li><a href="TheLocustGrove.html">The Locust Grove</a></li>
 					<li><a href="TheRetreatHouse.html">The Retreat House</a></li>
