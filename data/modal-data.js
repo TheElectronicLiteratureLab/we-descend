@@ -352,7 +352,7 @@ const modalData = [
 		</header>
 				
 		<div class="catalog container">
-			<p><a href="WritingsofTheMissionary.html">Writings of The Missionary</a></p>
+			<p><a href="WritingsofTheMissionary.html">Writings of the Missionary</a></p>
 			<p><a href="MPart2.html">M Part 2</a></p>
 			<p><a href="intheKeep.html">in the Keep</a></p>
 			<p><a href="MtheWanderer.html">M the Wanderer</a> </p>

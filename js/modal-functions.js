@@ -189,7 +189,7 @@ $(document).ready(function() {
 					<li><a href="EgderusSecret.html">Egderus' Secret</a></li>
 			</ul>
 			</li>
-				<li><a href="MISSIONARY.html">MISSIONARY</a> 
+				<li><a href="WritingsofTheMissionary.html#MISSIONARY">MISSIONARY</a> 
 				<ul>
 					<li><a href="WritingsofTheMissionary.html">Writings of the Missionary</a></li>
 					<li><a href="MPart2.html">M Part 2</a></li>
