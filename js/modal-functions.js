@@ -204,7 +204,7 @@ $(document).ready(function() {
 					<li><a href="PostscriptinAricsownhand.html">Postscript in Aric's own hand</a></li>
 			</ul>
 			</li>
-				<li><a href="BONE-SNAPPER.html">BONE-SNAPPER</a> 
+				<li><a href="SteadfastBone-Snapper.html#BONE-SNAPPER">BONE-SNAPPER</a> 
 				<ul>
 					<li><a href="SteadfastBone-Snapper.html">Steadfast Bone-Snapper</a></li>
 			</ul>
