@@ -35,20 +35,23 @@ const modalData = [
 	],
 	[`AGE of EGDERUS`,
 		`<header>
+			<h2 class="title">
+				<a href="LegomenonforAGEofEGDERUS.html">AGE of EGDERUS</a>
+			</h2>
 			<h4 class="subTitle">
 				Writings from the time during which Egderus flourished.
 			</h4>
 		</header>
 		
 		<div class="catalog container">
-				<p><a href="INSURGENT.html"> INSURGENT</a></p>
-				<p><a href="EGDERUS.html"> EGDERUS</a></p>
-				<p><a href="MISSIONARY.html">  MISSIONARY</a></p>
-				<p><a href="ARIC.html"> ARIC</a></p>
-				<p><a href="BONE-SNAPPER.html">  BONE-SNAPPER</a></p>
-				<p><a href="HISTORIAN.html"> HISTORIAN</a></p>
-				<p><a href="SUPERIUSFRATER.html"> SUPERIUS FRATER</a></p>
-				<p><a href="OLDPOET.html"> OLD POET</a></p>
+				<p><a href="onmarch.html#INSURGENT"> INSURGENT</a></p>
+				<p><a href="EgderusatMountainHouse.html#EGDERUS"> EGDERUS</a></p>
+				<p><a href="WritingsofTheMissionary.html#MISSIONARY">  MISSIONARY</a></p>
+				<p><a href="TestimonyofPraetorAric.html#ARIC"> ARIC</a></p>
+				<p><a href="SteadfastBone-Snapper.html#BONE-SNAPPER">  BONE-SNAPPER</a></p>
+				<p><a href="HistoriansTale.html#HISTORIAN"> HISTORIAN</a></p>
+				<p><a href="SuperiusFraterandRobenc.html#SUPERIUS FRATER"> SUPERIUS FRATER</a></p>
+				<p><a href="patteran.html#OLD POET"> OLD POET</a></p>
 		</div>
 		<!-- end of "listing container" div -->`
 	],

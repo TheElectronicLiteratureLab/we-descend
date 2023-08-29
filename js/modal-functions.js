@@ -164,7 +164,8 @@ $(document).ready(function() {
 			</li>
 		</ul>
 		</li>
-			<li><a href="AGEofEGDERUS.html">AGE of EGDERUS</a> 
+			<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="AGE of EGDERUS"
+			href="#">AGE of EGDERUS</a> 
 			<ul>
 				<li><a href="onmarch.html#INSURGENT">INSURGENT</a> 
 				<ul>
