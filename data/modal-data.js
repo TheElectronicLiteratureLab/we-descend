@@ -672,9 +672,9 @@ const modalData = [
 		</header>
 		
 		<div class="catalog container">
-				<p><a href="BOY.html"> BOY</a></p>
-				<p><a href="LASTONE.html"> LAST ONE</a></p>
-				<p><a href="UNKNOWNANCIENTS.html"> UNKNOWN ANCIENTS</a></p>
+				<p><a href="return.html#BOY"> BOY</a></p>
+				<p><a href="LastOneandBoy.html#LAST ONE"> LAST ONE</a></p>
+				<p><a href="Stormsandhaze.html#UNKNOWN ANCIENTS"> UNKNOWN ANCIENTS</a></p>
 
 		</div>
 		<!-- end of "catalog container" div -->`
