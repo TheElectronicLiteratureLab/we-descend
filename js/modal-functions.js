@@ -230,7 +230,7 @@ $(document).ready(function() {
 			</li>
 			<li><a href="TheANCIENTS.html">The ANCIENTS</a> 
 			<ul>
-				<li><a href="BOY.html">BOY</a> 
+				<li><a href="return.html#BOY">BOY</a> 
 				<ul>
 					<li><a href="return.html">return</a></li>
 					<li><a href="makingthisup.html">making this up</a></li>
