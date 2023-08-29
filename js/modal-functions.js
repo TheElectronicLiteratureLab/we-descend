@@ -301,7 +301,7 @@ $(document).ready(function() {
 					<ul>
 						<li><a href="LegomenonforINSURGENT.html">Legomenon for INSURGENT</a></li>
 						<li><a href="LegomenonforEGDERUS.html">Legomenon for EGDERUS</a></li>
-						<li><a href="LegomenonforMISSIONARY.html">Legomenon for The MISSIONARY</a></li>
+						<li><a href="LegomenonforTheMISSIONARY.html">Legomenon for The MISSIONARY</a></li>
 						<li><a href="LegomenonforARIC.html">Legomenon for ARIC</a></li>
 						<li><a href="LegomenonforBONE-SNAPPER.html">Legomeonon for BONE-SNAPPER</a></li>
 						<li><a href="LegomenonforHISTORIAN.html">Legomenon for HISTORIAN</a></li>
@@ -315,7 +315,8 @@ $(document).ready(function() {
 						<li><a href="LegomenonforUNKNOWNANCIENTS.html">Legomenon for UNKNOWN ANCIENTS</strong></a> <strong></li>
 					</ul></li>
 				</ul></li>
-					<li><a href="SCHOLIA.html">SCHOLIA</strong></a> (Annotations) 
+					<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="SCHOLIA"
+			href="#">SCHOLIA</strong></a> (Annotations) 
 					<ul>
 						<li>UNKNOWN PROVENANCE <strong>
 						<ul>
@@ -557,6 +558,12 @@ $(document).ready(function() {
 	function checkPage() {
 		let title = $("title").text().trim();
 		let catalog = $("#stream").children(".catalog.container").children(':contains("' + title + '")');
+
+		if (catalog.text() == '') {
+			catalog = $("#metastream").children(".catalog.container").children(':contains("' + title + '")');
+		}
+
+		// alert(catalog.text());
 
 		let selectLexia = catalog.filter(function () {
 			// alert(title + " | " + catalog.text().trim());

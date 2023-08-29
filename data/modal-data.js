@@ -457,175 +457,176 @@ const modalData = [
 			<p><a id="indescendingorder">Collected here</a>, <a href="indescendingorder.html">in descending order</a> of their primary referents, are Writings by the unknown Scholiast(s) whose annotations can be found throughout the Archives:</p>
 		</header>
 		
-		<div class="listing container">
+		<div class="catalog container">
 			<h3>UNKNOWN PROVENANCE</h3>
 			<p>The REMNANT</p>
-			<ul>
-				<li><a id="JonahatTarshish"></a><a id=""></a><a href="JonahatTarshish.html">Jonah at Tarshish</a></li>
-				<li><a id="heavilydamageddocument"></a><a href="heavilydamageddocument.html">heavily damaged document</a></li>
-				<li><a id="Writingsfromalleras"></a><a href="Writingsfromalleras.html">Writings from all eras</a></li>
-			</ul>
+
+				<p><a id="JonahatTarshish"></a><a id=""></a><a href="JonahatTarshish.html">Jonah at Tarshish</a></p>
+				<p><a id="heavilydamageddocument"></a><a href="heavilydamageddocument.html">heavily damaged document</a></p>
+				<p><a id="Writingsfromalleras"></a><a href="Writingsfromalleras.html">Writings from all eras</a></p>
+
 			<p>INSOMNIAC</p>
-			<ul>
-				<li><a id="unlessyoucansingdontinterruptthemusic"></a><a href="unlessyoucansingdontinterruptthemusic.html">unless you can sing, don't interrupt the music</a></li>
-				<li><a id="asthepoemsays"></a><a href="asthepoemsays.html">as the poem says</a></li>
-			</ul>
+
+				<p><a id="unlessyoucansingdontinterruptthemusic"></a><a href="unlessyoucansingdontinterruptthemusic.html">unless you can sing, don't interrupt the music</a></p>
+				<p><a id="asthepoemsays"></a><a href="asthepoemsays.html">as the poem says</a></p>
+
 			<p>ROMANTIC IMPULSE WRITINGS</p>
-			<ul>
-				<li><a id="tokillitthemselves"></a><a href="tokillitthemselves.html">to kill it themselves</a></li>
-				<li><a id="thegrandmother"></a><a href="thegrandmother.html">the grandmother</a></li>
-			</ul>
+
+				<p><a id="tokillitthemselves"></a><a href="tokillitthemselves.html">to kill it themselves</a></p>
+				<p><a id="thegrandmother"></a><a href="thegrandmother.html">the grandmother</a></p>
+
 			<p>OTHER WRITINGS of UNKNOWN PROVENANCE</p>
-			<ul>
-				<li><a id="theFraterhimself"></a><a href="theFraterhimself.html">the Frater himself</a></li>
-				<li><a id="notthesameassayingitcannotbecorrect"></a><a href="notthesameassayingitcannotbecorrect.html">not the same as saying it cannot be correct</a></li>
-				<li><a id="TheScholarisdead"></a><a href="TheScholarisdead.html">The Scholar is dead</a></li>
-				<li><a id="theirlessonsandtheirpractices"></a><a href="theirlessonsandtheirpractices.html">their lessons and their practices</a></li>
-			</ul>
+
+				<p><a id="theFraterhimself"></a><a href="theFraterhimself.html">the Frater himself</a></p>
+				<p><a id="notthesameassayingitcannotbecorrect"></a><a href="notthesameassayingitcannotbecorrect.html">not the same as saying it cannot be correct</a></p>
+				<p><a id="TheScholarisdead"></a><a href="TheScholarisdead.html">The Scholar is dead</a></p>
+				<p><a id="theirlessonsandtheirpractices"></a><a href="theirlessonsandtheirpractices.html">their lessons and their practices</a></p>
+
 			<h3>Age of the SCHOLAR</h3>
 			<p>VOICE FROM THE LOCUST GROVE</p>
-			<ul>
-				<li><a id="ManintheMoon"></a><a href="ManintheMoon.html">Man in the Moon</a></li>
-				<li><a id="noaccountofmytravels"></a><a href="noaccountofmytravels.html">no account of my travels</a></li>
-				<li><a id="RaggedyMan"></a><a href="RaggedyMan.html">Raggedy Man</a></li>
-				<li><a id="neglecthasawayofpreservingthings"></a><a href="neglecthasawayofpreservingthings.html">neglect has a way of preserving things</a></li>
-				<li><a id="theprimaryTextsinmyScholarsarchives"></a><a href="theprimaryTextsinmyScholarsarchives.html">the primaryTexts in myScholar's archives</a></li>
-				<li><a id="onceuponatime"></a><a href="onceuponatime.html">onceuponatime</a></li>
-				<li><a id="whathewasbeingputthrough"></a><a href="whathewasbeingputthrough.html">what he was being put through</a></li>
-				<li><a id="departinpeaceandquietness"></a><a href="departinpeaceandquietness.html">depart in peace and quietness</a></li>
-				<li><a id="alargerstoryembracingall"></a><a href="alargerstoryembracingall.html">a larger story embracing all</a></li>
-				<li><a id="aconnectionbetweentwoormoreauthors"></a><a href="aconnectionbetweentwoormoreauthors.html">a connection between two or more authors</a></li>
-			</ul>
+
+				<p><a id="ManintheMoon"></a><a href="ManintheMoon.html">Man in the Moon</a></p>
+				<p><a id="noaccountofmytravels"></a><a href="noaccountofmytravels.html">no account of my travels</a></p>
+				<p><a id="RaggedyMan"></a><a href="RaggedyMan.html">Raggedy Man</a></p>
+				<p><a id="neglecthasawayofpreservingthings"></a><a href="neglecthasawayofpreservingthings.html">neglect has a way of preserving things</a></p>
+				<p><a id="theprimaryTextsinmyScholarsarchives"></a><a href="theprimaryTextsinmyScholarsarchives.html">the primaryTexts in myScholar's archives</a></p>
+				<p><a id="onceuponatime"></a><a href="onceuponatime.html">onceuponatime</a></p>
+				<p><a id="whathewasbeingputthrough"></a><a href="whathewasbeingputthrough.html">what he was being put through</a></p>
+				<p><a id="departinpeaceandquietness"></a><a href="departinpeaceandquietness.html">depart in peace and quietness</a></p>
+				<p><a id="alargerstoryembracingall"></a><a href="alargerstoryembracingall.html">a larger story embracing all</a></p>
+				<p><a id="aconnectionbetweentwoormoreauthors"></a><a href="aconnectionbetweentwoormoreauthors.html">a connection between two or more authors</a></p>
+
 			<p>SCHOLAR</p>
-			<ul>
-				<li><a id="asourceIcannotname"></a><a href="asourceIcannotname.html">a source I cannot name</a></li>
-				<li><a id="rearrangeexistingevidence"></a><a href="rearrangeexistingevidence.html">rearrange existing evidence</a></li>
-				<li><a id="IthinkIknowwheretolook"></a><a href="IthinkIknowwheretolook.html">I think I know where to look</a></li>
-				<li><a id="Thedocumentpurportstobe"></a><a href="Thedocumentpurportstobe.html">The document purports to be</a></li>
-				<li><a id="albatross"></a><a href="albatross.html">albatross</a></li>
-				<li><a id="drivenintothewilderness"></a><a href="drivenintothewilderness.html">driven into the wilderness</a></li>
-				<li><a id="overinsistent"></a><a href="overinsistent.html">overinsistent</a></li>
-				<li><a id="Threepossibilities"></a><a href="Threepossibilities.html">Three possibilities</a></li>
-				<li><a id="anyfinalthoughts"></a><a href="anyfinalthoughts.html">any final thoughts</a></li>
-				<li><a id="melancholycontemplation"></a><a href="melancholycontemplation.html">melancholy contemplation</a></li>
-				<li><a id="interestingpossibilities"></a><a href="interestingpossibilities.html">interesting possibilities</a></li>
-				<li><a id="discoveredthearchives"></a><a href="discoveredthearchives.html">discovered the archives</a></li>
-				<li><a id="howthatcametopass"></a><a href="howthatcametopass.html">how that came to pass</a></li>
-			</ul>
+
+				<p><a id="asourceIcannotname"></a><a href="asourceIcannotname.html">a source I cannot name</a></p>
+				<p><a id="rearrangeexistingevidence"></a><a href="rearrangeexistingevidence.html">rearrange existing evidence</a></p>
+				<p><a id="IthinkIknowwheretolook"></a><a href="IthinkIknowwheretolook.html">I think I know where to look</a></p>
+				<p><a id="Thedocumentpurportstobe"></a><a href="Thedocumentpurportstobe.html">The document purports to be</a></p>
+				<p><a id="albatross"></a><a href="albatross.html">albatross</a></p>
+				<p><a id="drivenintothewilderness"></a><a href="drivenintothewilderness.html">driven into the wilderness</a></p>
+				<p><a id="overinsistent"></a><a href="overinsistent.html">overinsistent</a></p>
+				<p><a id="Threepossibilities"></a><a href="Threepossibilities.html">Three possibilities</a></p>
+				<p><a id="anyfinalthoughts"></a><a href="anyfinalthoughts.html">any final thoughts</a></p>
+				<p><a id="melancholycontemplation"></a><a href="melancholycontemplation.html">melancholy contemplation</a></p>
+				<p><a id="interestingpossibilities"></a><a href="interestingpossibilities.html">interesting possibilities</a></p>
+				<p><a id="discoveredthearchives"></a><a href="discoveredthearchives.html">discovered the archives</a></p>
+				<p><a id="howthatcametopass"></a><a href="howthatcametopass.html">how that came to pass</a></p>
+
 			<h3>Age of EGDERUS</h3>
 			<p>EGDERUS</p>
-			<ul>
-				<li><a id="ButRobencheseemedtofear"></a><a href="ButRobencheseemedtofear.html">But Robenc he seemed to fear</a></li>
-				<li><a id="ItookmyleaveofMountainHouse"></a><a href="ItookmyleaveofMountainHouse.html">I took my leave of Mountain House</a></li>
-				<li><a id="Hadhecommittedacrime"></a><a href="Hadhecommittedacrime.html">Had he committed a crime?</a></li>
-				<li><a id="IdidnotknowwhyIthoughtthat"></a><a href="IdidnotknowwhyIthoughtthat.html">I did not know why I thought that</a></li>
-				<li><a id="nowherewasitwrittendown"></a><a href="nowherewasitwrittendown.html">nowhere was it written down</a></li>
-				<li><a id="noexampleofthisscriptorsshorthandhasbeenfound"></a><a href="noexampleofthisscriptorsshorthandhasbeenfound.html">no example of this scriptor's shorthand has been found</a></li>
-				<li><a id="myownunderstandingoforthodoxy"></a><a href="myownunderstandingoforthodoxy.html">my own understanding of orthodoxy</a></li>
-				<li><a id="ThereasonsforhisremovalfromtheOffice"></a><a href="ThereasonsforhisremovalfromtheOffice.html">The reasons for his removal from the Office</a></li>
-				<li><a id="nofurtherinformationhassurvived"></a><a href="nofurtherinformationhassurvived.html">no further information... has survived</a></li>
-				<li><a id="itneveroccurredtome"></a><a href="itneveroccurredtome.html">it never occurred to me</a></li>
-				<li><a id="knownonlyastheHistorian"></a><a href="knownonlyastheHistorian.html">known only as the Historian</a></li>
-				<li><a id="helimped"></a><a href="helimped.html">he limped</a></li>
-				<li><a id="Iwascalledbacktomylordsservice"></a><a href="Iwascalledbacktomylordsservice.html">I was called back to my lord's service</a></li>
-				<li><a id="somedamagingdocuments"></a><a href="somedamagingdocuments.html">some damaging documents</a></li>
-				<li><a id="Wemustbeabletoprove"></a><a href="Wemustbeabletoprove.html">we must be able to prove</a></li>
-				<li><a id="somethingtoldme"></a><a href="somethingtoldme.html">something told me</a></li>
-				<li><a id="lacuna"></a><a href="lacuna.html">[lacuna]</a></li>
-				<li><a id="writingpoemsonthetrunksoftreesandthesidesofmountains"></a><a href="writingpoemsonthetrunksoftreesandthesidesofmountains.html">writing poems on the trunks of trees and the sides of mountains</a></li>
-				<li><a id="aneventualitywemaywellhavetoface"></a><a href="aneventualitywemaywellhavetoface.html">an eventuality we may well have to face</a></li>
-				<li><a id="lacunaquery"></a><a href="lacunaquery.html">lacuna?</a></li>
-				<li><a id="puttingthisincidenttogether"></a><a href="puttingthisincidenttogether.html">putting this incident together</a></li>
-				<li><a id="BythetimetheGoodDoctortookover"></a><a href="BythetimetheGoodDoctortookover.html">By the time the Good Doctor took over</a></li>
-				<li><a id="Ofmyownconvictions"></a><a href="Ofmyownconvictions.html">Of my own convictions</a></li>
-				<li><a id="TheGoodDoctorhimselfdisappeared"></a><a href="TheGoodDoctorhimselfdisappeared.html">The Good Doctor himself disappeared</a></li>
-				<li><a id="childrenoftheAncients"></a><a href="childrenoftheAncients.html">children of the Ancients</a></li>
-				<li><a id="theRemnantsancestry"></a><a href="theRemnantsancestry.html">the Remnant's ancestry</a></li>
-				<li><a id="theannalsoftheGolias"></a><a href="theannalsoftheGolias.html">the annals of the Golias</a></li>
-				<li><a id="Iopenmyarmstoitscoldembrace"></a><a href="Iopenmyarmstoitscoldembrace.html">I open my arms to its cold embrace</a></li>
-				<li><a id="Iamviolatingmyoath"></a><a href="Iamviolatingmyoath.html">I am violating my oath</a></li>
-				<li><a id="myearlyadventuresinleadership"></a><a href="myearlyadventuresinleadership.html">my early adventures in leadership</a></li>
-				<li><a id="avolumemadebystitchingtogether"></a><a href="avolumemadebystitchingtogether.html">a volume made by stitching together</a></li>
-				<li><a id="acellarbeneaththeentryway"></a><a href="acellarbeneaththeentryway.html">a cellar beneath the entryway</a></li>
-				<li><a id="Ipreparedaninventory"></a><a href="Ipreparedaninventory.html">I prepared an inventory</a></li>
-				<li><a id="theTreasureoftheAncients"></a><a href="theTreasureoftheAncients.html">the Treasure of the Ancients</a></li>
-			</ul>
+
+				<p><a id="ButRobencheseemedtofear"></a><a href="ButRobencheseemedtofear.html">But Robenc he seemed to fear</a></p>
+				<p><a id="ItookmyleaveofMountainHouse"></a><a href="ItookmyleaveofMountainHouse.html">I took my leave of Mountain House</a></p>
+				<p><a id="Hadhecommittedacrime"></a><a href="Hadhecommittedacrime.html">Had he committed a crime?</a></p>
+				<p><a id="IdidnotknowwhyIthoughtthat"></a><a href="IdidnotknowwhyIthoughtthat.html">I did not know why I thought that</a></p>
+				<p><a id="nowherewasitwrittendown"></a><a href="nowherewasitwrittendown.html">nowhere was it written down</a></p>
+				<p><a id="noexampleofthisscriptorsshorthandhasbeenfound"></a><a href="noexampleofthisscriptorsshorthandhasbeenfound.html">no example of this scriptor's shorthand has been found</a></p>
+				<p><a id="myownunderstandingoforthodoxy"></a><a href="myownunderstandingoforthodoxy.html">my own understanding of orthodoxy</a></p>
+				<p><a id="ThereasonsforhisremovalfromtheOffice"></a><a href="ThereasonsforhisremovalfromtheOffice.html">The reasons for his removal from the Office</a></p>
+				<p><a id="nofurtherinformationhassurvived"></a><a href="nofurtherinformationhassurvived.html">no further information... has survived</a></p>
+				<p><a id="itneveroccurredtome"></a><a href="itneveroccurredtome.html">it never occurred to me</a></p>
+				<p><a id="knownonlyastheHistorian"></a><a href="knownonlyastheHistorian.html">known only as the Historian</a></p>
+				<p><a id="helimped"></a><a href="helimped.html">he limped</a></p>
+				<p><a id="Iwascalledbacktomylordsservice"></a><a href="Iwascalledbacktomylordsservice.html">I was called back to my lord's service</a></p>
+				<p><a id="somedamagingdocuments"></a><a href="somedamagingdocuments.html">some damaging documents</a></p>
+				<p><a id="Wemustbeabletoprove"></a><a href="Wemustbeabletoprove.html">we must be able to prove</a></p>
+				<p><a id="somethingtoldme"></a><a href="somethingtoldme.html">something told me</a></p>
+				<p><a id="lacuna"></a><a href="lacuna.html">[lacuna]</a></p>
+				<p><a id="writingpoemsonthetrunksoftreesandthesidesofmountains"></a><a href="writingpoemsonthetrunksoftreesandthesidesofmountains.html">writing poems on the trunks of trees and the sides of mountains</a></p>
+				<p><a id="aneventualitywemaywellhavetoface"></a><a href="aneventualitywemaywellhavetoface.html">an eventuality we may well have to face</a></p>
+				<p><a id="lacunaquery"></a><a href="lacunaquery.html">lacuna?</a></p>
+				<p><a id="puttingthisincidenttogether"></a><a href="puttingthisincidenttogether.html">putting this incident together</a></p>
+				<p><a id="BythetimetheGoodDoctortookover"></a><a href="BythetimetheGoodDoctortookover.html">By the time the Good Doctor took over</a></p>
+				<p><a id="Ofmyownconvictions"></a><a href="Ofmyownconvictions.html">Of my own convictions</a></p>
+				<p><a id="TheGoodDoctorhimselfdisappeared"></a><a href="TheGoodDoctorhimselfdisappeared.html">The Good Doctor himself disappeared</a></p>
+				<p><a id="childrenoftheAncients"></a><a href="childrenoftheAncients.html">children of the Ancients</a></p>
+				<p><a id="theRemnantsancestry"></a><a href="theRemnantsancestry.html">the Remnant's ancestry</a></p>
+				<p><a id="theannalsoftheGolias"></a><a href="theannalsoftheGolias.html">the annals of the Golias</a></p>
+				<p><a id="Iopenmyarmstoitscoldembrace"></a><a href="Iopenmyarmstoitscoldembrace.html">I open my arms to its cold embrace</a></p>
+				<p><a id="Iamviolatingmyoath"></a><a href="Iamviolatingmyoath.html">I am violating my oath</a></p>
+				<p><a id="myearlyadventuresinleadership"></a><a href="myearlyadventuresinleadership.html">my early adventures in leadership</a></p>
+				<p><a id="avolumemadebystitchingtogether"></a><a href="avolumemadebystitchingtogether.html">a volume made by stitching together</a></p>
+				<p><a id="acellarbeneaththeentryway"></a><a href="acellarbeneaththeentryway.html">a cellar beneath the entryway</a></p>
+				<p><a id="Ipreparedaninventory"></a><a href="Ipreparedaninventory.html">I prepared an inventory</a></p>
+				<p><a id="theTreasureoftheAncients"></a><a href="theTreasureoftheAncients.html">the Treasure of the Ancients</a></p>
+
 			<p>[THE] M[ISSIONARY]</p>
-			<ul>
-				<li><a id="struckdowntheban"></a><a href="struckdowntheban.html">struck down the ban</a></li>
-				<li><a id="rippedupfromanoldpath"></a><a href="rippedupfromanoldpath.html">ripped up from an old path</a></li>
-				<li><a id="onemorevision"></a><a href="onemorevision.html">one more vision</a></li>
-				<li><a id="cannotescapeit"></a><a href="cannotescapeit.html">cannot escape it</a></li>
-				<li><a id="ThecharnelgroundoftheWorld"></a><a href="ThecharnelgroundoftheWorld.html">The charnel ground of the World</a></li>
-			</ul>
+
+				<p><a id="struckdowntheban"></a><a href="struckdowntheban.html">struck down the ban</a></p>
+				<p><a id="rippedupfromanoldpath"></a><a href="rippedupfromanoldpath.html">ripped up from an old path</a></p>
+				<p><a id="onemorevision"></a><a href="onemorevision.html">one more vision</a></p>
+				<p><a id="cannotescapeit"></a><a href="cannotescapeit.html">cannot escape it</a></p>
+				<p><a id="ThecharnelgroundoftheWorld"></a><a href="ThecharnelgroundoftheWorld.html">The charnel ground of the World</a></p>
+
 			<p>BONE-SNAPPER </p>
-			<ul>
-				<li><a id="ridiculoushappenstance"></a><a href="ridiculoushappenstance.html">ridiculous happenstance</a></li>
-			</ul>
+
+				<p><a id="ridiculoushappenstance"></a><a href="ridiculoushappenstance.html">ridiculous happenstance</a></p>
+
 			<p>ARIC</p>
-			<ul>
-				<li><a id="centurion"></a><a href="centurion.html">centurion</a></li>
-				<li><a id="Istilldonotknowwhathappenedtohim"></a><a href="Istilldonotknowwhathappenedtohim.html">I still do not know what happened to him</a></li>
-			</ul>
+
+				<p><a id="centurion"></a><a href="centurion.html">centurion</a></p>
+				<p><a id="Istilldonotknowwhathappenedtohim"></a><a href="Istilldonotknowwhathappenedtohim.html">I still do not know what happened to him</a></p>
+
 			<p>HISTORIAN </p>
-			<ul>
-				<li><a id="Asahistorian"></a><a href="Asahistorian.html">As a historian</a></li>
-				<li><a id="Imaynotbethefirstwayfarer"></a><a href="Imaynotbethefirstwayfarer.html">I may not be the first wayfarer</a></li>
-				<li><a id="atleastonepage"></a><a href="atleastonepage.html">at least one page</a></li>
-				<li><a id="pyrrhonism"></a><a href="pyrrhonism.html">pyrrhonism</a></li>
-				<li><a id="Theoldsong"></a><a href="Theoldsong.html">The old song</a></li>
-			</ul>
+
+				<p><a id="Asahistorian"></a><a href="Asahistorian.html">As a historian</a></p>
+				<p><a id="Imaynotbethefirstwayfarer"></a><a href="Imaynotbethefirstwayfarer.html">I may not be the first wayfarer</a></p>
+				<p><a id="atleastonepage"></a><a href="atleastonepage.html">at least one page</a></p>
+				<p><a id="pyrrhonism"></a><a href="pyrrhonism.html">pyrrhonism</a></p>
+				<p><a id="Theoldsong"></a><a href="Theoldsong.html">The old song</a></p>
+
 			<p>OLD POET</p>
-			<ul>
-				<li><a id="asmallpyramidofsharperstones"></a><a href="asmallpyramidofsharperstones.html">a small pyramid of sharper stones</a></li>
-			</ul>
+
+				<p><a id="asmallpyramidofsharperstones"></a><a href="asmallpyramidofsharperstones.html">a small pyramid of sharper stones</a></p>
+
 			<p>The ANCIENTS</p>
 			<p>BOY</p>
-			<ul>
-				<li><a id="Differentnowofcourse"></a><a href="Differentnowofcourse.html">Different now, of course.</a></li>
-			</ul>
+
+				<p><a id="Differentnowofcourse"></a><a href="Differentnowofcourse.html">Different now, of course.</a></p>
+
 			<p>LAST ONE</p>
-			<ul>
-				<li><a id="insert"></a><a href="insert.html">[insert] >></a></li>
-				<li><a id="psalmists"></a><a href="psalmists.html">psalmists</a></li>
-				<li><a id="theoriesarealltexts"></a><a href="theoriesarealltexts.html">theories are all texts</a></li>
-				<li><a id="memorizethestringofwords"></a><a href="memorizethestringofwords.html">memorize the string of words</a></li>
-				<li><a id="slideshows"></a><a href="slideshows.html">slideshows</a></li>
-				<li><a id="thedwellingplaceoftheghosts"></a><a href="thedwellingplaceoftheghosts.html">the dwelling place of the ghosts</a></li>
-			<li><a id="onestrangesceneafteranother"></a><a href="onestrangesceneafteranother.html">one strange scene after another</a></li>
-				<li><a id="WhoamI"></a><a href="WhoamI.html">Who am I?</a></li>
-				<li><a id="ourWorld"></a><a href="ourWorld.html">ourWorld</a></li>
-				<li><a id="thatfoolishboy"></a><a href="thatfoolishboy.html">that foolish boy</a></li>
-				<li><a id="Onimpatienceandtheenemy"></a><a href="Onimpatienceandtheenemy.html">On impatience and the enemy</a></li></ul>
+
+				<p><a id="insert"></a><a href="insert.html">[insert] >></a></p>
+				<p><a id="psalmists"></a><a href="psalmists.html">psalmists</a></p>
+				<p><a id="theoriesarealltexts"></a><a href="theoriesarealltexts.html">theories are all texts</a></p>
+				<p><a id="memorizethestringofwords"></a><a href="memorizethestringofwords.html">memorize the string of words</a></p>
+				<p><a id="slideshows"></a><a href="slideshows.html">slideshows</a></p>
+				<p><a id="thedwellingplaceoftheghosts"></a><a href="thedwellingplaceoftheghosts.html">the dwelling place of the ghosts</a></p>
+				<p><a id="onestrangesceneafteranother"></a><a href="onestrangesceneafteranother.html">one strange scene after another</a></p>
+				<p><a id="WhoamI"></a><a href="WhoamI.html">Who am I?</a></p>
+				<p><a id="ourWorld"></a><a href="ourWorld.html">ourWorld</a></p>
+				<p><a id="thatfoolishboy"></a><a href="thatfoolishboy.html">that foolish boy</a></p>
+				<p><a id="Onimpatienceandtheenemy"></a><a href="Onimpatienceandtheenemy.html">On impatience and the enemy</a></p>
+
 			<p>UNKNOWN ANCIENTS</p>
-			<ul>
-				<li><a id="Leviticus"></a><a href="Leviticus.html">Leviticus</a>  </li>
-				<li><a id="Job"></a><a href="Job.html">Job</a></li>
-				<li><a id="Baruch"></a><a href="Baruch.html">Baruch</a></li>
-				<li><a id="theexpletivetwitslarynx"></a><a href="theexpletivetwitslarynx.html">the [expletive] twit's larynx</a></li>
-				<li><a id="thefullretailprice"></a><a href="thefullretailprice.html">the full retail price</a></li>
-				<li><a id="holdingaparliamentlikeintheoldstory"></a><a href="holdingaparliamentlikeintheoldstory.html">holding a parliament, like in the old story</a></li>
-			</ul>
+
+				<p><a id="Leviticus"></a><a href="Leviticus.html">Leviticus</a>  </p>
+				<p><a id="Job"></a><a href="Job.html">Job</a></p>
+				<p><a id="Baruch"></a><a href="Baruch.html">Baruch</a></p>
+				<p><a id="theexpletivetwitslarynx"></a><a href="theexpletivetwitslarynx.html">the [expletive] twit's larynx</a></p>
+				<p><a id="thefullretailprice"></a><a href="thefullretailprice.html">the full retail price</a></p>
+				<p><a id="holdingaparliamentlikeintheoldstory"></a><a href="holdingaparliamentlikeintheoldstory.html">holding a parliament, like in the old story</a></p>
+
 			<p>APPARATI</p>
-			<ul>
-				<li><a id="heretoforeunpublished"></a><a href="heretoforeunpublished.html">heretofore unpublished</a></li>
-				<li><a id="boldfacetype"></a><a href="boldfacetype.html">boldface type</a></li>
-				<li><a id="movingthetextitself"></a><a href="movingthetextitself.html">moving the text itself</a></li>
-				<li><a id="TheLANDING"></a><a href="TheLANDING.html">The LANDING</a></li>
-				<li><a id="definitivelyplacedintime"></a><a href="definitivelyplacedintime.html">definitively placed in time</a></li>
-				<li><a id="theothertimeBands"></a><a href="theothertimeBands.html">the other timeBands</a></li>
-				<li><a id="apotentiallyedifyingpatterninwhichtoreadthem"></a><a href="apotentiallyedifyingpatterninwhichtoreadthem.html">a potentially edifying pattern in which to read them</a></li>
-				<li><a id="theotherwandererswhoseWritingsappearintheArchives"></a><a href="theotherwandererswhoseWritingsappearintheArchives.html">the other wanderers whose Writings appear in the Archives</a></li>
-				<li><a id="thelastbutoneoftheAncients"></a><a href="thelastbutoneoftheAncients.html">the last but one of the Ancients</a></li>
-				<li><a id="alongerallegoricalwork"></a><a href="alongerallegoricalwork.html">a longer allegorical work</a></li>
-				<li><a id="amongthemiscellaneaofunplaceableartifacts"></a><a href="amongthemiscellaneaofunplaceableartifacts.html">among the miscellanea of unplaceable artifacts</a></li>
-				<li><a id="SermonsofEgderus"></a><a href="SermonsofEgderus.html">Sermons of Egderus</a></li>
-				<li><a id="inthesecondclause"></a><a href="inthesecondclause.html">in the second clause</a></li>
-				<li><a id="collapseofthecivilizationoftheAncients"></a><a href="collapseofthecivilizationoftheAncients.html">collapse of the civilization of the Ancients</a></li>
-				<li><a id="thelastoriginalWritings"></a><a href="thelastoriginalWritings.html">the last 'original' Writings</a></li>
-				<li><a id="elucidations"></a><a href="elucidations.html">elucidations</a></li>
-				<li><a id="indescendingorder"></a><a href="indescendingorder.html">in descending order</a> </li>
-			</ul>
+
+				<p><a id="heretoforeunpublished"></a><a href="heretoforeunpublished.html">heretofore unpublished</a></p>
+				<p><a id="boldfacetype"></a><a href="boldfacetype.html">boldface type</a></p>
+				<p><a id="movingthetextitself"></a><a href="movingthetextitself.html">moving the text itself</a></p>
+				<p><a id="TheLANDING"></a><a href="TheLANDING.html">The LANDING</a></p>
+				<p><a id="definitivelyplacedintime"></a><a href="definitivelyplacedintime.html">definitively placed in time</a></p>
+				<p><a id="theothertimeBands"></a><a href="theothertimeBands.html">the other timeBands</a></p>
+				<p><a id="apotentiallyedifyingpatterninwhichtoreadthem"></a><a href="apotentiallyedifyingpatterninwhichtoreadthem.html">a potentially edifying pattern in which to read them</a></p>
+				<p><a id="theotherwandererswhoseWritingsappearintheArchives"></a><a href="theotherwandererswhoseWritingsappearintheArchives.html">the other wanderers whose Writings appear in the Archives</a></p>
+				<p><a id="thelastbutoneoftheAncients"></a><a href="thelastbutoneoftheAncients.html">the last but one of the Ancients</a></p>
+				<p><a id="alongerallegoricalwork"></a><a href="alongerallegoricalwork.html">a longer allegorical work</a></p>
+				<p><a id="amongthemiscellaneaofunplaceableartifacts"></a><a href="amongthemiscellaneaofunplaceableartifacts.html">among the miscellanea of unplaceable artifacts</a></p>
+				<p><a id="SermonsofEgderus"></a><a href="SermonsofEgderus.html">Sermons of Egderus</a></p>
+				<p><a id="inthesecondclause"></a><a href="inthesecondclause.html">in the second clause</a></p>
+				<p><a id="collapseofthecivilizationoftheAncients"></a><a href="collapseofthecivilizationoftheAncients.html">collapse of the civilization of the Ancients</a></p>
+				<p><a id="thelastoriginalWritings"></a><a href="thelastoriginalWritings.html">the last 'original' Writings</a></p>
+				<p><a id="elucidations"></a><a href="elucidations.html">elucidations</a></p>
+				<p><a id="indescendingorder"></a><a href="indescendingorder.html">in descending order</a> </p>
+
 		</div>
 		<!-- end of "listing container" div -->`
 	],
