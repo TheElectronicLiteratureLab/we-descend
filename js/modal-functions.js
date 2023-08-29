@@ -255,7 +255,7 @@ $(document).ready(function() {
 					<li><a href="deities.html">deities</a></li>
 			</ul>
 			</li>
-				<li><a href="UNKNOWNANCIENTS.html">UNKNOWN ANCIENTS</a> 
+				<li><a href="Stormsandhaze.html#UNKNOWN ANCIENTS">UNKNOWN ANCIENTS</a> 
 				<ul>
 					<li><a href="Stormsandhaze.html">Storms and haze</a></li>
 					<li><a href="Catastrophe.html">Catastrophe</a></li>
