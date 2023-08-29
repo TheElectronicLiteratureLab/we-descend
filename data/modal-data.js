@@ -298,7 +298,7 @@ const modalData = [
 		</div>
 		<!-- end of "catalog" div -->`
 	],
-	[`LEGOMENA (Elucidations)`,
+	[`LEGOMENA`,
 		`<header>			
 			<h2 class="notaName">
 				<a id="LEGOMENA">LEGOMENA</a>
@@ -306,40 +306,40 @@ const modalData = [
 			<p>Elucidations pertaining to <a id="indescendingorder">the work of every Author</a>, <a href="indescendingorder.html#note">in descending order</a></p>
 		</header>
 
-		<div class="listing container">
+		<div class="catalog container">
 			<h3><a id="LegomenonforUNKNOWNPROVENANCE"></a><a href="LegomenonforUNKNOWNPROVENANCE.html">Legomenon for UNKNOWN PROVENANCE</a></h3>
-				<ul>
-					<li><a id="LegomenonfortheREMNANT"></a><a href="LegomenonfortheRemnant.html">Legomenon for the REMNANT</a></li>
-					<li><a id="LegomenonforINSOMNIAC"></a><a href="LegomenonforINSOMNIAC.html">Legomenon for INSOMNIAC</a></li>
-					<li><a id="LegomenonforROMANTICIMPULSEWRITINGS"></a><a href="LegomenonforROMANTICIMPULSEWRITINGS.html">Legomenon for ROMANTIC IMPULSE WRITINGS</a></li>
-					<li><a id="LegomenonforOTHERWRITINGSofUNKNOWNPROVENANCE"></a><a href="LegomenonforOTHERWRITINGSofUNKNOWNPROVENANCE.html">Legomenon for OTHER WRITINGS of UNKNOWN PROVENANCE</a></li>
-					</ul>
+
+					<p><a id="LegomenonfortheREMNANT"></a><a href="LegomenonfortheRemnant.html">Legomenon for The REMNANT</a></p>
+					<p><a id="LegomenonforINSOMNIAC"></a><a href="LegomenonforINSOMNIAC.html">Legomenon for INSOMNIAC</a></p>
+					<p><a id="LegomenonforROMANTICIMPULSEWRITINGS"></a><a href="LegomenonforROMANTICIMPULSEWRITINGS.html">Legomenon for ROMANTIC IMPULSE WRITINGS</a></p>
+					<p><a id="LegomenonforOTHERWRITINGSofUNKNOWNPROVENANCE"></a><a href="LegomenonforOTHERWRITINGSofUNKNOWNPROVENANCE.html">Legomenon for OTHER WRITINGS of UNKNOWN PROVENANCE</a></p>
+
 			<h3><a id="LegomenonforAGEoftheSCHOLAR"></a><a href="LegomenonforAGEoftheSCHOLAR.html">Legomenon for AGE of the SCHOLAR</a></h3>
-				<ul>
-					<li><a id="LegomenonforSOLDIER"></a><a href="LegomenonforSOLDIER.html">Legomenon for SOLDIER</a></li>
-					<li><a id="LegomenonforEXILE"></a><a href="LegomenonforEXILE.html">Legomenon for EXILE</a></li>
-					<li><a id="LegomenonforUNKNOWNSCHOLASTIC"></a><a href="LegomenonforUNKNOWNSCHOLASTIC.html">Legomenon for UNKNOWN SCHOLASTIC</a></li>
-					<li><a id="LegomenonforVOICEfromtheLOCUSTGROVE"></a><a href="LegomenonforVOICEfromtheLOCUSTGROVE.html">Legomenon for VOICE from the LOCUST GROVE</a></li>
-					<li><a id="LegomenonforUNKNOWNCURATOR"></a><a href="LegomenonforUNKNOWNCURATOR.html">Legomenon for UNKNOWN CURATOR</a></li>
-					<li><a id="LegomenonforSCHOLAR"></a><a href="LegomenonforSCHOLAR.html">Legomenon for SCHOLAR</a></li>
-				</ul>
+
+					<p><a id="LegomenonforSOLDIER"></a><a href="LegomenonforSOLDIER.html">Legomenon for SOLDIER</a></p>
+					<p><a id="LegomenonforEXILE"></a><a href="LegomenonforEXILE.html">Legomenon for EXILE</a></p>
+					<p><a id="LegomenonforUNKNOWNSCHOLASTIC"></a><a href="LegomenonforUNKNOWNSCHOLASTIC.html">Legomenon for UNKNOWN SCHOLASTIC</a></p>
+					<p><a id="LegomenonforVOICEfromtheLOCUSTGROVE"></a><a href="LegomenonforVOICEfromtheLOCUSTGROVE.html">Legomenon for VOICE from the LOCUST GROVE</a></p>
+					<p><a id="LegomenonforUNKNOWNCURATOR"></a><a href="LegomenonforUNKNOWNCURATOR.html">Legomenon for UNKNOWN CURATOR</a></p>
+					<p><a id="LegomenonforSCHOLAR"></a><a href="LegomenonforSCHOLAR.html">Legomenon for SCHOLAR</a></p>
+
 			<h3><a id="LegomenonforAGEofEGDERUS"></a><a href="LegomenonforAGEofEGDERUS.html">Legomenon for AGE of EGDERUS</a></h3>
-				<ul>
-					<li><a id="LegomenonforINSURGENT"></a><a href="LegomenonforINSURGENT.html">Legomenon for INSURGENT</a></li>
-					<li><a id="LegomenonforEGDERUS"></a><a href="LegomenonforEGDERUS.html">Legomenon for EGDERUS</a></li>
-					<li><a id="LegomenonforMISSIONARY"></a><a href="LegomenonforMISSIONARY.html">Legomenon for The MISSIONARY</a></li>
-					<li><a id="LegomenonforARIC"></a><a href="LegomenonforARIC.html">Legomenon for ARIC</a></li>
-					<li><a id="LegomenonforBONE-SNAPPER"></a><a href="LegomenonforBONE-SNAPPER.html">Legomenon for BONE-SNAPPER</a></li>
-					<li><a id="LegomenonforHISTORIAN"></a><a href="LegomenonforHISTORIAN.html">Legomenon for HISTORIAN</a></li>
-					<li><a id="LegomenonforSUPERIUSFRATER"></a><a href="LegomenonforSUPERIUSFRATER.html">Legomenon for SUPERIUS FRATER</a></li>
-					<li><a id="LegomenonforOLDPOET"></a><a href="LegomenonforOLDPOET.html">Legomenon for OLD POET</a></li>
-				</ul>
+
+					<p><a id="LegomenonforINSURGENT"></a><a href="LegomenonforINSURGENT.html">Legomenon for INSURGENT</a></p>
+					<p><a id="LegomenonforEGDERUS"></a><a href="LegomenonforEGDERUS.html">Legomenon for EGDERUS</a></p>
+					<p><a id="LegomenonforMISSIONARY"></a><a href="LegomenonforTheMISSIONARY.html">Legomenon for The MISSIONARY</a></p>
+					<p><a id="LegomenonforARIC"></a><a href="LegomenonforARIC.html">Legomenon for ARIC</a></p>
+					<p><a id="LegomenonforBONE-SNAPPER"></a><a href="LegomenonforBONE-SNAPPER.html">Legomenon for BONE-SNAPPER</a></p>
+					<p><a id="LegomenonforHISTORIAN"></a><a href="LegomenonforHISTORIAN.html">Legomenon for HISTORIAN</a></p>
+					<p><a id="LegomenonforSUPERIUSFRATER"></a><a href="LegomenonforSUPERIUSFRATER.html">Legomenon for SUPERIUS FRATER</a></p>
+					<p><a id="LegomenonforOLDPOET"></a><a href="LegomenonforOLDPOET.html">Legomenon for OLD POET</a></p>
+
 			<h3><a id="LegomenonfortheANCIENTS"></a><a href="LegomenonfortheANCIENTS.html">Legomenon for the ANCIENTS</a></h3>
-				<ul>
-					<li><a id="LegomenonforBOY"></a><a href="LegomenonforBOY.html">Legomenon for BOY</a></li>
-					<li><a id="LegomenonforLASTONE"></a><a href="LegomenonforLASTONE.html">Legomenon for LAST ONE</a></li>
-					<li><a id="LegomenonforUNKNOWNANCIENTS"></a><a href="LegomenonforUNKNOWNANCIENTS.html">Legomenon for UNKNOWN ANCIENTS</a></li>
-				</ul>
+
+					<p><a id="LegomenonforBOY"></a><a href="LegomenonforBOY.html">Legomenon for BOY</a></p>
+					<p><a id="LegomenonforLASTONE"></a><a href="LegomenonforLASTONE.html">Legomenon for LAST ONE</a></p>
+					<p><a id="LegomenonforUNKNOWNANCIENTS"></a><a href="LegomenonforUNKNOWNANCIENTS.html">Legomenon for UNKNOWN ANCIENTS</a></p>
+
 		</div>
 		<!-- end of "listing container" div -->`
 	],
