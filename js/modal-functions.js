@@ -23,30 +23,30 @@ $(document).ready(function() {
 		
 		<div class="catalog container">
 			<!--<p><a id="UNKNOWNPROVENANCE"></a><strong>===<a href="UNKNOWNPROVENANCE.html">UNKNOWN PROVENANCE</a>===</p>-->
-			<p><a id="TheREMNANT"></a><a href="TheREMNANT.html">The REMNANT</a></p>
-			<p><a id="INSOMNIAC"></a><a href="INSOMNIAC.html">INSOMNIAC</a></p>
-			<p><a id="ROMANTICIMPULSEWRITINGS"></a><a href="ROMANTICIMPULSEWRITINGS.html">ROMANTIC IMPULSE WRITINGS</a></p>
-			<p><a id="OTHERWRITINGSofUNKNOWNPROVENANCE"></a><a href="OTHERWRITINGSofUNKNOWNPROVENANCE.html">OTHER WRITINGS of UNKNOWN PROVENANCE</a></p>
+			<p><a id="TheREMNANT"></a><a href="TheRemnantSay.html#The REMNANT">The REMNANT</a></p>
+			<p><a id="INSOMNIAC"></a><a href="awake.html#INSOMNIAC">INSOMNIAC</a></p>
+			<p><a id="ROMANTICIMPULSEWRITINGS"></a><a href="YoungRobenc.html#ROMANTIC IMPULSE WRITINGS">ROMANTIC IMPULSE WRITINGS</a></p>
+			<p><a id="OTHERWRITINGSofUNKNOWNPROVENANCE"></a><a href="HouseHills.html#OTHER WRITINGS of UNKNOWN PROVENANCE">OTHER WRITINGS of UNKNOWN PROVENANCE</a></p>
 			<!--<p><a id="AGEoftheSCHOLAR"></a>===<a href="AGEoftheSCHOLAR.html">AGE of the SCHOLAR</a>===</p>-->
-			<p><a id="SOLDIER"></a><a href="SOLDIER.html">SOLDIER</a></p>
-			<p><a id="EXILE"></a><a href="EXILE.html">EXILE</a></p>
-			<p><a id="UNKNOWNSCHOLASTIC"></a><a href="UNKNOWNSCHOLASTIC.html">UNKNOWN SCHOLASTIC</a></p>
-			<p><a id="VOICEfromtheLOCUSTGROVE"></a><a href="VOICEfromtheLOCUSTGROVE.html">VOICE from the LOCUST GROVE</a></p>
-			<p><a id="UNKNOWNCURATOR"></a><a href="UNKNOWNCURATOR.html">UNKNOWN CURATOR</a></p>
-			<p><a id="SCHOLAR"></a><a href="SCHOLAR.html">SCHOLAR</a></p>
+			<p><a id="SOLDIER"></a><a href="purpleberries.html#SOLDIER">SOLDIER</a></p>
+			<p><a id="EXILE"></a><a href="fog.html#EXILE">EXILE</a></p>
+			<p><a id="UNKNOWNSCHOLASTIC"></a><a href="conspiracy.html#UNKNOWN SCHOLASTIC">UNKNOWN SCHOLASTIC</a></p>
+			<p><a id="VOICEfromtheLOCUSTGROVE"></a><a href="TheLocustGrove.html#VOICE from the LOCUST GROVE">VOICE from the LOCUST GROVE</a></p>
+			<p><a id="UNKNOWNCURATOR"></a><a href="archiveunderthreat.html#UNKNOWN CURATOR">UNKNOWN CURATOR</a></p>
+			<p><a id="SCHOLAR"></a><a href="ScholarsDiary.html#SCHOLAR">SCHOLAR</a></p>
 			<!--<p><a id="AGEofEGDERUS"></a>===<a href="AGEofEGDERUS.html">AGE of EGDERUS</a>== </p>-->
-			<p><a id="INSURGENT"></a><a href="INSURGENT.html">INSURGENT</a></p>
-			<p><a id="EGDERUS"></a><a href="EGDERUS.html">EGDERUS</a></p>
-			<p><a id="MISSIONARY"></a><a href="MISSIONARY.html">MISSIONARY</a></p>
-			<p><a id="ARIC"></a><a href="ARIC.html">ARIC</a></p>
-			<p><a id="BONE-SNAPPER"></a><a href="BONE-SNAPPER.html">BONE-SNAPPER</a></p>
-			<p><a id="HISTORIAN"></a><a href="HISTORIAN.html">HISTORIAN</a></p>
-			<p><a id="SUPERIUSFRATER"></a><a href="SUPERIUSFRATER.html">SUPERIUS FRATER</a></p>
-			<p><a id="OLDPOET"></a><a href="OLDPOET.html">OLD POET</a></p>
+			<p><a id="INSURGENT"></a><a href="onmarch.html#INSURGENT">INSURGENT</a></p>
+			<p><a id="EGDERUS"></a><a href="EgderusatMountainHouse.html#EGDERUS">EGDERUS</a></p>
+			<p><a id="MISSIONARY"></a><a href="WritingsofTheMissionary.html#MISSIONARY">MISSIONARY</a></p>
+			<p><a id="ARIC"></a><a href="TestimonyofPraetorAric.html#ARIC">ARIC</a></p>
+			<p><a id="BONE-SNAPPER"></a><a href="SteadfastBone-Snapper.html#BONE-SNAPPER">BONE-SNAPPER</a></p>
+			<p><a id="HISTORIAN"></a><a href="HistoriansTale.html#HISTORIAN">HISTORIAN</a></p>
+			<p><a id="SUPERIUSFRATER"></a><a href="SuperiusFraterandRobenc.html#SUPERIUS FRATER">SUPERIUS FRATER</a></p>
+			<p><a id="OLDPOET"></a><a href="patteran.html#OLD POET">OLD POET</a></p>
 			<!--<p><a id="TheANCIENTS"></a>===<a href="TheANCIENTS.html">The ANCIENTS</a>===</p>-->
-			<p><a id="BOY"></a><a href="BOY.html">BOY</a></p>
-			<p><a id="LASTONE"></a><a href="LASTONE.html">LAST ONE</a></p>
-			<p><a id="UNKNOWNANCIENTS"></a><a href="UNKNOWNANCIENTS.html">UNKNOWN ANCIENTS</strong></a></p>
+			<p><a id="BOY"></a><a href="return.html#BOY">BOY</a></p>
+			<p><a id="LASTONE"></a><a href="LastOneandBoy.html#LAST ONE">LAST ONE</a></p>
+			<p><a id="UNKNOWNANCIENTS"></a><a href="Stormsandhaze.html#UNKNOWN ANCIENTS">UNKNOWN ANCIENTS</a></p>
 		</div>
 		<!-- end of "catalog container" div -->`);
 		
