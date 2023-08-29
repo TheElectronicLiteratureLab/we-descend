@@ -279,7 +279,8 @@ $(document).ready(function() {
 				</li>
 			</ul>
 		<h4>SECONDARY WRITINGS <strong></h4>
-			<ul><li><a href="LegomenonforUNKNOWNPROVENANCE.html#LEGOMENA">LEGOMENA</strong></a> (Elucidations) 
+			<ul><li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="LEGOMENA"
+			href="#">LEGOMENA</strong></a> (Elucidations) 
 				<ul>
 					<li><strong><a href="LegomenonforUNKNOWNPROVENANCE.html">Legomenon for UNKNOWN PROVENANCE</a> 
 					<ul>
