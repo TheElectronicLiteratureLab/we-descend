@@ -236,11 +236,11 @@ $(document).ready(function() {
 					<li><a href="makingthisup.html">making this up</a></li>
 			</ul>
 			</li>
-				<li><a href="LASTONE.html">LAST ONE</a> 
+				<li><a href="LastOneandBoy.html#LAST ONE">LAST ONE</a> 
 				<ul>
 					<li><a href="LastOneandBoy.html">Last One and Boy</a></li>
 					<li><a href="morningsofcreation.html">mornings of creation</a></li>
-					<li><a href="Theyrecomingapart.html">They're coming apart...</a></li>
+					<li><a href="Theyrecomingapart.html">They're coming apart</a></li>
 					<li><a href="whattoleavebehind.html">what to leave behind</a></li>
 					<li><a href="impatience.html">impatience</a></li>
 					<li><a href="theghosts.html">the ghosts</a></li>
