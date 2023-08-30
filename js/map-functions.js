@@ -10,10 +10,10 @@ var currentLevel = 1;
 
 //Adjust level based on imported variable
 // alert(currentStream);
-var ageUnknown = [`TheREMNANT`,`INSOMNIAC`,`ROMANTICIMPULSEWRITINGS`,`OTHERWRITINGSofUNKNOWNPROVENANCE`];
-var ageScholar = [`SOLDIER`,`EXILE`,`UNKNOWNSCHOLASTIC`,`VOICEfromtheLOCUSTGROVE`,`UNKNOWNCURATOR`,`SCHOLAR`];
-var ageEgderus = [`INSURGENT`,`EGDERUS`,`MISSIONARY`,`ARIC`,`BONE-SNAPPER`,`HISTORIAN`,`SUPERIUSFRATER`,`OLDPOET`];
-var ageAncient = [`BOY`,`LASTONE`,`UNKNOWNANCIENTS`];
+var ageUnknown = [`The REMNANT`,`INSOMNIAC`,`ROMANTIC IMPULSE WRITINGS`,`OTHER WRITINGS of UNKNOWN PROVENANCE`];
+var ageScholar = [`SOLDIER`,`EXILE`,`UNKNOWN SCHOLASTIC`,`VOICE from the LOCUST GROVE`,`UNKNOWN CURATOR`,`SCHOLAR`];
+var ageEgderus = [`INSURGENT`,`EGDERUS`,`MISSIONARY`,`ARIC`,`BONE-SNAPPER`,`HISTORIAN`,`SUPERIUS FRATER`,`OLD POET`];
+var ageAncient = [`BOY`,`LAST ONE`,`UNKNOWN ANCIENTS`];
 
 if (ageUnknown.includes(currentStream)) {
 	currentLevel = 1;
