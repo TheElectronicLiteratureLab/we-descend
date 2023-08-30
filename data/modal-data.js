@@ -22,8 +22,7 @@ const modalData = [
 			</p>
 			<p><a id="intheKeep"></a><a href="1intheKeep.html">in the Keep</a></p>
 			<p><a id="ThePerpetratedWorld"></a><a href="1ThePerpetratedWorld.html">The Perpetrated World</a></p>
-			<p><a id="Thescriptorandhisbeloved"></a><a href="1Thescriptorandhisbeloved.html">The scriptor and his
-					beloved</a></p>
+			<p><a id="Thescriptorandhisbeloved"></a><a href="1Thescriptorandhisbeloved.html">The scriptor and his beloved</a></p>
 			<p><a id="stars"></a><a href="1stars.html">stars</a></p>
 			<p><a id="enemy"></a><a href="1enemy.html">enemy</a></p>
 			<p><a id="return"></a><a href="1return.html">return</a></p>
@@ -86,34 +85,37 @@ const modalData = [
 			</header>
 			&nbsp;
 	
-			<div class="listing container">
+			<div class="catalog container">
 				<h4>frontMatter</h4>
-				<ul>
+
 					<li><a href="index.html">Frontispiece</a></li>
 					<li><a href="Dedication.html">Dedication</a></li>
 					<li><a href="TITLE.html">TITLE</a> (home)</li>
 					<li><a href="PrefacetotheCompleteEdition.html">Preface to the Complete Edition</a></li>
 					<li><a href="ForewordtotheArchives.html">Foreword to the Archives</a></li>
 					<li><a href="Epigraph.html">Epigraph</a> </li>
-					<li><a href="1PATHWAY.html">PATHWAY</a> (a 'tour' of the Writings) </li>
-					<li><a href="INVENTORY.html">INVENTORY</a> (of Authors)</li>
-			</ul>
+					<li><a href="1Epigraph.html#PATHWAY">PATHWAY</a> (a 'tour' of the Writings) </li>
+					<li><a id="stream-button" class="modal-toggle" data-target="stream-modal" data-subtarget="inventory" href="#">INVENTORY</a> (of Authors)</li>
+
 				<h4>midMatter</h4>
-				<ul>
+
+					<li><a href="1Epigraph.html#PATHWAY">PATHWAY</strong></a> ('tour' of the Writings)</li>
 					<li><a href="LANDING.html">LANDING</a> (resting place where many paths meet)</li>
-				</li>
-					<li><a href="SCHOLIA.html">SCHOLIA</a> (Annotations}</li>
-					<li><a href="LEGOMENA.html">LEGOMENA</a> (Elucidations)</li>
+					<li><a id="stream-button" class="modal-toggle" data-target="stream-modal" data-subtarget="inventory" href="#">INVENTORY</strong></a> (Authors) <strong></li>
+					<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="SCHOLIA"
+			href="#">SCHOLIA</a> (Annotations}</li>
+					<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="LEGOMENA"
+			href="#">LEGOMENA</a> (Elucidations)</li>
+					
+				<h4>backMatter</h4>
+
 					<li><a href="AfterwordTransmissionoftheArchives.html">Afterword: Transmission of the Archives</a> (with synopsis of transmission)</li>
 					<li><a href="OntheArrangementoftheWritings.html">On the Arrangement of the Writings</a></li>
-				</ul>
-				<h4>backMatter</h4>
-				<ul>
 					<li>APPARATI (this Nota)</li>
 					<li><a href="Acknowledgments.html">Acknowledgments</a></li>
 					<li><a href="Colophon.html">Colophon</a></li>
-					<li><a href="OUTLINE.html">OUTLINE</a> (site map)</li>
-				</ul>
+					<li><a class="modal-toggle" data-target="stream-modal" data-subtarget="outline" href="#">OUTLINE</a> (site map)</li>
+
 			</div>
 			<!-- end of "listing container" div -->`
 	],

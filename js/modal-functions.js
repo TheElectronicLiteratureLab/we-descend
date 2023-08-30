@@ -454,7 +454,8 @@ $(document).ready(function() {
 				</li></ul>
 			<h4>TERTIARY WRITINGS <strong></h4>
 				<ul>
-					<li><a href="APPARATI.html">APPARATI</strong></a> (Finding Aids + Supplementay Writings) 
+					<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="APPARATI"
+			href="#">APPARATI</strong></a> (Finding Aids + Supplementay Writings) 
 					<ul>
 						<li>frontMatter 
 						<ul>
@@ -467,13 +468,19 @@ $(document).ready(function() {
 					</ul></li>
 						<li>midMatter 
 						<ul>
-							<li><strong><a href="1PATHWAY.html">PATHWAY</strong></a> ('tour' of the Writings)<strong></li>
+							<li><strong><a href="1Epigraph.html#PATHWAY">PATHWAY</strong></a> ('tour' of the Writings)<strong></li>
 							<li><a href="LANDING.html">LANDING</strong></a> (resting place where many paths meet) <strong></li>
-							<li><a href="INVENTORY.html">INVENTORY</strong></a> (Authors) <strong></li></ul>
+							<li><a id="stream-button" class="modal-toggle" data-target="stream-modal" data-subtarget="inventory" href="#">INVENTORY</strong></a> (Authors) <strong></li>
+							<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="SCHOLIA"
+			href="#">SCHOLIA</a> (Annotations}</li>
+							<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="LEGOMENA"
+			href="#">LEGOMENA</a> (Elucidations)</li>
+						</ul>
 						<li>backMatter
 						<ul>
 							<li><strong><a href="AfterwordTransmissionoftheArchives.html">Afterword: Transmission of the Archives</strong></a> (with synopsis of transmission)<strong></li>
 							<li><a href="OntheArrangementoftheWritings.html">On the Arrangement of the Writings</a></li>
+							<li><a class="modal-toggle" data-target="stream-modal" data-subtarget="stream" href="#">APPARATI</a></li>
 							<li><a href="Acknowledgments.html">Acknowledgments</a></li>
 							<li><a href="Colophon.html">Colophon</a> </strong></li>
 							<li>OUTLINE (this Nota)</li>
