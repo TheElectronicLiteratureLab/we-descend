@@ -79,9 +79,9 @@ const modalData = [
 				<h2>
 					<a href="">APPARATI</a>
 				</h2>
-				<h3>
+				<p>
 					Various contrivances to help find specific Writings, Authors, and stories contained in the archives, as well as to aid in comprehending the whole:
-				</h3>
+				</p>
 			</header>
 			&nbsp;
 	
@@ -101,7 +101,7 @@ const modalData = [
 
 					<li><a href="1Epigraph.html#PATHWAY">PATHWAY</strong></a> ('tour' of the Writings)</li>
 					<li><a href="LANDING.html">LANDING</a> (resting place where many paths meet)</li>
-					<li><a id="stream-button" class="modal-toggle" data-target="stream-modal" data-subtarget="inventory" href="#">INVENTORY</strong></a> (Authors) <strong></li>
+					<li><a id="stream-button" class="modal-toggle" data-target="stream-modal" data-subtarget="inventory" href="#">INVENTORY</strong></a> (Authors)</li>
 					<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="SCHOLIA"
 			href="#">SCHOLIA</a> (Annotations}</li>
 					<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="LEGOMENA"
@@ -308,7 +308,7 @@ const modalData = [
 			<p>Elucidations pertaining to <a id="indescendingorder">the work of every Author</a>, <a href="indescendingorder.html#note">in descending order</a></p>
 		</header>
 
-		<div class="catalog container">
+		<div class="catalog container legomena-cont">
 			<h3><a id="LegomenonforUNKNOWNPROVENANCE"></a><a href="LegomenonforUNKNOWNPROVENANCE.html">Legomenon for UNKNOWN PROVENANCE</a></h3>
 
 					<p><a id="LegomenonfortheREMNANT"></a><a href="LegomenonfortheRemnant.html">Legomenon for The REMNANT</a></p>
@@ -459,7 +459,7 @@ const modalData = [
 			<p><a id="indescendingorder">Collected here</a>, <a href="indescendingorder.html">in descending order</a> of their primary referents, are Writings by the unknown Scholiast(s) whose annotations can be found throughout the Archives:</p>
 		</header>
 		
-		<div class="catalog container">
+		<div class="catalog container scholia-cont">
 			<h3>UNKNOWN PROVENANCE</h3>
 			<p>The REMNANT</p>
 

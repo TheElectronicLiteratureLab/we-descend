@@ -958,3 +958,28 @@ article .path a {
 	right: -20px;
 	opacity: .5;
 }
+
+
+/* Legomena & Scholia Modals */
+.legomena-cont, .scholia-cont {
+	text-align: left;
+}
+
+.scholia-cont a:first-of-type {
+	margin-left: 25px;
+}
+
+.catalog h3, .catalog h4 {
+	font-size: 1.1em;
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+
+.catalog h3:first-of-type, .catalog h4:first-of-type {
+	margin-top: 0;
+}
+
+.catalog p {
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
