@@ -1,0 +1,403 @@
+===============================================
+/* Stylesheet for _We Descend, Complete Edition_ 
+multi-column version */
+
+/* Very special thanks to David Storey, from whose blogpost "Responsive viewport units" [http://generatedcontent.org/post/21279324555/viewportunits] the multicolumn gambit was adapted; and also to Jason Santa Maria, whose book _On Web Typography_ first put me on to it. */
+================================================
+
+html {
+	font-size: 1em;
+	}
+
+/* reset */
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, p, ul, ol, li, th, td, article, section, figure, img {
+	margin:0;
+	padding:0;
+	}
+
+body {
+	font-family: "Book Antiqua", Georgia, serif;
+	font-size: 100%;
+	color: #030; /* very dark lime green, rgb(0,20,0) */
+	line-height: 1.5em;
+	margin: 3em 5em 3em 5em;
+	padding-left: 2em;
+	padding-right: 2em;
+	background: #ffe; /* very pale (mostly white) yellow, rgb(255,255,238) */
+	/*background-image: url(agoraMap-thin+sepia+transfer+noise2000pct.jpg); */
+	}
+
+/* grid */
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	   	-ms-box-sizing: border-box;
+		    box-sizing: border-box;
+	}
+.container {
+	margin: 0 auto;
+	width: 100%;
+	padding-left: 1em;
+	padding-right: 1em;
+	}
+	
+article {
+	margin: 1em auto;
+	padding: 1em 2em .5em 2em;		
+	border: .2em solid #000; /* used to be moderate orange, #c96, rgb(204,153,102) — just in case we change our mind back... */
+	border-radius: 1em;
+	background: #ffe; /* very pale (mostly white) yellow, rgb(255,255,238) */
+	}
+
+/* multi-column */
+article > section {
+	 -webkit-perspective:1;
+	-webkit-column-width: 15em;
+	   -moz-column-width: 15em;
+	    -ms-column-width: 15em;
+			column-width: 15em;
+	 -webkit-column-fill: auto;
+	    -moz-column-fill: auto;
+	     -ms-column-fill: auto;
+	 		 column-fill: auto; 
+	  -webkit-column-gap: 2em;
+	     -moz-column-gap: 2em;
+	      -ms-column-gap: 2em;
+			  column-gap: 2em; 
+
+	height: 65vh; /* check vmin property with this... */
+	max-width: 80vw;
+	overflow-x: auto;
+	overflow-y: hidden; 
+	padding-bottom: 1em;
+	margin-bottom: .75em;
+	border-bottom: .1em solid rgba(102,51,51, .3); /* #633, very dark desaturated red, 30% opaque */
+	}
+
+article :target {
+	-webkit-animation: crosslink 4.25s ease;
+	   -moz-animation: crosslink 4.25s ease;
+	    -ms-animation: crosslink 4.25s ease;	
+	        animation: crosslink 4.25s ease;
+	} 
+
+@-webkit-keyframes crosslink {
+	0%  {background: #cc9;}
+	100%   {background: #ffe;}
+	}
+@-moz-keyframes crosslink {
+	0%  {background: #cc9;}
+	100%   {background: #ffe;}
+	}
+@-ms-keyframes crosslink {
+	0%  {background: #cc9;}
+	100%   {background: #ffe;}
+	}
+@-keyframes crosslink {
+	0%  {background: #cc9;}
+	100%   {background: #ffe;}
+	}
+
+	
+/* single-column */
+article > div {
+	border-bottom: .1em solid rgba(102,51,51, .3); /* #633, very dark desaturated red, 30% opaque */	
+	}
+
+/* pageStyles */
+.pathWritingPage,
+.offPathWritingPage 
+.legomenonPage {
+	max-width: 65em;
+	}
+.scholionPage,
+.bookPlatePage,
+.timeBandPage, 
+.uniCol {
+	max-width: 55em;
+	}
+.scholionPage,
+.legomenonPage, 
+/*.timeBandPage */{
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.4em;
+	}
+.uniCol {
+/*	margin-top: .25em;*/
+	padding-bottom: .75em;
+	}
+	
+/* titles */
+header {
+	padding-top: .5em;
+	padding-bottom: .25em;
+	}
+.notaName {
+	text-align: left;
+	}
+.title,
+.subTitle {
+	text-align: center;
+	padding-bottom: .4em;
+	font-weight: normal;
+	}
+/* .subTitle {
+	font-size: .85em;
+	} */
+.separator 	{
+	text-align: center;
+	padding-top: .8em;
+	padding-bottom: .5em
+	font-weight: normal;
+	}
+.dedication {
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	border-bottom:  .1em solid rgba(102,51,51, .3); /* #633, very dark desaturated red, 30% opaque */
+	text-align: center;
+	}	
+
+/* paragraph styles */
+p {
+	-webkit-hyphens: auto;
+	   -moz-hyphens: auto;
+	    -ms-hyphens: auto;
+			hyphens: auto;
+	padding-bottom: .5em;
+	}
+blockquote {
+	margin: .5em 2em;
+	font-size: 1em;
+	line-height: 1.45em;
+	}
+h1	{
+	font-size: 2em;
+	padding-bottom: .75em;
+	}
+h2	{
+	font-size: 1.5em;
+	padding-bottom: .75em;
+	}
+h3	{
+	font-weight: normal;
+	font-size: 1.35em;
+	line-height: 1.2em;
+	padding-bottom: .5em;
+	}
+h4	{
+	font-weight: normal;
+	font-size: 1.15em;
+	padding-top: .35em;
+	padding-bottom: .35em;
+	}
+h5	{
+	font-size: 1em;
+	font-weight: normal;
+	padding-top: .253m;
+	padding-bottom: .25em;
+	}
+h6	{
+	font-weight: normal;
+	font-size: .85em;
+	padding-bottom: .25em;
+	}
+
+ul, ol {
+	padding-left: 2em;
+	}
+img {
+	max-width: 100%;
+	border: .2em solid #633; /* very dark desaturated red rgb(102,51,51) */
+	/*border-radius: 5em;*/
+	}
+.image {
+	margin: 1em 1em auto;
+	text-align: center;
+	}
+.frontispiece {
+	/*border-radius: 2em;*/
+	text-align: center;
+	border: none;
+	}
+.logo {
+	border: none;
+	border-radius: 0;
+	}
+.verse	{
+	padding: 0 .75em 1em 1.5em;
+	/*font-size: .95em;*/
+	line-height: 1.45em;
+	}
+.smalltext {
+	margin: 0 1em .5em 1em;
+	font-size: .95em;
+	line-height: 1.3em;
+	}
+.smallertext {
+	margin: .5em 1em 0 1em;
+	font-size: .9em;
+	line-height: 1.3em;
+	}
+
+.dictation,
+.renderor {
+	padding: 0 0 .25em 0;
+	text-align: left;
+	}
+.dictation {
+	font-family: Courier, Monaco, pre-formatted;
+	font-size: .96em;
+	line-height: 1.35em;
+	}
+.renderor p {
+	font-family: Monaco, Courier, pre-formatted;
+	font-size: .93em;
+	font-weight: normal;
+	line-height: 1.45em;
+	}
+
+.path p,
+.apparatus p, 
+.occultPath p {
+	margin: .3em .3em .1em .3em;
+	font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+	font-size: .8em;
+	text-align: center;
+	}
+nav p {
+	padding-bottom: 0;
+	}
+.rant p {
+	font-family: Garamond, "Palatino Linotype", Georgia, Times, serif;
+	font-size: 1.35em;
+	}
+footer p {
+	font-family: Monaco, Arial, sans-serif;
+	font-size: .9em;
+	}
+
+/* links */
+
+a:link	{
+	text-decoration: none;
+	color: #c60; /* strong orange, rgb(204,102,0) */
+	}
+a:visited	{
+	color: #0aa; /* dark cyan, rgb(0,170,170) */
+	}
+/* a:hover	{
+	color: #c60; strong orange [brown tone], rgb(204,102,0)
+	} */
+a:active {
+	color: #f00; /* red, rgb(255,0,0) */
+	}
+.path a {
+	color: rgba(51,0,0, .4); /* #300, very dark red, 40% opaque */
+	}
+.path a:hover {
+	color: rgba(51,0,0, .8); /* #300, very dark red, 80% opaque */
+	}
+/* .onPath a {
+	color: #396;  dark moderate cyan - lime green, rgb(51,153,102) 
+	}
+.offPath a {
+	color: #046; /* very dark blue, rgb(0,68,102)
+	} */
+.apparatus a,
+.occultPath a {
+	color: rgba(119,0,0, .4); /* #700, dark red, 40% opaque */
+	}
+.apparatus a:hover,
+.occultPath a:hover  {
+	color: rgba(51,0,0, .8); /* #300, very dark red, 80% opaque */
+	}
+.oneWay {
+	font-weight: 900;
+	}
+
+/* TOCs */
+.catalog {
+	max-width: 35em;
+	margin-bottom: .5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-bottom: .1em solid rgba(102,51,51, .3); /* #633, very dark desaturated red, 30% opaque */
+	}
+.catalog p {
+	padding-bottom: .3em;
+	text-align: center;
+	/* line-height: 2.25em; */
+	}
+.listing {
+	max-width: 35em;
+	margin-bottom: 0;
+	padding-bottom: .5em;
+	border-bottom: .1em solid rgba(102,51,51, .3); /* #633, very dark desaturated red, 30% opaque */
+	}
+.listing ul {
+	margin-bottom: .2em;
+	text-align: left;
+	}
+.listing li {
+	}
+.listHeading {
+	padding-top: .75em;
+	padding-bottom: 0;
+	font-weight: bold;
+	}
+	    		
+/* devices with smaller screens */
+@media screen and (max-width: 25em) and (orientation: portrait) {
+	body {
+		font-size: .8em;
+		margin: 2em auto;
+		}
+	p {
+		text-align: justify;
+		line-height: 1.25em;
+		}
+	ul {
+		text-align: justify; 
+		line-height: 1.35em;
+		}
+	li {
+		font-size: 1em;
+		}	
+	h3 {
+		font-size: 1.35em;
+		}
+	h4 {
+		font-size: 1.15em;
+		}
+	.path p,
+	.apparatus p, 
+	.occultPath p {
+		margin: .5em auto;
+		font-size: .85em;
+		-webkit-hyphens: none;
+		   -moz-hyphens: none;
+	    	-ms-hyphens: none;
+				hyphens: none;
+		}
+	.renderor p {
+		line-height: 1.2em;
+		} 
+	}	
+
+@media screen and (max-width: 25em) and (orientation: landscape) {
+	body {
+		font-size: .8em;
+		margin: -3em 0;
+		}
+	}
+	
+/* devices without any pointer */
+@media (any-pointer:none) {
+	.path a,
+	.apparatus a, 
+	.occultPath a {
+		color: #830; /* dark orange [brown tone], rgb(153,51,0) */
+		}
+	}
