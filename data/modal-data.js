@@ -45,7 +45,7 @@ const modalData = [
 		<div class="catalog container">
 				<p><a href="onmarch.html#INSURGENT"> INSURGENT</a></p>
 				<p><a href="EgderusatMountainHouse.html#EGDERUS"> EGDERUS</a></p>
-				<p><a href="WritingsofTheMissionary.html#MISSIONARY">  MISSIONARY</a></p>
+				<p><a href="WritingsoftheMissionary.html#MISSIONARY">  MISSIONARY</a></p>
 				<p><a href="TestimonyofPraetorAric.html#ARIC"> ARIC</a></p>
 				<p><a href="SteadfastBone-Snapper.html#BONE-SNAPPER">  BONE-SNAPPER</a></p>
 				<p><a href="HistoriansTale.html#HISTORIAN"> HISTORIAN</a></p>
@@ -357,7 +357,7 @@ const modalData = [
 		</header>
 				
 		<div class="catalog container">
-			<p><a href="WritingsofTheMissionary.html">Writings of the Missionary</a></p>
+			<p><a href="WritingsoftheMissionary.html">Writings of the Missionary</a></p>
 			<p><a href="MPart2.html">M Part 2</a></p>
 			<p><a href="intheKeep.html">in the Keep</a></p>
 			<p><a href="MtheWanderer.html">M the Wanderer</a> </p>
@@ -688,7 +688,7 @@ const modalData = [
 		<h3>Writings of M, </h3>
 		<h3>possibly the 'Missionary to <a href="LegomenonforTheREMNANT.html"><b>the Remnant</b></a>' </h3>
 
-		<p><a href="WritingsofTheMissionary.html"><b>Writings of The Missionary</a> </p>
+		<p><a href="WritingsoftheMissionary.html"><b>Writings of The Missionary</a> </p>
 		<p><a href="MPart2.html">M Part 2</a> </p>
 		<p><a href="intheKeep.html">in the Keep</a> </p>
 		<p><a href="MtheWanderer.html">M the Wanderer</a> </b></p>`

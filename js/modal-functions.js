@@ -37,7 +37,7 @@ $(document).ready(function() {
 			<!--<p><a id="AGEofEGDERUS"></a>===<a href="AGEofEGDERUS.html">AGE of EGDERUS</a>== </p>-->
 			<p><a id="INSURGENT"></a><a href="onmarch.html#INSURGENT">INSURGENT</a></p>
 			<p><a id="EGDERUS"></a><a href="EgderusatMountainHouse.html#EGDERUS">EGDERUS</a></p>
-			<p><a id="MISSIONARY"></a><a href="WritingsofTheMissionary.html#MISSIONARY">MISSIONARY</a></p>
+			<p><a id="MISSIONARY"></a><a href="WritingsoftheMissionary.html#MISSIONARY">MISSIONARY</a></p>
 			<p><a id="ARIC"></a><a href="TestimonyofPraetorAric.html#ARIC">ARIC</a></p>
 			<p><a id="BONE-SNAPPER"></a><a href="SteadfastBone-Snapper.html#BONE-SNAPPER">BONE-SNAPPER</a></p>
 			<p><a id="HISTORIAN"></a><a href="HistoriansTale.html#HISTORIAN">HISTORIAN</a></p>
@@ -190,9 +190,9 @@ $(document).ready(function() {
 					<li><a href="EgderusSecret.html">Egderus' Secret</a></li>
 			</ul>
 			</li>
-				<li><a href="WritingsofTheMissionary.html#MISSIONARY">MISSIONARY</a> 
+				<li><a href="WritingsoftheMissionary.html#MISSIONARY">MISSIONARY</a> 
 				<ul>
-					<li><a href="WritingsofTheMissionary.html">Writings of the Missionary</a></li>
+					<li><a href="WritingsoftheMissionary.html">Writings of the Missionary</a></li>
 					<li><a href="MPart2.html">M Part 2</a></li>
 					<li><a href="intheKeep.html">in the Keep</a></li>
 					<li><a href="MtheWanderer.html">M the Wanderer</a></li>
