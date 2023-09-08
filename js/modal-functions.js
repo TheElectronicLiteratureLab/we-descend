@@ -284,7 +284,7 @@ $(document).ready(function() {
 				<ul>
 					<li><strong><a href="LegomenonforUNKNOWNPROVENANCE.html">Legomenon for UNKNOWN PROVENANCE</a> 
 					<ul>
-						<li><a href="LegomenonfortheRemnant.html">Legomenon for the REMNANT</a></li>
+						<li><a href="LegomenonfortheREMNANT.html">Legomenon for the REMNANT</a></li>
 						<li><a href="LegomenonforINSOMNIAC.html">Legomenon for INSOMNIAC</a></li>
 						<li><a href="LegomenonforROMANTICIMPULSEWRITINGS.html">Legomenon for ROMANTIC IMPULSE WRITINGS</a></li>
 						<li><a href="LegomenonforOTHERWRITINGSofUNKNOWNPROVENANCE.html">Legomenon for OTHER WRITINGS of UNKNOWN PROVENANCE</a></li>

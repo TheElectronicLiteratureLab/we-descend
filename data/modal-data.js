@@ -311,7 +311,7 @@ const modalData = [
 		<div class="catalog container legomena-cont">
 			<h3><a id="LegomenonforUNKNOWNPROVENANCE"></a><a href="LegomenonforUNKNOWNPROVENANCE.html">Legomenon for UNKNOWN PROVENANCE</a></h3>
 
-					<p><a id="LegomenonfortheREMNANT"></a><a href="LegomenonfortheRemnant.html">Legomenon for The REMNANT</a></p>
+					<p><a id="LegomenonfortheREMNANT"></a><a href="LegomenonfortheREMNANT.html">Legomenon for The REMNANT</a></p>
 					<p><a id="LegomenonforINSOMNIAC"></a><a href="LegomenonforINSOMNIAC.html">Legomenon for INSOMNIAC</a></p>
 					<p><a id="LegomenonforROMANTICIMPULSEWRITINGS"></a><a href="LegomenonforROMANTICIMPULSEWRITINGS.html">Legomenon for ROMANTIC IMPULSE WRITINGS</a></p>
 					<p><a id="LegomenonforOTHERWRITINGSofUNKNOWNPROVENANCE"></a><a href="LegomenonforOTHERWRITINGSofUNKNOWNPROVENANCE.html">Legomenon for OTHER WRITINGS of UNKNOWN PROVENANCE</a></p>
@@ -348,11 +348,11 @@ const modalData = [
 	[`MISSIONARY`,
 		`<header>			
 			<h2 class="title">
-				<a href="LegomenonforMISSIONARY.html">MISSIONARY</a> <!--link to Author's legomenon -->
+				<a href="LegomenonforTheMISSIONARY.html">MISSIONARY</a> <!--link to Author's legomenon -->
 			</h2>
 			<h3 class="subTitle">
 				Writings of M,<br>
-				possibly the 'Missionary to <a href="LegomenonfortheRemnant.html">the Remnant</a>'
+				possibly the 'Missionary to <a href="LegomenonfortheREMNANT.html">the Remnant</a>'
 			</h3>
 		</header>
 				
@@ -696,7 +696,7 @@ const modalData = [
 	[`The REMNANT`,
 		`<header>			
 			<h2 class="title">
-				<a href="LegomenonfortheRemnant.html">The REMNANT</a> <!--link to Author's legomenon -->
+				<a href="LegomenonfortheREMNANT.html">The REMNANT</a> <!--link to Author's legomenon -->
 			</h2>
 			<h3 class="subTitle">
 				Writings attributed to those who were left...
