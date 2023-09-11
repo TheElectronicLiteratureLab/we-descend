@@ -477,13 +477,14 @@ article {
 }
 
 article a:link,
-#output a:link {
+#output a:link, .modal-toggle {
 	color: var(--ochre);
 	font-weight: 700;
+	cursor: pointer;
 }
 
 article a:visited,
-#output a:visited {
+#output a:visited, .modal-toggle {
 	color: var(--earth);
 }
 
@@ -517,6 +518,7 @@ article section {
 	flex: 1;
 	overflow-y: auto;
 	padding-right: 10px;
+	padding-bottom: 25px;
 }
 
 article .inscription {
@@ -626,6 +628,26 @@ article .path a {
 	background: rgba(0, 0, 0, .25);
 	border-radius: 10px;
 }
+
+
+/* Scrollbar Firefox */
+body {
+	scrollbar-width: 10px;
+	scrollbar-color: rgba(0, 0, 0, .25) rgba(0, 0, 0, .05);
+	border-radius: 10px;
+  }
+  body:-webkit-scrollbar {
+	width: 10px;
+	border-radius: 10px;
+  }
+  body:-webkit-scrollbar-track {
+	background:  rgba(0, 0, 0, .25);
+	border-radius: 10px;
+  }
+  body:-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, .25);
+	border-radius: 10px;
+  }
 
 
 /* Modals */
