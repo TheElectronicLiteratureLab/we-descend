@@ -454,8 +454,7 @@ $(document).ready(function() {
 				</li></ul>
 			<h4>TERTIARY WRITINGS <strong></h4>
 				<ul>
-					<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="APPARATI"
-			href="#">APPARATI</strong></a> (Finding Aids + Supplementay Writings) 
+					<li>APPARATI</strong> (Finding Aids + Supplementay Writings) 
 					<ul>
 						<li>frontMatter 
 						<ul>
