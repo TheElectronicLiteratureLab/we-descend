@@ -445,7 +445,7 @@ $(document).ready(function() {
 							<li><a href="amongthemiscellaneaofunplaceableartifacts.html">among the miscellanea of unplaceable artifacts</a></li>
 							<li><a href="SermonsofEgderus.html">Sermons of Egderus</a></li>
 							<li><a href="inthesecondclause.html">in the second clause</a></li>
-							<li><a href="collapseofthecivilizationoftheAncients.html">collapse of the civilization of the Anients</a></li>
+							<li><a href="collapseofthecivilizationoftheAncients.html">collapse of the civilization of the Ancients</a></li>
 							<li><a href="thelastoriginalWritings.html">last 'original' Writings</a></li>
 							<li><a href="elucidations.html">elucidations</a></li>
 							<li><a href="indescendingorder.html">in descending order</strong></a> </strong><strong>
