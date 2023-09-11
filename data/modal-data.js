@@ -193,7 +193,7 @@ const modalData = [
 			<p><a href="threefoldmission.html">threefold mission</a></p>
 			<p><a href="thiswork.html">this work</a></p>
 			<p><a href="EgderusLastWritings.html">Egderus' Last Writings</a></p>
-			<p><a href="EgderusSecret.html">Egderus' Secret</a> </p>
+			<!--<p><a href="EgderusSecret.html">Egderus' Secret</a> </p>-->
 		</div>
 		<!-- end of "catalog" div -->`
 	],
