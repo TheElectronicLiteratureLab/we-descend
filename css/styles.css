@@ -610,6 +610,14 @@ article .path a {
 	line-height: 1.5;
 }
 
+h1 span {
+	display: block;
+	font-size: 18px;
+	text-transform: none;
+	letter-spacing: 0;
+	margin-bottom: 5px;
+}
+
 /*Scrollbar*/
 /* Width */
 ::-webkit-scrollbar {
