@@ -83,8 +83,7 @@ const modalData = [
 					Various contrivances to help find specific Writings, Authors, and stories contained in the archives, as well as to aid in comprehending the whole:
 				</p>
 			</header>
-			&nbsp;
-	
+			
 			<div class="catalog container">
 				<h4>frontMatter</h4>
 

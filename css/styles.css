@@ -989,6 +989,10 @@ body {
 	opacity: .5;
 }
 
+#stream .catalog li {
+	list-style: none;
+}
+
 
 /* Legomena & Scholia Modals */
 .legomena-cont, .scholia-cont {
