@@ -18,7 +18,7 @@ $(document).ready(function() {
 			<h3 class="subTitle">
 				<a id="indescendingorder">Writings by Author</a>
 			<h3>
-			<h4 class="subTitle"><a href="indescendingorder.html">in descending order</a>:</h4>
+			<h3 class="subTitle"><a href="indescendingorder.html">in descending order</a>:</h3>
 		</header>
 		
 		<div class="catalog container">
@@ -479,7 +479,6 @@ $(document).ready(function() {
 						<ul>
 							<li><strong><a href="AfterwordTransmissionoftheArchives.html">Afterword: Transmission of the Archives</strong></a> (with synopsis of transmission)<strong></li>
 							<li><a href="OntheArrangementoftheWritings.html">On the Arrangement of the Writings</a></li>
-							<li><a class="modal-toggle" data-target="stream-modal" data-subtarget="stream" href="#">APPARATI</a></li>
 							<li><a href="Acknowledgments.html">Acknowledgments</a></li>
 							<li><a href="Colophon.html">Colophon</a> </strong></li>
 							<li>OUTLINE (this Nota)</li>

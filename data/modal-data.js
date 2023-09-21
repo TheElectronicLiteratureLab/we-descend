@@ -3,7 +3,7 @@ const modalData = [
 	[`PATHWAY`,
 		`<header>
 			<h3 class="subTitle">A literary sequence</h3>
-			<h4 class="subTitle">providing a brief tour of the Writings</h4>
+			<h3 class="subTitle">providing a brief tour of the Writings</h3>
 		</header>
 
 		<div class="catalog container">
@@ -37,9 +37,9 @@ const modalData = [
 			<h2 class="title">
 				<a href="LegomenonforAGEofEGDERUS.html">AGE of EGDERUS</a>
 			</h2>
-			<h4 class="subTitle">
+			<h3 class="subTitle">
 				Writings from the time during which Egderus flourished.
-			</h4>
+			</h3>
 		</header>
 		
 		<div class="catalog container">
@@ -75,15 +75,11 @@ const modalData = [
 		<!-- end of "catalog container" div -->`
 	],
 	[`APPARATI`,
-		`<header>			
-				<h2>
-					<a href="">APPARATI</a>
-				</h2>
+		`<header>
 				<p>
 					Various contrivances to help find specific Writings, Authors, and stories contained in the archives, as well as to aid in comprehending the whole:
 				</p>
 			</header>
-			&nbsp;
 	
 			<div class="catalog container">
 				<h4>frontMatter</h4>
@@ -372,8 +368,8 @@ const modalData = [
 			<h3 class="subTitle">
 				Verse by the Author of poems
 			</h3>
-			<h4 class="subTitle">'<a href="NewYear.html#writingpoemsonthetrunksoftreesandthesidesofmountains">written on the trunks of trees and the sides of mountains</a>'
-			</h4>
+			<h3 class="subTitle">'<a href="NewYear.html#writingpoemsonthetrunksoftreesandthesidesofmountains">written on the trunks of trees and the sides of mountains</a>'
+			</h3>
 		</header>
 				
 		<div class="catalog container">
