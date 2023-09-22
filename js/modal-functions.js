@@ -14,6 +14,12 @@ $(document).ready(function() {
 		}
 	}
 	
+	//remove inventory and outline if in pathway stream
+	if (currentStream == "PATHWAY") {
+		$("#outline-tab, #inventory-tab, .stream-tab-pipe").css("display","none");
+	}
+	
+	
 	$(`#inventory`).html(`<header>
 			<h3 class="subTitle">
 				<a id="indescendingorder">Writings by Author</a>
@@ -489,6 +495,101 @@ $(document).ready(function() {
 		</ul>
 	</div>
 	<!-- end of "inscription" section -->`);
+	
+	
+	
+	$(`#map-modal`).html(`<div id="map-container">
+			<h2>UNKNOWN PROVENANCE</h2>
+			<main>
+				<section class="map-grid position-1" id="unknown-grid">
+					<a href="YoungRobenc.html#ROMANTIC IMPULSE WRITINGS">
+						<h3>ROMANTIC IMPULSE WRITINGS</h3>
+					</a>
+					<a href="TheRemnantSay.html#The REMNANT">
+						<h3>THE REMNANT</h3>
+					</a>
+					<a href="awake.html#INSOMNIAC">
+						<h3>INSOMNIAC</h3>
+					</a>
+					<a href="HouseHills.html#OTHER WRITINGS of UNKNOWN PROVENANCE">
+						<h3>OTHER WRITINGS of UNKNOWN PROVENANCE</h3>
+					</a>
+				</section>
+
+				<section class="map-grid position-2" id="scholar-grid">
+					<a href="purpleberries.html#SOLDIER">
+						<h3>SOLDIER</h3>
+					</a>
+					<a href="conspiracy.html#UNKNOWN SCHOLASTIC">
+						<h3>UNKNOWN SCHOLASTIC</h3>
+					</a>
+					<a href="fog.html#EXILE">
+						<h3>EXILE</h3>
+					</a>
+					<a href="TheLocustGrove.html#VOICE from the LOCUST GROVE">
+						<h3>VOICE from the LOCUST GROVE</h3>
+					</a>
+					<a href="archiveunderthreat.html#UNKNOWN CURATOR">
+						<h3>UNKNOWN CURATOR</h3>
+					</a>
+					<a href="ScholarsDiary.html#SCHOLAR">
+						<h3>SCHOLAR</h3>
+					</a>
+				</section>
+
+				<section class="map-grid position-3" id="egderus-grid">
+					<a href="onmarch.html#INSURGENT">
+						<h3>INSURGENT</h3>
+					</a>
+					<a href="EgderusatMountainHouse.html#EGDERUS">
+						<h3>EGDERUS</h3>
+					</a>
+					<a href="WritingsoftheMissionary.html#MISSIONARY">
+						<h3>MISSIONARY</h3>
+					</a>
+					<a href="TestimonyofPraetorAric.html#ARIC">
+						<h3>ARIC</h3>
+					</a>
+					<a href="SteadfastBone-Snapper.html#BONE-SNAPPER">
+						<h3>BONE-SNAPPER</h3>
+					</a>
+					<a href="HistoriansTale.html#HISTORIAN">
+						<h3>HISTORIAN</h3>
+					</a>
+					<a href="SuperiusFraterandRobenc.html#SUPERIUS FRATER">
+						<h3>SUPERIUS FRATER</h3>
+					</a>
+					<a href="patteran.html#OLD POET">
+						<h3>OLD POET</h3>
+					</a>
+				</section>
+
+				<section class="map-grid position-4" id="ancients-grid">
+					<a href="Stormsandhaze.html#UNKNOWN ANCIENTS">
+						<h3>UNKNOWN ANCIENTS</h3>
+					</a>
+					<a href="return.html#BOY">
+						<h3>BOY</h3>
+					</a>
+					<a href="LastOneandBoy.html#LAST ONE">
+						<h3>LAST ONE</h3>
+					</a>
+				</section>
+
+			</main>
+
+			<div class="button-array">
+				<button id="ascend-button">
+					<span>ASCEND</span>
+				</button>
+				<div class="decorative-diamond"></div>
+				<button id="descend-button">
+					<span>DESCEND</span>
+				</button>
+			</div>
+		</div>
+		
+		<button class="close-modal">Close</button>`);
 		
 		
 
@@ -550,11 +651,8 @@ $(document).ready(function() {
 
 	function checkHash() {
 		let hash = window.location.hash.slice(1).replaceAll(`%20`, ` `);
-		// alert(hash);
 		for (x=0;x<modalData.length;x++) {
-			// alert(x);
 			if (modalData[x][0] == hash) {
-				// alert("'"+hash+"' found at position "+x);
 				streamBtn.click();
 				break;
 			}
@@ -569,11 +667,7 @@ $(document).ready(function() {
 			catalog = $("#metastream").children(".catalog.container").children(':contains("' + title + '")');
 		}
 
-		// alert(catalog.text());
-
 		let selectLexia = catalog.filter(function () {
-			// alert(title + " | " + catalog.text().trim());
-			// alert($(this).text().trim() == title);
 			return $(this).text().trim() == title;
 			});
 

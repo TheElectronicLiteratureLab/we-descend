@@ -100,13 +100,6 @@ $(document).ready(function() {
 				}//end of contentIndices if conditional
 			
 			
-			
-			
-			
-			
-			
-			
-			
 				//string exists in title
 				if (titleIndices != null) {
 					for (z=0; z < titleIndices.length; z++) {

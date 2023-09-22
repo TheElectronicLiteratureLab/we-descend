@@ -9,7 +9,6 @@ $(document).ready(function() {
 var currentLevel = 1;
 
 //Adjust level based on imported variable
-// alert(currentStream);
 var ageUnknown = [`The REMNANT`,`INSOMNIAC`,`ROMANTIC IMPULSE WRITINGS`,`OTHER WRITINGS of UNKNOWN PROVENANCE`];
 var ageScholar = [`SOLDIER`,`EXILE`,`UNKNOWN SCHOLASTIC`,`VOICE from the LOCUST GROVE`,`UNKNOWN CURATOR`,`SCHOLAR`];
 var ageEgderus = [`INSURGENT`,`EGDERUS`,`MISSIONARY`,`ARIC`,`BONE-SNAPPER`,`HISTORIAN`,`SUPERIUS FRATER`,`OLD POET`];
@@ -83,8 +82,6 @@ const traverse = () => {
 
 		//change body's color to match
 		$("#map-modal").removeClass("age2").removeClass("age3").removeClass("age4").addClass("age1");
-		// $("map-modal").css("background-color", "var(--sand3)")
-		// $("body").css("background-image", "url(" + unknownTexture + ")")
 
 		//gray out ascend button because you can't go any higher
 		$("#ascend-button").css({"opacity":".5", "cursor":"initial"})
@@ -110,8 +107,6 @@ const traverse = () => {
 
 		//change body's color to match
 		$("#map-modal").removeClass("age1").removeClass("age3").removeClass("age4").addClass("age2");
-		// $("body").css("background-color", "var(--scholar-color)")
-		// $("body").css("background-image", "url(" + scholarTexture + ")")
 
 		//normal ascend button
 		$("#ascend-button").css({"opacity":"1", "cursor":"pointer"})
@@ -137,8 +132,6 @@ const traverse = () => {
 
 		//change body's color to match
 		$("#map-modal").removeClass("age1").removeClass("age2").removeClass("age4").addClass("age3");
-		// $("body").css("background-color", "var(--egderus-color)")
-		// $("body").css("background-image", "url(" + edgerusTexture + ")")
 
 		//normal ascend button
 		$("#ascend-button").css({"opacity":"1", "cursor":"pointer"})
@@ -164,8 +157,6 @@ const traverse = () => {
 
 		//change body's color to match
 		$("#map-modal").removeClass("age1").removeClass("age2").removeClass("age3").addClass("age4");
-		// $("body").css("background-color", "var(--ancients-color)")
-		// $("body").css("background-image", "url(" + ancientsTexture + ")")
 
 		//normal ascend button
 		$("#ascend-button").css({"opacity":"1", "cursor":"pointer"})
