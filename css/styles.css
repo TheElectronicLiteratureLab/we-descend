@@ -304,6 +304,7 @@ h6 {
 	text-transform: uppercase;
 	font-family: var(--secondaryFont);
 	letter-spacing: var(--secondaryFont-spacing);
+	color: var(--ink) !important;
 	font-weight: 600;
 	font-size: 1.5em;
 	opacity: .8;
