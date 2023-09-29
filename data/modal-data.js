@@ -1,6 +1,6 @@
 //title, text, link
 const modalData = [
-	[`PATHWAY`,
+	[`PROLOGUE`,
 		`<header>
 			<h3 class="subTitle">A literary sequence</h3>
 			<h3 class="subTitle">providing a brief tour of the Writings</h3>
@@ -89,12 +89,12 @@ const modalData = [
 					<li><a href="PrefacetotheCompleteEdition.html">Preface to the Complete Edition</a></li>
 					<li><a href="ForewordtotheArchives.html">Foreword to the Archives</a></li>
 					<li><a href="Epigraph.html">Epigraph</a> </li>
-					<li><a href="1Epigraph.html#PATHWAY">PATHWAY</a> (a 'tour' of the Writings) </li>
+					<li><a href="1Epigraph.html#PROLOGUE">PROLOGUE</a> (a 'tour' of the Writings) </li>
 					<li><a id="stream-button" class="modal-toggle" data-target="stream-modal" data-subtarget="inventory" href="#">INVENTORY</a> (of Authors)</li>
 
 				<h4>midMatter</h4>
 
-					<li><a href="1Epigraph.html#PATHWAY">PATHWAY</strong></a> ('tour' of the Writings)</li>
+					<li><a href="1Epigraph.html#PROLOGUE">PROLOGUE</strong></a> ('tour' of the Writings)</li>
 					<li><a href="LANDING.html">LANDING</a> (resting place where many paths meet)</li>
 					<li><a id="stream-button" class="modal-toggle" data-target="stream-modal" data-subtarget="inventory" href="#">INVENTORY</strong></a> (Authors)</li>
 					<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="SCHOLIA"

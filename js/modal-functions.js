@@ -14,8 +14,8 @@ $(document).ready(function() {
 		}
 	}
 	
-	//remove inventory and outline if in pathway stream
-	if (currentStream == "PATHWAY") {
+	//remove inventory and outline if in prologue stream
+	if (currentStream == "PROLOGUE") {
 		$("#outline-tab, #inventory-tab, .stream-tab-pipe").css("display","none");
 	}
 	
@@ -473,7 +473,7 @@ $(document).ready(function() {
 					</ul></li>
 						<li>midMatter 
 						<ul>
-							<li><strong><a href="1Epigraph.html#PATHWAY">PATHWAY</strong></a> ('tour' of the Writings)<strong></li>
+							<li><strong><a href="1Epigraph.html#PROLOGUE">PROLOGUE</strong></a> ('tour' of the Writings)<strong></li>
 							<li><a href="LANDING.html">LANDING</strong></a> (resting place where many paths meet) <strong></li>
 							<li><a id="stream-button" class="modal-toggle" data-target="stream-modal" data-subtarget="inventory" href="#">INVENTORY</strong></a> (Authors) <strong></li>
 							<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="SCHOLIA"
