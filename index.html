@@ -18,17 +18,74 @@
 	<button id="mobile-menu"><span>MENU</span></button>
 
 	<h1 onclick="launch()" id="intro-title">WE DESCEND</h1>
-	<img src="./img/title-3.png">
-	<img src="./img/title-2.png">
-	<img src="./img/title-1.png">
+	<img src="./img/title-3.png" id="intro-img-3">
+	<img src="./img/title-2.png" id="intro-img-2">
+	<img src="./img/title-1.png" id="intro-img-1">
+
+	<article class="bookPlatePage hidden" id="dedication">
+		<div class="dedication container">
+			<h5>In memory of</h5>
+			<h3>Deborah Ruth Griffin Bly</h3>
+			<h4>1954 – 2012</h4>
+		</div>
+	</article>
+
+	<article class="bookPlatePage hidden" id="firstTime">
+		<div class="firstTime container">
+			<h3>Is this your first reading?</h3>
+			<div class="firstTimeButtons">
+				<button onclick="firstReading(`yes`);">Yes</button>
+				<button onclick="firstReading(`no`);">No</button>
+			</div>
+		</div>
+	</article>
 
 	<script type="text/javascript">
+		let lockout = false;
+
 		function launch() {
 			document.getElementById("intro-overlay").classList.add("intro-out");
 			setTimeout(function() {
-				// window.location.replace("1TITLE.html"); //load page and remove index from history
-				window.location.href = "1TITLE.html"; //load page but keep index in history
+				document.getElementById("intro-title").classList.add("hidden");
+				document.getElementById("intro-overlay").classList.remove("intro-out");
+				document.getElementById("intro-overlay").classList.add("intro-in");
+				document.getElementById("dedication").classList.remove("hidden");
+				document.getElementById("intro-img-1").remove();
+				document.getElementById("intro-img-2").remove();
+				document.getElementById("intro-img-3").remove();
+
+				setTimeout(function() {
+					document.getElementById("intro-overlay").classList.remove("intro-in");
+					document.getElementById("intro-overlay").classList.add("intro-transition");
+
+					setTimeout(function() {
+						document.getElementById("dedication").classList.add("hidden");
+						document.getElementById("firstTime").classList.remove("hidden");
+					}, 1000);
+
+					// window.location.replace("1TITLE.html"); //load page and remove index from history
+					// window.location.href = "1TITLE.html"; //load page but keep index in history
+				}, 5000);
+
 			}, 550);
+		}
+
+		function firstReading(query) {
+			if (!lockout) {
+				lockout = true;
+				document.getElementById("intro-overlay").classList.remove("intro-transition");
+				document.getElementById("intro-overlay").classList.add("intro-out-alt");
+				if (query == "yes") {
+					setTimeout(function() {
+						window.location.href = "1TITLE.html";
+					}, 1000);
+				}
+				else if (query == "no") {
+					setTimeout(function() {
+						window.location.href = "LANDING.html";
+					}, 1000);
+				}
+			}
 		}
 	</script>
 

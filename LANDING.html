@@ -10,13 +10,16 @@
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 	<link href="css/map.css" rel="stylesheet">
+	<link href="css/intro.css" rel="stylesheet">
 </head>
 
 <body data-stream="PROLOGUE">
+	<div id="intro-overlay" class="covered"></div>
+
 	<div class="bg-texture"></div>
 	<button id="mobile-menu"><span>MENU</span></button>
 
-	<article class="bookPlatePage">
+	<article class="bookPlatePage" id="title">
 
 		<h1 class="title">
 			We Descend
@@ -157,6 +160,27 @@
 	<script src="js/search-functions.js"></script>
 	<script src="js/modal-functions.js"></script>
 	<script src="js/map-functions.js"></script>
+
+	<script type="text/javascript">
+
+		let lastPageUrl = document.referrer;
+		let result = lastPageUrl.slice(-1);
+		overlay = document.getElementById("intro-overlay");
+		title = document.getElementById("title");
+
+		// result = "/"; //Debugging
+
+		if (result == "/") { //Routed from index | animated intro
+			overlay.classList.add("intro-in");
+			overlay.classList.remove("covered");
+
+			title.classList.add("intro-in");
+		}
+		else { //Routed from somewhere else | static page
+			overlay.classList.add("intro-in-instant");
+		}
+
+	</script>
 	
 </body>
 
