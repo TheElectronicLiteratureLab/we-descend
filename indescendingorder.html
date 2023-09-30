@@ -36,11 +36,7 @@
 	<!-- end of "uniCol" div -->
 			
 		<nav class="path">
-			<div>return to:<!--<a href="INVENTORY.html#indescendingorder">INVENTORY</a>-->
-			<a href="LegomenonforUNKNOWNPROVENANCE.html#LEGOMENA">LEGOMENA</a><span>|</span>
-			<a href="TheLANDING.html#indescendingorder">The LANDING</a>
-			<!--<a href="OUTLINE.html#indescendingorder">OUTLINE</a>
-			<a href="elucidations.html#note">Backward</a><span>|</span><a href="SCHOLIA.html#indescendingorder">SCHOLIA</a><span>|</span><a href="LANDING.html">Onward</a>-->
+			<a href="" onclick="returnToLast();">RETURN</a>
 		</nav>
 		<!-- end of "path" navigation -->
 					
@@ -143,6 +139,12 @@
 	<script src="js/search-functions.js"></script>
 	<script src="js/modal-functions.js"></script>
 	<script src="js/map-functions.js"></script>
+
+	<script type="text/javascript">
+		function returnToLast() {
+			history.back();
+		}
+	</script>
 	
 </body>
 
