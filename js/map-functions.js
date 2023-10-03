@@ -69,7 +69,7 @@ const traverse = () => {
 	if (currentLevel == 1) {
 
 		//change title
-		$("h2").html("UNKNOWN PROVENANCE")
+		$("h2").html("AGE of UNKNOWN PROVENANCE")
 
 		//remove any existing classes and re-add grid styling
 		$("#unknown-grid, #scholar-grid, #egderus-grid, #ancients-grid").removeClass().addClass("map-grid");
