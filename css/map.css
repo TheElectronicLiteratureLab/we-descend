@@ -246,7 +246,7 @@
 		grid-column: span 1;
 	}
 
-	#ancients-grid a:nth-child(1){
+	#ancients-grid a:nth-child(2){
 		grid-row: span 2;
 	}
 
