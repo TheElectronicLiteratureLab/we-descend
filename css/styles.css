@@ -95,7 +95,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.3em;
+	font-size: 1.6em;
 	letter-spacing: 1px;
 }
 
@@ -103,7 +103,19 @@ h6 {
 	margin-bottom: 25px;
 }
 
+blockquote {
+	padding: 25px;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
 /*Book Plate Page*/
+#title h3 {
+	font-size: 1em;
+}
+
 .bookPlatePage {
 	background-image: none;
 	height: auto;
