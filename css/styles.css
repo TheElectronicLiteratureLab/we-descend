@@ -95,7 +95,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.6em;
+	font-size: 1.3em;
 	letter-spacing: 1px;
 }
 
@@ -168,14 +168,14 @@ h6 {
 	font-size: 1.1em;
 }
 
-.bookPlatePage a {
-	margin-bottom: 5px;
+.bookPlatePage a, .bookplatePage div {
+	margin-bottom: 3px;
 }
 
 .entry-btn {
-	margin: 25px 0;
-	height: 275px;
-	width: 275px;
+	margin: 20px 0;
+	height: 245px;
+	width: 245px;
 	background-image: url(../img/wdce-logo-no-text.png);
 	background-size: cover;
 	background-position: center;
@@ -183,7 +183,7 @@ h6 {
 	font-family: var(--secondaryFont);
 	letter-spacing: var(--secondaryFont-spacing);
 	font-weight: 600;
-	font-size: .8em;
+	font-size: .7em;
 	position: relative;
 	transition: all .4s;
 }
@@ -211,15 +211,16 @@ h6 {
 
 .bookPlatePage .path {
 	border-top: none;
-	margin: 0 0 20px 0;
-}
-
-.bookPlatePage .path:last-of-type {
-	margin-bottom: 0;
+	margin: 0 0 10px 0;
+	padding: 0;
 }
 
 .bookPlatePage .path a {
 	margin: 0;
+}
+
+.bookPlatePage div{
+	margin-top: 15px;
 }
 
 #copyright {
@@ -396,7 +397,7 @@ h6 {
 	#navigator .decorative-vert {
 		position: relative;
 		height: auto;
-		width: 40px;
+		width: 25%;
 		border: 1.5px solid var(--earth);
 		z-index: 1;
 		margin: auto;
@@ -427,7 +428,7 @@ h6 {
 	}
 
 	#navigator .decorative-vert {
-		height: 40px;
+		height: 25%;
 		width: auto
 	}
 }
