@@ -1039,3 +1039,11 @@ body {
 	margin-left: 20px;
 	margin-bottom: 5px;
 }
+
+.newline {
+	display: block;
+}
+
+.path.double {
+	display: block;
+}
