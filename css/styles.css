@@ -1047,3 +1047,15 @@ body {
 .path.double {
 	display: block;
 }
+
+@media screen and (max-width: 520px) {
+	h1.title {
+		font-size: 2.5em;
+	}
+}
+
+@media screen and (max-width: 465px) {
+	h1.title {
+		font-size: 2.0em;
+	}
+}
