@@ -350,7 +350,7 @@ blockquote {
 		align-items: center;
 	}
 
-	#mobile-menu {
+	#mobile-menu, #mobile-prologue {
 		display: none;
 	}
 
