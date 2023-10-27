@@ -44,10 +44,13 @@ $(document).ready(function() {
 				preEllipses = postEllipses = null;
 			
 				//search the text for user's search term
-				searchTitle = searchData[x][0].toLowerCase();
-				searchText = searchData[x][1].toLowerCase();
+				searchLinkType = searchData[x][0].toLowerCase();
+				searchStream = searchData[x][1].toLowerCase();
+				searchTitle = searchData[x][2].toLowerCase();
+				searchText = searchData[x][3].toLowerCase();
 			
 				//search for strings in both titles and content
+				streamIndices = getIndicesOf(searchString, searchStream);
 				titleIndices = getIndicesOf(searchString, searchTitle);
 				contentIndices = getIndicesOf(searchString, searchText);
 			
@@ -83,18 +86,32 @@ $(document).ready(function() {
 						}
 			
 						//format output
-						let searchResult = searchData[x][1].substring(finalStartPosition, startPosition)+"<mark class='search-highlight'>"+searchData[x][1].substring(startPosition, endPosition)+"</mark>"+searchData[x][1].substring(endPosition, finalEndPosition);
+						let searchResult = searchData[x][3].substring(finalStartPosition, startPosition)+"<mark class='search-highlight'>"+searchData[x][3].substring(startPosition, endPosition)+"</mark>"+searchData[x][3].substring(endPosition, finalEndPosition);
 			
 						//append elipses if needed
-						if (finalStartPosition > 0 && searchResult[0] == " ") {
+						if (finalStartPosition > 0 && searchResult[2] == " ") {
 							searchResult = "..."+searchResult.substring(1,searchResult.length);
 						}
 						if (searchResult[searchResult.length] != ".") {
 							searchResult = searchResult+"...";
 						}
 			
-						//print findings
-						$("#output-area").append("<h3><a href='"+searchData[x][2]+"'>"+searchData[x][0]+"</a></h3><p>"+searchResult+"</p>");
+						//print findings for either page or modal link type
+						
+						if (searchLinkType == "page") {
+							$("#output-area").append("<h3><a href='"+searchData[x][4]+"'>"+searchData[x][2]+"</a></h3><p>"+searchResult+"</p>");
+						}
+						else if (searchLinkType == "modal") {
+							$("#output-area").append("<h3><a class='modal-toggle' data-subtarget='"+searchData[x][4]+"' \
+								onclick='$(`#stream-modal`).removeClass(`modal-closed`); \
+								$(`.outline-container, .stream-container, .inventory-container`).addClass(`hidden`); \
+								$(`.inventory-container`).removeClass(`hidden`); \
+								$(`.modal-toggle.selected`).removeClass(`selected`); \
+								$(`#inventory-tab`).addClass(`selected`); \
+								'>"+searchData[x][2]+"</a></h3><p>"+searchResult+"</p>");
+						}
+						
+						
 						searchCount++;
 					}//end of contentIndices for loop
 				}//end of contentIndices if conditional
@@ -147,11 +164,11 @@ $(document).ready(function() {
 						}
 			
 						//format output
-						let searchResultTitle = searchData[x][0].substring(finalStartPositionTitle, startPositionTitle)+"<mark class='search-highlight'>"+searchData[x][0].substring(startPositionTitle, endPositionTitle)+"</mark>"+searchData[x][0].substring(endPositionTitle, finalEndPositionTitle);
-						let searchResultText = searchData[x][1].substring(0, finalEndPositionText);
+						let searchResultTitle = searchData[x][2].substring(finalStartPositionTitle, startPositionTitle)+"<mark class='search-highlight'>"+searchData[x][2].substring(startPositionTitle, endPositionTitle)+"</mark>"+searchData[x][2].substring(endPositionTitle, finalEndPositionTitle);
+						let searchResultText = searchData[x][3].substring(0, finalEndPositionText);
 			
 						//append elipses if needed
-						if (searchResultText[0] == " ") {
+						if (searchResultText[2] == " ") {
 							searchResultText = "..."+searchResultText.substring(1,searchResultText.length);
 						}
 						else if (searchResultText[searchResultText.length] != ".") {
@@ -159,10 +176,51 @@ $(document).ready(function() {
 						}
 			
 						//print findings
-						$("#output-area").append("<h3><a href='"+searchData[x][2]+"'>"+searchResultTitle+"</a></h3><p>"+searchResultText+"</p>");
+						$("#output-area").append("<h3><a href='"+searchData[x][4]+"'>"+searchResultTitle+"</a></h3><p>"+searchResultText+"</p>");
 						searchCount++;
-					}//end of contentIndices for loop
-				}//end of contentIndices if conditional
+					}//end of titleIndices for loop
+				}//end of titleIndices if conditional
+				
+				
+				//string exists in stream
+				if (streamIndices != null) {
+					for (z=0; z < streamIndices.length; z++) {
+						foundResultFlag = 1;
+			
+						startPosition = streamIndices[z];
+		
+						//calculate beginning and end of string
+						endPosition = startPosition + searchString.length;
+			
+						//grab text around search result
+						finalStartPosition = startPosition - 40;
+						finalEndPosition = endPosition + 40;
+			
+						//find words to cut at
+						while (searchStream[finalStartPosition] != " " && finalStartPosition > 0) {
+							finalStartPosition--;
+						}
+			
+						while (searchStream[finalEndPosition] != " " && finalEndPosition < searchStream.length) {
+							finalEndPosition++;
+						}
+			
+						//prevent leaving string
+						if (finalStartPosition < 0) {
+							finalStartPosition = 0;
+						}
+						if (finalEndPosition > searchStream.length) {
+							finalEndPosition = searchStream.length;
+						}
+			
+						//format output
+						let searchResult = "Backward | "+searchData[x][1].substring(finalStartPosition, startPosition)+"<mark class='search-highlight'>"+searchData[x][1].substring(startPosition, endPosition)+"</mark>"+searchData[x][1].substring(endPosition, finalEndPosition)+" | Onward";
+			
+						//print findings
+						$("#output-area").append("<h3><a href='"+searchData[x][4]+"'>"+searchData[x][2]+"</a></h3><p>"+searchResult+"</p>");
+						searchCount++;
+					}//end of streamIndices for loop
+				}//end of streamIndices if conditional
 
 			}//end of for loop
 

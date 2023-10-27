@@ -832,11 +832,3 @@ const modalData = [
 	]
 	
 ];
-
-/*
-
-<body data-stream="">
-
-<span>|</span><a id="stream-button" class="modal-toggle" data-target="stream-modal" data-subtarget="stream"	href="#"></a><span>|</span>
-
-*/

@@ -591,7 +591,9 @@ $(document).ready(function() {
 		
 		<button class="close-modal">Close</button>`);
 		
-		
+	function yeahTest() {
+		alert("yes");
+	}
 
 	$(".modal-toggle").click(function(){
 	
@@ -601,6 +603,11 @@ $(document).ready(function() {
 			$("#"+target).removeClass("modal-closed");
 			secondaryModal = topModal;
 			topModal = target;
+			
+			//focus on search field
+			if (target = "search") {
+				$( "#searchterm" ).trigger( "focus" );
+			}
 		}
 		
 		//open targeted article inside of modal
@@ -643,10 +650,20 @@ $(document).ready(function() {
 	});
 
 	function closeModal() {
+		//temp fix for closing modals when inventory is opened via search
+		if (!$("#stream-modal").hasClass("modal-closed") && !$("#search-modal").hasClass("modal-closed")) {
+			topModal = "stream-modal";
+		}
+		
 		$("#"+topModal).addClass("modal-closed");
 		$("#"+topModal+".modal article").addClass("hidden");
 		$("#"+topModal+".modal-toggle.selected").removeClass("selected");
-		topModal = secondaryModal;
+		
+		//temp fix for closing modals when inventory is opened via search
+		if (!$("#search-modal").hasClass("modal-closed")) {
+			topModal = "search-modal";
+		}
+		
 	}
 
 	function checkHash() {
