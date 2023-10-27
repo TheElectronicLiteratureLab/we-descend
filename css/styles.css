@@ -273,7 +273,7 @@ blockquote {
 	display: none;
 }
 
-#mobile-menu {
+#mobile-menu, #mobile-prologue {
 	position: fixed;
 	top: 0px;
 	right: 0px;
@@ -289,7 +289,7 @@ blockquote {
 	transition: background-color .3s linear;
 }
 
-#mobile-menu span {
+#mobile-menu span, #mobile-prologue span {
 	transform: rotate(-45deg);
 	margin-bottom: 0;
 	text-transform: uppercase;
@@ -299,7 +299,7 @@ blockquote {
 	opacity: .8;
 }
 
-#mobile-menu::after {
+#mobile-menu::after, #mobile-prologue::after {
 	display: block;
 	content: '';
 	height: 80px;
@@ -350,7 +350,7 @@ blockquote {
 		align-items: center;
 	}
 
-	#mobile-menu {
+	#mobile-menu, #mobile-prologue {
 		display: none;
 	}
 
@@ -1038,4 +1038,24 @@ body {
 .catalog p {
 	margin-left: 20px;
 	margin-bottom: 5px;
+}
+
+.newline {
+	display: block;
+}
+
+.path.double {
+	display: block;
+}
+
+@media screen and (max-width: 520px) {
+	h1.title {
+		font-size: 2.5em;
+	}
+}
+
+@media screen and (max-width: 465px) {
+	h1.title {
+		font-size: 2.0em;
+	}
 }
