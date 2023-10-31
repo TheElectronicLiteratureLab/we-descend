@@ -642,6 +642,7 @@ $(document).ready(function() {
 
 		}
 		checkPage();
+		checkInventory();
 
 
 	});
@@ -697,9 +698,21 @@ $(document).ready(function() {
 
 		let selectLexia = catalog.filter(function () {
 			return $(this).text().trim() == title;
-			});
+		});
 
 		selectLexia.addClass("current-stream-page");
+	}
+
+	function checkInventory() {
+		let inventory = $("#inventory").children(".catalog.container").children(':contains("' + currentStream + '")');
+
+		let selectInventory = inventory.children(':contains("' + currentStream + '")');
+
+		if (selectInventory.text() != currentStream) {
+			selectInventory = selectInventory.last();
+		}		
+
+		selectInventory.addClass("current-stream-page");
 	}
 
 	checkHash();
