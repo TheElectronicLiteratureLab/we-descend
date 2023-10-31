@@ -28,19 +28,24 @@ $(document).ready(function() {
 		</header>
 		
 		<div class="catalog container">
-			<!--<p><a id="UNKNOWNPROVENANCE"></a><strong>===<a href="UNKNOWNPROVENANCE.html">UNKNOWN PROVENANCE</a>===</p>-->
+		<div class="inventory-timeband"><p><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="UNKNOWN PROVENANCE"
+			href="#">UNKNOWN PROVENANCE</a></p>
 			<p><a id="TheREMNANT"></a><a href="TheRemnantSay.html#The REMNANT">The REMNANT</a></p>
 			<p><a id="INSOMNIAC"></a><a href="awake.html#INSOMNIAC">INSOMNIAC</a></p>
 			<p><a id="ROMANTICIMPULSEWRITINGS"></a><a href="YoungRobenc.html#ROMANTIC IMPULSE WRITINGS">ROMANTIC IMPULSE WRITINGS</a></p>
 			<p><a id="OTHERWRITINGSofUNKNOWNPROVENANCE"></a><a href="HouseHills.html#OTHER WRITINGS of UNKNOWN PROVENANCE">OTHER WRITINGS of UNKNOWN PROVENANCE</a></p>
-			<!--<p><a id="AGEoftheSCHOLAR"></a>===<a href="AGEoftheSCHOLAR.html">AGE of the SCHOLAR</a>===</p>-->
+		</div>
+		<div class="inventory-timeband"><p><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="AGE of the SCHOLAR"
+			href="#">AGE of the SCHOLAR</a></p>
 			<p><a id="SOLDIER"></a><a href="purpleberries.html#SOLDIER">SOLDIER</a></p>
 			<p><a id="EXILE"></a><a href="fog.html#EXILE">EXILE</a></p>
 			<p><a id="UNKNOWNSCHOLASTIC"></a><a href="conspiracy.html#UNKNOWN SCHOLASTIC">UNKNOWN SCHOLASTIC</a></p>
 			<p><a id="VOICEfromtheLOCUSTGROVE"></a><a href="TheLocustGrove.html#VOICE from the LOCUST GROVE">VOICE from the LOCUST GROVE</a></p>
 			<p><a id="UNKNOWNCURATOR"></a><a href="archiveunderthreat.html#UNKNOWN CURATOR">UNKNOWN CURATOR</a></p>
 			<p><a id="SCHOLAR"></a><a href="ScholarsDiary.html#SCHOLAR">SCHOLAR</a></p>
-			<!--<p><a id="AGEofEGDERUS"></a>===<a href="AGEofEGDERUS.html">AGE of EGDERUS</a>== </p>-->
+		</div>
+		<div class="inventory-timeband"><p><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="AGE of EGDERUS"
+			href="#">AGE of EGDERUS</a></p>
 			<p><a id="INSURGENT"></a><a href="onmarch.html#INSURGENT">INSURGENT</a></p>
 			<p><a id="EGDERUS"></a><a href="EgderusatMountainHouse.html#EGDERUS">EGDERUS</a></p>
 			<p><a id="MISSIONARY"></a><a href="WritingsoftheMissionary.html#MISSIONARY">MISSIONARY</a></p>
@@ -49,10 +54,13 @@ $(document).ready(function() {
 			<p><a id="HISTORIAN"></a><a href="HistoriansTale.html#HISTORIAN">HISTORIAN</a></p>
 			<p><a id="SUPERIUSFRATER"></a><a href="SuperiusFraterandRobenc.html#SUPERIUS FRATER">SUPERIUS FRATER</a></p>
 			<p><a id="OLDPOET"></a><a href="patteran.html#OLD POET">OLD POET</a></p>
-			<!--<p><a id="TheANCIENTS"></a>===<a href="TheANCIENTS.html">The ANCIENTS</a>===</p>-->
+		</div>
+		<div class="inventory-timeband"><p><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="The ANCIENTS"
+			href="#">The ANCIENTS</a></p>
 			<p><a id="BOY"></a><a href="return.html#BOY">BOY</a></p>
 			<p><a id="LASTONE"></a><a href="LastOneandBoy.html#LAST ONE">LAST ONE</a></p>
 			<p><a id="UNKNOWNANCIENTS"></a><a href="Stormsandhaze.html#UNKNOWN ANCIENTS">UNKNOWN ANCIENTS</a></p>
+		</div>
 		</div>
 		<!-- end of "catalog container" div -->`);
 		
@@ -65,7 +73,7 @@ $(document).ready(function() {
 	<div class="listing container">
 		<h4><a id="indescendingorder">PRIMARY WRITINGS</a> (<a href="indescendingorder.html">in descending order</a>)</h4>
 		<ul>
-			<li><strong><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="UNKNOWN PROVENANCE"
+			<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="UNKNOWN PROVENANCE"
 			href="#">UNKNOWN PROVENANCE</a> 
 			<ul>
 				<li><a href="TheRemnantSay.html#The REMNANT">The REMNANT</a>
@@ -278,7 +286,7 @@ $(document).ready(function() {
 					<li><a href="whatitis.html">what it is</a></li>
 					<li><a href="nothingatall.html">nothing at all</a></li>
 					<li><a href="refugee.html">refugee</a></li>
-					<li><a href="thisroad.html">this road</a></strong></li>
+					<li><a href="thisroad.html">this road</a></li>
 					</ul>
 					</li>
 				</ul>
@@ -662,6 +670,9 @@ $(document).ready(function() {
 		//temp fix for closing modals when inventory is opened via search
 		if (!$("#search-modal").hasClass("modal-closed")) {
 			topModal = "search-modal";
+		}
+		else {
+			topModal = secondaryModal;
 		}
 		
 	}
