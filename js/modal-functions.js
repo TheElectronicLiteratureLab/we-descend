@@ -73,7 +73,7 @@ $(document).ready(function() {
 	<div class="listing container">
 		<h4><a id="indescendingorder">PRIMARY WRITINGS</a> (<a href="indescendingorder.html">in descending order</a>)</h4>
 		<ul>
-			<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="UNKNOWN PROVENANCE"
+			<li><a class="modal-toggle age-heading" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="UNKNOWN PROVENANCE"
 			href="#">UNKNOWN PROVENANCE</a> 
 			<ul>
 				<li><a href="TheRemnantSay.html#The REMNANT">The REMNANT</a>
@@ -120,7 +120,7 @@ $(document).ready(function() {
 				</li>
 			</ul>
 			</li>
-			<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="AGE of the SCHOLAR"
+			<li><a class="modal-toggle age-heading" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="AGE of the SCHOLAR"
 			href="#">AGE of the SCHOLAR</a> 
 			<ul>
 				<li><a href="purpleberries.html#SOLDIER">SOLDIER</a> 
@@ -178,7 +178,7 @@ $(document).ready(function() {
 			</li>
 		</ul>
 		</li>
-			<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="AGE of EGDERUS"
+			<li><a class="modal-toggle age-heading" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="AGE of EGDERUS"
 			href="#">AGE of EGDERUS</a> 
 			<ul>
 				<li><a href="onmarch.html#INSURGENT">INSURGENT</a> 
@@ -242,7 +242,7 @@ $(document).ready(function() {
 					<li><a href="patteran.html">patteran</a></li></ul></li>
 			</ul>
 			</li>
-			<li><a class="modal-toggle" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="The ANCIENTS"
+			<li><a class="modal-toggle age-heading" data-target="metastream-modal" data-subtarget="metastream" data-metamodal="The ANCIENTS"
 			href="#">The ANCIENTS</a>
 			<ul>
 				<li><a href="return.html#BOY">BOY</a> 

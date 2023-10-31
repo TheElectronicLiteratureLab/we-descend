@@ -1065,7 +1065,17 @@ body {
 }
 
 .inventory-timeband a:first-of-type, .inventory-timeband a:visited:first-of-type {
+	text-transform: uppercase;
 	color: var(--ink);
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 1.5;
 	padding-bottom: 10px;
-	font-weight: 700;
+}
+
+.age-heading, .age-heading:visited {
+	text-transform: uppercase;
+	color: var(--ink);
+	font-size: 1em;
+	font-weight: 600;
 }
