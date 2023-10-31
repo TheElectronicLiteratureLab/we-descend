@@ -45,10 +45,12 @@ $(document).ready(function() {
 			
 				//search the text for user's search term
 				searchLinkType = searchData[x][0].toLowerCase();
+				searchStream = searchData[x][1].toLowerCase();
 				searchTitle = searchData[x][2].toLowerCase();
 				searchText = searchData[x][3].toLowerCase();
 			
 				//search for strings in both titles and content
+				streamIndices = getIndicesOf(searchString, searchStream);
 				titleIndices = getIndicesOf(searchString, searchTitle);
 				contentIndices = getIndicesOf(searchString, searchText);
 			
@@ -178,6 +180,47 @@ $(document).ready(function() {
 						searchCount++;
 					}//end of titleIndices for loop
 				}//end of titleIndices if conditional
+				
+				
+				//string exists in stream
+				if (streamIndices != null) {
+					for (z=0; z < streamIndices.length; z++) {
+						foundResultFlag = 1;
+			
+						startPosition = streamIndices[z];
+		
+						//calculate beginning and end of string
+						endPosition = startPosition + searchString.length;
+			
+						//grab text around search result
+						finalStartPosition = startPosition - 40;
+						finalEndPosition = endPosition + 40;
+			
+						//find words to cut at
+						while (searchStream[finalStartPosition] != " " && finalStartPosition > 0) {
+							finalStartPosition--;
+						}
+			
+						while (searchStream[finalEndPosition] != " " && finalEndPosition < searchStream.length) {
+							finalEndPosition++;
+						}
+			
+						//prevent leaving string
+						if (finalStartPosition < 0) {
+							finalStartPosition = 0;
+						}
+						if (finalEndPosition > searchStream.length) {
+							finalEndPosition = searchStream.length;
+						}
+			
+						//format output
+						let searchResult = "Backward | "+searchData[x][1].substring(finalStartPosition, startPosition)+"<mark class='search-highlight'>"+searchData[x][1].substring(startPosition, endPosition)+"</mark>"+searchData[x][1].substring(endPosition, finalEndPosition)+" | Onward";
+			
+						//print findings
+						$("#output-area").append("<h3><a href='"+searchData[x][4]+"'>"+searchData[x][2]+"</a></h3><p>"+searchResult+"</p>");
+						searchCount++;
+					}//end of streamIndices for loop
+				}//end of streamIndices if conditional
 
 			}//end of for loop
 
